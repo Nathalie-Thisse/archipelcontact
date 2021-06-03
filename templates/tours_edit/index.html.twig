@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tours index{% endblock %}
+
+{% block body %}
+    <h1>Tours index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Islands</th>
+                <th>Photo</th>
+                <th>Map</th>
+                <th>Included</th>
+                <th>NotIncluded</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tour in tours %}
+            <tr>
+                <td>{{ tour.id }}</td>
+                <td>{{ tour.title }}</td>
+                <td>{{ tour.description }}</td>
+                <td>{{ tour.duration }}</td>
+                <td>{{ tour.price }}</td>
+                <td>{{ tour.islands }}</td>
+                <td>{{ tour.photo }}</td>
+                <td>{{ tour.map }}</td>
+                <td>{{ tour.included }}</td>
+                <td>{{ tour.notIncluded }}</td>
+                <td>
+                    <a href="{{ path('tours_edit_show', {'id': tour.id}) }}">show</a>
+                    <a href="{{ path('tours_edit_edit', {'id': tour.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('tours_edit_new') }}">Create new</a>
+{% endblock %}
