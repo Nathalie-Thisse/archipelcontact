@@ -5,6 +5,30 @@
 {% block body %}
 
     <h1>{{ tour.title }}</h1>
+    <p>{{ tour.description }}</p>
 
+    <div>
+        <p>Durée : {{ tour.duration }}</p>
+        <p>Ile(s) visitée(s) : {{ tour.islands }}</p>
+        <p>Prix : à partir de {{ tour.price }} € par personne</p>
+    </div>
+
+    <iframe src="{{ tour.map }}" width="320" height="240"></iframe>
+
+    {# {{ dump(days) }} #}
+
+    <ul>        
+        {% for day in tour.days %}
+            <li>{{ day.title }}</li>
+            <li>{{ day.description }}</li>
+            <li>{{ day.photo }}</li>
+            <li>{{ day.hotel }}</li>
+        {% endfor %} 
+    </ul>
+
+    <p>Prix : à partir de {{ tour.price }} €</p>
+    <p>Note: prix en basse saison, en hôtel de charme de type 3*</p>
+    <p>Notre prix comprend : {{ tour.included }}</p>
+    <p>Notre prix ne comprend pas : {{ tour.notIncluded }}</p>
 
 {% endblock %}
