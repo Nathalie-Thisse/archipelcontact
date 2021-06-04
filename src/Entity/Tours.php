@@ -20,7 +20,7 @@ class Tours
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=300, nullable=true)
      */
     private $title;
 
