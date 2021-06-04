@@ -18,7 +18,7 @@ class Days
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=500, nullable=true)
+     * @ORM\Column(type="string", length=600, nullable=true)
      */
     private $title;
 
