@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Tours;
 use App\Entity\Days;
 use App\Repository\ToursRepository;
+use App\Repository\DaysRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -37,15 +38,16 @@ class ToursController extends AbstractController
     //     ]);
     // }
     
- 	/**
-     * @Route("/tours/{id}", name="show_tour")
-    */
+    
+    // Display each tour information in Tour Page: 
+    #[Route('/tours/{id}', name: 'show_tour', methods: ['GET'])]
     public function showTour($id, EntityManagerInterface $entityManager, Request $request): Response
     {
         $tour = $entityManager->getRepository(Tours::class)->find($id);
-
         return $this->render('tours\tour.html.twig', [
-            'tour' => $tour,
+            'tour' => $tour,                        
+            'days' => $tour->getDays(),
         ]);
     }
+
 }
