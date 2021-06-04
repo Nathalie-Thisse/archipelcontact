@@ -40,13 +40,14 @@ class ToursController extends AbstractController
     
     
     // Display each tour information in Tour Page: 
+        
     #[Route('/tours/{id}', name: 'show_tour', methods: ['GET'])]
     public function showTour($id, EntityManagerInterface $entityManager, Request $request): Response
     {
         $tour = $entityManager->getRepository(Tours::class)->find($id);
         return $this->render('tours\tour.html.twig', [
             'tour' => $tour,                        
-            'days' => $tour->getDays(),
+            // 'days' => $tour->getDays(),
         ]);
     }
 

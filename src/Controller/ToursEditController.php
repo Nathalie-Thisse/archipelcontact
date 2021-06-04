@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/tours/edit')]
+#[Route('/tours/admin/edit')]
 class ToursEditController extends AbstractController
 {
     #[Route('/', name: 'tours_edit_index', methods: ['GET'])]
@@ -21,7 +21,7 @@ class ToursEditController extends AbstractController
         ]);
     }
 
-    #[Route('/new', name: 'tours_edit_new', methods: ['GET', 'POST'])]
+    #[Route('/admin/new', name: 'tours_edit_new', methods: ['GET', 'POST'])]
     public function new(Request $request): Response
     {
         $tour = new Tours();
@@ -42,7 +42,7 @@ class ToursEditController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'tours_edit_show', methods: ['GET'])]
+    #[Route('/admin/{id}', name: 'tours_edit_show', methods: ['GET'])]
     public function show(Tours $tour): Response
     {
         return $this->render('tours_edit/show.html.twig', [
@@ -50,7 +50,7 @@ class ToursEditController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}/edit', name: 'tours_edit_edit', methods: ['GET', 'POST'])]
+    #[Route('/admin/{id}/edit', name: 'tours_edit_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Tours $tour): Response
     {
         $form = $this->createForm(ToursType::class, $tour);
@@ -68,7 +68,7 @@ class ToursEditController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'tours_edit_delete', methods: ['POST'])]
+    #[Route('/admin/{id}', name: 'tours_edit_delete', methods: ['POST'])]
     public function delete(Request $request, Tours $tour): Response
     {
         if ($this->isCsrfTokenValid('delete'.$tour->getId(), $request->request->get('_token'))) {
