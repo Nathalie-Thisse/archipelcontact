@@ -23,21 +23,21 @@ class ToursController extends AbstractController
         return $this->render('tours/index.html.twig', [
             'tours' => $toursRepository->findAll(),
         ]);
-    }
+    } 
 
-    // // 2d method: 
-    // /**
-    //  * @Route("/tours", name="tours")
-    //  */
-    // public function index(EntityManagerInterface $entityManager): Response
-    // {
-    //     $tours = $entityManager->getRepository(Tours::class)->findAll();
+     // 2d method: 
+     ///**
+     // * @Route("/tours", name="tours")
+     // */
+     /* public function index(EntityManagerInterface $entityManager): Response
+     {
+         $tours = $entityManager->getRepository(Tours::class)->findAll();
 
-    //     return $this->render('tours/index.html.twig', [
-    //         'tours' => $tours,
-    //     ]);
-    // }
-    
+         return $this->render('tours/index.html.twig', [
+             'tours' => $tours,
+         ]);
+     }
+     */
     
     // Display each tour information in Tour Page: 
         
