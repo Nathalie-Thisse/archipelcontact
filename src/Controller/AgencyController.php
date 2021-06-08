@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AgencyController extends AbstractController
 {
     /**
-     * @Route("/agency", name="agency")
+     * @Route("/agence", name="agency")
      */
     public function index(): Response
     {

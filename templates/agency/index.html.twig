@@ -3,18 +3,92 @@
 {% block title %}Hello AgencyController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="container">
+    
+    <h1>L'agence</h1>
+    
+    {# section 1 : introduction #}
+    <section>
+        <p>Agence réceptive créée en 1989, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem deleniti obcaecati a magnam nemo facilis, fuga optio, dolores qui molestias sapiente id nisi culpa! Nulla error adipisci tempora esse vitae?</p>
+        <p>Nous sommes avant tout des amoureux de l’Indonésie, de sa culture, de sa nature et de ses valeurs. Nous respectons et valorisons les différentes communautés indonésiennes, leurs temps de prière et leurs coutumes. Notre désir premier est de faire découvrir cette richesse culturelle à vos clients.</p>
+        <p>Chaque fois que cela sera possible, nous mettrons en contact les voyageurs et les habitants. En indonésien, « client » se dit « tamu » et signifie aussi « invité » : la tradition d’accueil des Indonésiens et la disponibilité de notre équipe sur place permet de faire d’un voyage, une aventure unique et inoubliable.</p>
+    </section>  
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Applications/MAMP/htdocs/archipelcontact/src/Controller/AgencyController.php'|file_link(0) }}">src/Controller/AgencyController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Applications/MAMP/htdocs/archipelcontact/templates/agency/index.html.twig'|file_link(0) }}">templates/agency/index.html.twig</a></code></li>
-    </ul>
-</div>
+    {# section 2 : list of articles #}    
+    <section>
+
+        {# article 1 #}
+        <article>
+            <div>
+                <img src="../../assets/images/" alt="">
+            </div>
+            <div>
+                <h2>Une équipe multiculturelle</h2>
+                <p>Archipel Contact est une agence à taille humaine composée de spécialistes francophones ayant une expertise confirmée du terrain. Tous les membres de l’équipe ont vécu en Indonésie et continuent de s’y rendre régulièrement. Ils connaissent les spécificités du terrain et les coutumes locales ainsi que les besoins et les envies de nos clients européens, ils mettent à votre disposition leur savoir-faire afin d’offrir le meilleur de l’Indonésie.</p>
+                <p>L’équipe opérationnelle est située à Denpasar et met en place, coordonne et supervise le déroulement des circuits. Ibu Ati épaulée par Ibu Sri veillent sur l’équipe locale : notre grande famille Balinaise !</p>
+                <p>Sur les autres îles, nos partenaires font partie de l’aventure depuis 20 ans. Nos bureaux sont repartis sur toute l’Indonésie, ce qui nous permet de suivre en temps réel l’évolution de la destination. A Java, Lombok, Sulawesy, Flores et Borneo.</p>
+            </div>
+        </article>
+
+        {# article 2 #} 
+            <article>
+                <div>
+                    <img src="../../assets/images/" alt="">
+                </div>
+                <div>
+                    <h2>Des services sur-mesure</h2>
+                    <p>Nous proposons des voyages sur-mesure pour les individuels et les groupes, des départs garantis (Bali), des voyages incentive ainsi que des voyages à thème insolites.</p>
+                    <p>Votre production est créée sur-mesure selon votre cahier des charges. Et vous disposez d’une production générale pour les demandes moins spécifiques</p>
+                </div>
+            </article>
+
+        {# article 3 #} 
+            <article>
+                <div>
+                    <img src="../../assets/images/" alt="">
+                </div>
+                <div>
+                    <h2>Des voyages responsables</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis quos temporibus labore, impedit praesentium expedita animi repudiandae sequi ex, porro reiciendis quod necessitatibus, aspernatur perspiciatis saepe similique eum! Harum, quisquam.</p>
+                </div>
+            </article>
+
+        {# article 4 #} 
+            <article>
+                <div>
+                    <img src="../../assets/images/" alt="">
+                </div>
+                <div>
+                    <h2>Notre disponibilité</h2>
+                    <p>Nous mettons à votre disposition des outils de vente pour vous former sur nos destinations, tels que notre site professionnel, une bibliothèque photos, des fiches techniques, des formations dans vos locaux, et des voyages d’inspection sur mesure.</p>
+                </div>
+            </article>
+
+        {# article 5 #} 
+            <article>
+                <div>
+                    <img src="../../assets/images/" alt="">
+                </div>
+                <div>
+                    <h2>Des prestations de qualité</h2>
+                    <p>Nous offrons des prestations de qualité, en portant notre attention sur les moindres détails, depuis la conception des jusqu’à la réalisation. Nous respectons une charte de standard minimum pour nos services et choix hôteliers.</p>
+                </div>
+            </article>
+
+        {# article 6 #} 
+            <article>
+                <div>
+                    <img src="../../assets/images/" alt="">
+                </div>
+                <div>
+                    <h2>Une attention personnalisée</h2>
+                    <p>Nos guides expérimentés savent écouter les désirs des clients et s’adaptent avec une grande flexibilité. Très peu de litiges sont enregistrés car les complications sont traitées en temps réel, sur place, avec comme priorité la satisfaction du client et la préservation de la retation agence, plutôt que l’aspect financier. Les commentaires sont pris très au sérieux afin d’améliorer et de faire évoluer nos prestations tout au long de l’année.</p>
+                </div>
+            </article>
+    
+    </section>
+
+    </div>
+
 {% endblock %}
