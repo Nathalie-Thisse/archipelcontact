@@ -1,8 +1,13 @@
-body {
-    background-color: blue;
-    font-family: 'Courier New', Courier, monospace;
-}
 
-.coucou{
-    background-color: red;
-}
+/*  _core — contains variables, resets, mixins, and other similar styles
+    _layout — there are the styles for the header, footer, the grid system, etc
+    _components — styles for every component necessary for that project, including buttons, modals, etc.
+    _app — imports 
+*/
+
+/* APP.SCSS */
+
+@import 'core/variables';
+
+@import 'layout/header';
+
