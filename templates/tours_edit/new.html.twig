@@ -3,9 +3,12 @@
 {% block title %}New Tours{% endblock %}
 
 {% block body %}
-    <h1>Create new Tours</h1>
 
-    {{ include('tours_edit/_form.html.twig') }}
+    <div class="container">
+        <h1>Create new Tours</h1>
 
-    <a href="{{ path('tours_edit_index') }}">back to list</a>
+        {{ include('tours_edit/_form.html.twig') }}
+
+        <a href="{{ path('tours_edit_index') }}" <i class="fas fa-arrow-alt-circle-left m-2"></i>back to list</a>
+    </div>
 {% endblock %}

@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/tours/admin')]
+#[Route('/admin/tours')]
 class ToursEditController extends AbstractController
 {
     #[Route('/', name: 'tours_edit_index', methods: ['GET'])]
