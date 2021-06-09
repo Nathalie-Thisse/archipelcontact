@@ -1,3 +1,40 @@
-.coucou{
-    background-color: $base-color;
+
+/* HEADER */
+
+.header-top{
+    text-align: center;
+    color: white;
+
+    background-image:  linear-gradient(to right, rgba(35, 24, 52, 0.379), rgba(35, 24, 52, 0.379)), url('../../images/florian-giorgio-PSJ-B59f-LE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    padding: 12rem 0;
+
+    h1{
+        font-size: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(78, 54, 116, 0.44);
+
+    div{
+        margin: 1rem;
+    }
+}
+
+.navbar--links{
+
+    a{
+        margin-left: 6rem;
+        margin-right: 2rem;
+        text-decoration: none;
+        color: white;
+    }
+   
 }

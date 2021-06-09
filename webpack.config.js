@@ -10,21 +10,15 @@ Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
-    .setPublicPath('build/')
+    .setPublicPath('/archipelcontact/public/build')
     // only needed for CDN's or sub-directory deploy
-    /* .setManifestKeyPrefix('build/') */
+    /* .setManifestKeyPrefix('build') */
 
     .copyFiles({
         from: './assets/images',
         to: 'images/[path][name].[ext]'
     })  
 
-
-
-    .copyFiles({
-        from: './assets/images',
-        to: 'images/[path][name].[ext]'
-    })  
 
     /*
      * ENTRY CONFIG
@@ -42,8 +36,8 @@ Encore
 
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app
-    .enableSingleRuntimeChunk()
-   /*  .disableSingleRuntimeChunk() */
+   /*  .enableSingleRuntimeChunk() */
+    .disableSingleRuntimeChunk()
     /*
      * FEATURE CONFIG
      *
