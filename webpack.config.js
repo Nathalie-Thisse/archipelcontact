@@ -10,7 +10,8 @@ Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
-    .setPublicPath('/archipelcontact/public/build')
+    .setPublicPath('/nath/archipelcontact/public/build')
+
     // only needed for CDN's or sub-directory deploy
     /* .setManifestKeyPrefix('build') */
 
@@ -18,6 +19,7 @@ Encore
         from: './assets/images',
         to: 'images/[path][name].[ext]'
     })  
+
 
 
     /*
