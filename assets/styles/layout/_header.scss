@@ -24,13 +24,18 @@
     background-color: rgba(78, 54, 116, 0.44);
 
     div{
-        margin: 1rem;
+        margin: 0.5rem;
     }
+}
+
+.navbar--logo a img{
+    width: 55px;
 }
 
 .navbar--links{
 
     a{
+        font-size: 1.2rem;
         margin-left: 6rem;
         margin-right: 2rem;
         text-decoration: none;
