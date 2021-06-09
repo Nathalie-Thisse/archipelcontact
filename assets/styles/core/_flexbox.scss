@@ -1,0 +1,24 @@
+
+.flexbox-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flexbox-center-tours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .center-tours{
+        display: flex;
+        text-align: center;
+    }
+}
+
+.flexbox-side-iframe{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

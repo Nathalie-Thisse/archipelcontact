@@ -4,17 +4,19 @@
 
 {% block body %}
 
-    <div class="container">
+    <div id="island" class="container">
     
     {# section 1 - introduction #}
-    <section>
+    <section class="flexbox-center">
         <h2>Bali</h2>
-        <p>L'île des Dieux</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum perspiciatis laborum magnam cum voluptas nihil quo architecto odio sed voluptates natus repellat facilis error, nostrum enim! Distinctio, numquam ipsa!</p>    
+        <h3>L'île des Dieux</h3>
+        <p>Bali, l’île la plus connue d’Indonésie vous accueille !</p>
+        <p>Jungle, volcans, rizières en terrasses, hibiscus et cocotiers, forêts de bambous géants : les paysages rivalisent de beauté.</p>
+        <p>Jungle, volcans, rizières en terrasses, hibiscus et cocotiers, forêts de bambous géants : les paysages rivalisent de beauté.</p>    
     </section>
     
     {# section 2 - top & iframe #}    
-    <section>
+    <section class="flexbox-side-iframe">
         <div>
             <h4>Top des activités à Bali</h4>
             <ul>
@@ -30,7 +32,7 @@
     </section>
 
     {# section 3 - activities #}
-    <section>
+    <section class="flexbox-center">
         <h3>Les activités à Bali - Nos recommandations</h3>
 
         <div class="toggle-activities">
@@ -235,7 +237,7 @@
 
 
     {# section 5 - presentation #}
-    <section>
+    <section class="flexbox-center">
         <h3>Découvrez l’île de Bali</h3>
         <p>Parmi toutes les îles qui composent l’Indonésie, il en est une petite, véritable perle qui n’a cessé d’exciter l’imagination des voyageurs : Bali, paradis des Dieux… et des peuples ; terre des cérémonies et des offrandes, du sourire et de l’accueil. </p>
         <p>Jungle, volcans, rizières en terrasses, hibiscus et cocotiers, forêts de bambous géants : les paysages rivalisent de beauté.</p>
@@ -247,7 +249,11 @@
     </section>
 
     {# section 6 - tours #}
+
+    <section class="flexbox-center-tours">
         <h3>Nos circuits</h3>
+
+        <div class="center-tours">
 
             {# To display several tours here:  #}            
             {% for tour in tours %} 
@@ -285,6 +291,8 @@
                     </a>
                 {% endif %}
             {% endfor %}
+        </div>
+    </section>
 
     </div>
 {% endblock %}
