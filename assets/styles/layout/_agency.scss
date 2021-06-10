@@ -1,17 +1,40 @@
 
 #agency .introduction{
     text-align: center;
+    
+    p{
+        padding: 0 10rem;
+    }
 }
 
+
+
 #agency .articleslist{
-    img{
-        width: 50%;;
-    }
+  
     
     .article{
         display:flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+      
     }
 
+    .article-description{
+        width: 60%
+    }
+
+    .article-image{
+        width: 30%;
+    }
+
+    .article-image img{
+        width: 100%;
+    }
+
+    .article h4{
+        padding-bottom: 1rem;
+    }
+   
     .article p, h4{
         text-align: left !important;
     }

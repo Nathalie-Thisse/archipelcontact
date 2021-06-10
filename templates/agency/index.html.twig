@@ -1,87 +1,87 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AgencyController!{% endblock %}
+{% block title %}L'Agence{% endblock %}
 
 {% block body %}
 
     <div id="agency" class="container">
     
-    {# section 1 : introduction #}
-    <section class="introduction">
-        <h3>L'agence</h3>
-        <p>Archipel Contact est une agence réceptive spécialiste des voyages sur-mesure en Indonésie. </p>
-        <p>C’est en 1989 et par amour pour l’Indonésie que Sylvie Ponte crée Archipel Contact. En partenariat avec sa sœur de cœur, Ibu Ati, elle travaille main dans la main. Une belle aventure qui continue aujourd’hui.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio alias delectus quod temporibus exercitationem ipsam, fugit corporis laboriosam quas animi aliquid odit corrupti ratione aut molestiae repudiandae dolorum quo fuga?</p>
-    </section>  
+        {# section 1 : introduction #}
+        <section class="introduction">
+            <h2>L'agence</h2>
+            <p>Archipel Contact est une agence réceptive spécialiste des voyages sur-mesure en Indonésie. </p>
+            <p>C’est en 1989 et par amour pour l’Indonésie que Sylvie Ponte crée Archipel Contact. En partenariat avec sa sœur de cœur, Ibu Ati, elle travaille main dans la main. Une belle aventure qui continue aujourd’hui.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio alias delectus quod temporibus exercitationem ipsam, fugit corporis laboriosam quas animi aliquid odit corrupti ratione aut molestiae repudiandae dolorum quo fuga?</p>
+        </section>  
 
-    {# section 2 : articles list #}    
-    <section class="articleslist">
+        {# section 2 : articles list #}    
+        <section class="articleslist">
 
-        {# article 1 #}
-        <article class="article">
-            <div>
-                <img src="../../assets/images/agency/guide.jpg" alt="">
-            </div>
-            <div>
-                <h4>Une équipe multiculturelle</h4>
-                <p>Archipel Contact est une agence à taille humaine composée de spécialistes francophones ayant une expertise confirmée du terrain. Nous avons tous vécu en Indonésie et continuons de nous y rendre régulièrement afin de dénicher les perles rares, d’expérimenter de nouvelles activités et de vérifier la qualité des prestations. </p>
-                <p>L’équipe opérationnelle est située à Denpasar et met en place, coordonne et supervise le déroulement des circuits. Ibu Ati épaulée par Ibu Sri veillent sur l’équipe locale, notre grande famille Balinaise !</p>
-                <p>Sur les autres îles de Java, Sulawesi, Flores, etc., nos partenaires font partie de l’aventure depuis plus de 20 ans. Nos bureaux sont repartis sur toute l’Indonésie ce qui nous permet d’être de réels spécialistes de la destinations. </p>
-            </div>
-        </article>
+            {# article 1 #}
+            <article class="article">
+                <div class='article-image'>
+                    <img src="../../assets/images/agency/guide.jpg" alt="">
+                </div>
+                <div class="article-description">
+                    <h4>Une équipe multiculturelle</h4>
+                    <p>Archipel Contact est une agence à taille humaine composée de spécialistes francophones ayant une expertise confirmée du terrain. Nous avons tous vécu en Indonésie et continuons de nous y rendre régulièrement afin de dénicher les perles rares, d’expérimenter de nouvelles activités et de vérifier la qualité des prestations. </p>
+                    <p>L’équipe opérationnelle est située à Denpasar et met en place, coordonne et supervise le déroulement des circuits. Ibu Ati épaulée par Ibu Sri veillent sur l’équipe locale, notre grande famille Balinaise !</p>
+                    <p>Sur les autres îles de Java, Sulawesi, Flores, etc., nos partenaires font partie de l’aventure depuis plus de 20 ans. Nos bureaux sont repartis sur toute l’Indonésie ce qui nous permet d’être de réels spécialistes de la destinations. </p>
+                </div>
+            </article>
 
-        {# article 2 #} 
-        <article class="flexbox-sidebyside">
-            <div>
-                <img src="../../assets/images/agency/guide.jpg" alt="">
-            </div>
-            <div>
-                <h4>Notre mission</h4>
-                <p>Nous sommes avant tout des amoureux de l’Indonésie, de sa culture, de sa nature et de ses valeurs. Nous respectons et valorisons les différentes communautés indonésiennes, leurs temps de prière et leurs coutumes. Notre désir premier est de faire découvrir cette richesse culturelle à travers des voyages étiques et responsables. </p>
-                <p>Nous aimons mettre en contact les voyageurs et les habitants pour des séjours plus authentiques. En indonésien, « client » se dit « tamu » et signifie aussi « invité » : la tradition d’accueil des Indonésiens et la disponibilité de notre équipe sur place permet de faire d’un voyage, une aventure unique et inoubliable.</p>
-            </div>
-        </article>
+            {# article 2 #} 
+            <article class="article">
+                <div class='article-image'>
+                    <img src="../../assets/images/agency/guide.jpg" alt="">
+                </div>
+                <div class="article-description">
+                    <h4>Notre mission</h4>
+                    <p>Nous sommes avant tout des amoureux de l’Indonésie, de sa culture, de sa nature et de ses valeurs. Nous respectons et valorisons les différentes communautés indonésiennes, leurs temps de prière et leurs coutumes. Notre désir premier est de faire découvrir cette richesse culturelle à travers des voyages étiques et responsables. </p>
+                    <p>Nous aimons mettre en contact les voyageurs et les habitants pour des séjours plus authentiques. En indonésien, « client » se dit « tamu » et signifie aussi « invité » : la tradition d’accueil des Indonésiens et la disponibilité de notre équipe sur place permet de faire d’un voyage, une aventure unique et inoubliable.</p>
+                </div>
+            </article>
 
-        {# article 3 #} 
-        <article class="flexbox-sidebyside">
-            <div>
-                <img src="../../assets/images/agency/guide.jpg" alt="">
-            </div>
-            <div>
-                <h4>Des services sur-mesure</h4>
-                <p>Parce que nous pensons que chaque voyageur est unique, nous préparons des voyages personnalisés.</p>
-                <p>Nous connaissons très bien les spécificités du terrain et les coutumes locales ainsi que les besoins et les envies des voyageurs européens. Nous mettons à disposition ce savoir-faire afin d’offrir le meilleur de l’Indonésie.</p>
-                <p>Nous confectionnons des voyages sur-mesure pour les individuels, les groupes, les groupes incentive ; des voyages classiques tout comme des voyages à thème insolites.</p>
-            </div>
-        </article>
+            {# article 3 #} 
+            <article class="article">
+                <div class='article-image'>
+                    <img src="../../assets/images/agency/guide.jpg" alt="">
+                </div>
+                <div class="article-description">
+                    <h4>Des services sur-mesure</h4>
+                    <p>Parce que nous pensons que chaque voyageur est unique, nous préparons des voyages personnalisés.</p>
+                    <p>Nous connaissons très bien les spécificités du terrain et les coutumes locales ainsi que les besoins et les envies des voyageurs européens. Nous mettons à disposition ce savoir-faire afin d’offrir le meilleur de l’Indonésie.</p>
+                    <p>Nous confectionnons des voyages sur-mesure pour les individuels, les groupes, les groupes incentive ; des voyages classiques tout comme des voyages à thème insolites.</p>
+                </div>
+            </article>
 
-        {# article 4 #} 
-        <article class="flexbox-sidebyside">
-            <div>
-                <img src="../../assets/images/agency/guide.jpg" alt="">
-            </div>
-            <div>
-                <h4>Des prestations de qualité</h4>
-                <p>NNotre équipe francophone est disponible sur plusieurs fuseaux horaires ce qui nous permet d’avoir un temps de réponse très court. Nous tenons particulièrement à répondre aux demandes dans un délais de moins de 48h.</p>
-                <p>Pour les agents de voyage, nous mettons à votre disposition des outils pratiques d’information sur la destination (fiches pratiques, brochures, etc.). Nous organisons des formations en agence ou en visio, et nous sommes bien sûr disponibles par email, téléphone, Whatsapp et Skype. </p>
-                <p>Nous avons choisi d’offrir des prestations de qualité, en portant notre attention sur les moindres détails, depuis la conception des jusqu’à la réalisation. Nous respectons une charte de standard minimum pour nos services et choix hôteliers.</p>
-            </div>
-        </article>
+            {# article 4 #} 
+            <article class="article">
+                <div class='article-image'>
+                    <img src="../../assets/images/agency/guide.jpg" alt="">
+                </div>
+                <div class="article-description">
+                    <h4>Des prestations de qualité</h4>
+                    <p>Notre équipe francophone est disponible sur plusieurs fuseaux horaires ce qui nous permet d’avoir un temps de réponse très court. Nous tenons particulièrement à répondre aux demandes dans un délais de moins de 48h.</p>
+                    <p>Pour les agents de voyage, nous mettons à votre disposition des outils pratiques d’information sur la destination (fiches pratiques, brochures, etc.). Nous organisons des formations en agence ou en visio, et nous sommes bien sûr disponibles par email, téléphone, Whatsapp et Skype. </p>
+                    <p>Nous avons choisi d’offrir des prestations de qualité, en portant notre attention sur les moindres détails, depuis la conception des jusqu’à la réalisation. Nous respectons une charte de standard minimum pour nos services et choix hôteliers.</p>
+                </div>
+            </article>
 
-        {# article 5 #} 
-        <article class="flexbox-sidebyside">
-            <div>
-                <img src="../../assets/images/agency/guide.jpg" alt="">
-            </div>
-            <div>
-                <h4>Sur place, Une attention personnalisée</h4>
-                <p>Les voyageurs sont accueillis avec soin par nos équipes locales. Entourés, ils ont les coordonnées des membres de nos équipes et peuvent les contacter à tous moments si nécessaire.</p>
-                <p>Nos guides expérimentés savent écouter les désirs des clients et s’adaptent avec une grande flexibilité. Notre priorité et celle de nos équipes est la satisfaction du client.</p>
-                <p>Les commentaires sont pris très au sérieux afin d’améliorer et de faire évoluer nos prestations tout au long de l’année.</p>
-            </div>
-        </article>
-    
-    </section>
+            {# article 5 #} 
+            <article class="article">
+                <div class='article-image'>
+                    <img src="../../assets/images/agency/guide.jpg" alt="">
+                </div>
+                <div class="article-description">
+                    <h4>Sur place, une attention personnalisée</h4>
+                    <p>Les voyageurs sont accueillis avec soin par nos équipes locales. Entourés, ils ont les coordonnées des membres de nos équipes et peuvent les contacter à tous moments si nécessaire.</p>
+                    <p>Nos guides expérimentés savent écouter les désirs des clients et s’adaptent avec une grande flexibilité. Notre priorité et celle de nos équipes est la satisfaction du client.</p>
+                    <p>Les commentaires sont pris très au sérieux afin d’améliorer et de faire évoluer nos prestations tout au long de l’année.</p>
+                </div>
+            </article>
+        
+        </section>
 
     </div>
 
