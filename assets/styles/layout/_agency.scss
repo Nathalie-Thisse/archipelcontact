@@ -1,0 +1,28 @@
+
+#agency .introduction{
+    text-align: center;
+}
+
+#agency .articleslist{
+    img{
+        width: 50%;;
+    }
+    
+    .article{
+        display:flex;
+    }
+
+    .article p, h4{
+        text-align: left !important;
+    }
+
+    article:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+}
+
+
+
+
+
