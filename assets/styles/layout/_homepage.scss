@@ -13,5 +13,82 @@
 .home-destinations--blocks{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    div{
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        width: 230px;
+        height: 230px;
+        color: white;
+        text-align: center;
+        margin: 0 2rem 2rem ;
+    }
+
+
+    h3{
+        font-family: 'Beth Ellen', cursive;
+        padding-bottom: 2rem;
+        text-decoration: none !important;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+   .divider{
+       width: 75%;
+       height: 1px;
+       background-color: white;
+       text-align: center;
+   }
+
+   
 }
+
+.home-destinations--blocks div:hover{
+   
+
+
+    h3{
+        font-size: 2rem;
+    }
+ 
+}
+
+.home-destinations--bali{
+    background: url('../../images/homepage/low-quality-bali.jpg');
+}
+
+.home-destinations--java{
+    background-image: url('../../images/homepage/low-quality-java.jpg');
+}
+
+.home-destinations--lombok{
+    background-image: url('../../images/homepage/low-quality-lombok.jpg');
+}
+
+.home-destinations--sulawesi{
+    background-image: url('../../images/homepage/low-quality-sulawesi.jpg');
+}
+
+.home-destinations--komodoflores{
+    background-image: url('../../images/homepage/low-quality-komodo.jpg');
+}
+
+.home-destinations--sumba{
+    background-image: url('../../images/homepage/low-quality-sumba.jpg');
+}
+
+.home-destinations--sumatra{
+    background-image: url('../../images/homepage/low-quality-sumatra.jpg');
+}
+
+.home-destinations--kalimantan{
+    background-image: url('../../images/homepage/low-quality-kalimantan.jpg');
+}
+
