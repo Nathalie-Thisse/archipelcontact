@@ -38,7 +38,7 @@
                     <a href="{{ path('home') }}">Destinations</a>
                     <a href="{{ path('home') }}">Circuits</a>
                     <a href="{{ path('home') }}">Informations Pratiques</a>
-                    <a href="{{ path('home') }}">L'Agence</a>
+                    <a href="{{ path('agency') }}">L'Agence</a>
                     <a href="{{ path('home') }}">Contact</a>
                     
                 </div>
@@ -53,6 +53,30 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
         {% endblock %}
+
+
+        <footer class='footer'>
+
+            <h4>Archipel Contact</h4>
+
+            <div class="footer-content">
+                <ul>
+                    <a href=""><li>Destinations</li></a>
+                    <a href=""><li>Circuits</li></a>
+                    <a href=""><li>Informations pratiques</li></a>
+                    <a href=""><li>L'Agence</li></a>
+                    <a href=""><li>Contact</li></a>
+                    <a href=""><li>Mentions légales</li></a>
+                    <a href=""><li>Condition de vente</li></a>
+                </ul>
+
+                <div>
+                    <a href=""><p>Contactez-nous</p></a>
+                    <img src="{{ asset('../assets/images/icones/icon-whitepaperplane.png') }}" alt="">
+                </div>
+
+            </div>  
+        </footer>
 
     </body>
 </html>

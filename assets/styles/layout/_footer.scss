@@ -1,0 +1,33 @@
+.footer{
+    background: url('/assets/images/icones/mandala-blanc.png'), $dark-violet;
+    background-position: -100px -110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    margin-top: 2rem;
+}
+
+
+.footer h4{
+    font-family: 'Beth Ellen', cursive;
+    text-align: center;
+    padding: 3rem 0;
+
+}
+
+.footer-content{
+
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+
+    a{
+        color: white !important;
+    }
+
+   
+    img{
+        width: 100px;
+    }
+
+}
