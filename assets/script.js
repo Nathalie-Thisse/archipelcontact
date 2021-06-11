@@ -1,4 +1,4 @@
-// tabs
+// ------------------------------- tabs for activities in ISLAND PAGE
 
 var tabLinks = document.querySelectorAll(".tablinks");
 var tabContent = document.querySelectorAll(".tabcontent");
@@ -25,3 +25,25 @@ function openTabs(el) {
    
    btnTarget.classList.add("active");
 }
+
+// ------------------------------- sidebar for INFORMATION PAGE
+
+window.addEventListener('DOMContentLoaded', () => {
+
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
