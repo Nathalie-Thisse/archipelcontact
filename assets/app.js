@@ -12,4 +12,4 @@ import './styles/app.scss';
 import './bootstrap';
 
 // main JS file: 
-import './script.js';
+import './script';

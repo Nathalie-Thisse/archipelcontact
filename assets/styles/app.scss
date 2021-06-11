@@ -9,14 +9,18 @@
 @import 'core/variables';
 
 @import 'components/tab';
+@import 'components/sidebar';
+@import 'components/dropdown-menu';
 
 @import 'core/typography';
 @import 'core/flexbox';
 
 @import 'layout/header';
 @import 'layout/homepage';
+@import 'layout/islands-all';
 @import 'layout/island';
 @import 'layout/agency';
+@import 'layout/information';
 @import 'layout/contact';
 @import 'layout/footer';
 
