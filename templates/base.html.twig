@@ -25,24 +25,40 @@
                 <h2>Un autre visage de l'Indonésie</h2>
             </div>
 
-            <section class='navbar'>
-                <div class='navbar--logo'>
-
+            <nav class="menu">
+                <ol>
+                    <li>
                     <a href="{{ path('home') }}">
                         <img src="{{ asset('../assets/images/Logo-invisible-avec-soleil.png') }}" alt="logo">
                     </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ path('islands') }}">Destinations</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item"><a href="#0">Bali</a></li>
+                            <li class="menu-item"><a href="#0">Java</a></li>
+                            <li class="menu-item"><a href="#0">Lombok</a></li>
+                            <li class="menu-item"><a href="#0">Sulawesi</a></li>
+                            <li class="menu-item"><a href="#0">Komodo & Flores</a></li>
+                            <li class="menu-item"><a href="#0">Sumba</a></li>
+                            <li class="menu-item"><a href="#0">Sumatra</a></li>
+                            <li class="menu-item"><a href="#0">Kalimantan</a></li>  
+                        </ol>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#0">Circuits</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item"><a href="#0">Circuit 1</a></li>
+                            <li class="menu-item"><a href="#0">Circuit 2</a></li>
+                            <li class="menu-item"><a href="#0">Circuit 3</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item"><a href="{{ path('information') }}">Informations Pratiques</a></li>
+                    <li class="menu-item"><a href="{{ path('agency') }}">L'Agence</a></li>
+                    <li class="menu-item"><a href="{{ path('contact') }}">Contact</a></li>
+                </ol>
 
-                </div>
-                <div class='navbar--links'>
-
-                    <a href="{{ path('home') }}">Destinations</a>
-                    <a href="{{ path('islands') }}">Circuits</a>
-                    <a href="{{ path('information') }}">Informations Pratiques</a>
-                    <a href="{{ path('agency') }}">L'Agence</a>
-                    <a href="{{ path('contact') }}">Contact</a>
-                    
-                </div>
-            </section>
+            </nav>
         </header>
 
         {% block body %}
@@ -76,6 +92,7 @@
                 </div>
 
             </div>  
+
         </footer>
 
     </body>
