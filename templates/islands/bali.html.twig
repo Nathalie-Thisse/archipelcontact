@@ -4,7 +4,7 @@
 
 {% block body %}
 
-    <div id="island" class="container">
+    <div id="island">
     
     {# section 1 - introduction #}
     <section>
@@ -18,7 +18,7 @@
     
     {# section 2 - top & iframe #}    
     <section class="flexbox-sidebyside">
-        <div>
+        <div class="top-activities">
             <h4>Top des activités à Bali</h4>
             <ul>
                 <li>Visites culturelles</li>
@@ -38,39 +38,47 @@
 
         <h3>Les activités à Bali - Nos recommandations :</h3>
 
-        <div class="demo-section">
-        <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-        </div>
-
         <div class="tab-wrap">
 
         <!-- active tab on page load gets checked attribute -->
         <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-        <label for="tab1">Short</label>
+        <label for="tab1">VIE & COUTUMES</label>
 
         <input type="radio" id="tab2" name="tabGroup1" class="tab">
-        <label for="tab2">Medium</label>
+        <label for="tab2">ART & CULTURE</label>
 
         <input type="radio" id="tab3" name="tabGroup1" class="tab">
-        <label for="tab3">Long</label>
+        <label for="tab3">SPORT & AVENTURE</label>
 
         <input type="radio" id="tab4" name="tabGroup1" class="tab">
-        <label for="tab4">Long2</label>
+        <label for="tab4">FAUNE & FLORE</label>
 
-        <div class="tab__content">
-            <h3>Short Section</h3>
-            <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        <div class="tab__content flexbox-sidebyside">
+            <div>
+                <h3>Vie & coutumes</h3>
+                <h4>Les villes & villages</h4>
+                <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Repas/ nuit chez l'habitant</p>
+                <h4>Les cultures & les plantations</h4>
+                <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                <h4>Les cérémonies</h4>
+                <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                <h4>Les savoir-faire</h4>
+                <p>cours de cuisine, guérisseur, chamane</p>
+                <h4>Les soins & le bien-être</h4>
+                <p>massage, yoga, méditation</p>
+            </div>
+            <img src="../../../assets/images/icones/Fichier 1nature.png" alt="">
         </div>
 
         <div class="tab__content">
-            <h3>Medium Section</h3>
+            <h3>Art & culture</h3>
             <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
         </div>
 
         <div class="tab__content">
-            <h3>Long Section</h3>
+            <h3>Sport & aventure</h3>
             <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
@@ -81,7 +89,7 @@
         </div>
 
         <div class="tab__content">
-            <h3>Long Section2</h3>
+            <h3>Faune & flore</h3>
             <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
