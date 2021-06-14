@@ -8,9 +8,11 @@
 /* APP.SCSS */
 @import 'core/variables';
 
-@import 'components/tab';
-@import 'components/sidebar';
 @import 'components/dropdown-menu';
+@import 'components/photos-carousel';
+@import 'components/reviews-carousel';
+@import 'components/sidebar';
+@import 'components/tab';
 
 @import 'core/typography';
 @import 'core/flexbox';
