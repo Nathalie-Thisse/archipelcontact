@@ -25,7 +25,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
                 <div class="text">
                 <h4>Bali</h4>
                 <div class="divider"></div>
@@ -36,7 +36,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
                 <div class="text">
                 <h4>Java</h4>
                 <div class="divider"></div>
@@ -47,7 +47,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
                 <div class="text">
                 <h4>Lombok</h4>
                 <div class="divider"></div>
@@ -58,7 +58,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
                 <div class="text">
                 <h4>Sulawesi</h4>
                 <div class="divider"></div>
@@ -69,7 +69,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}' alt="Komodo et Flores"/>
                 <div class="text">
                 <h4>Komodo Flores</h4>
                 <div class="divider"></div>
@@ -80,7 +80,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}' alt="Sumba"/>
                 <div class="text">
                 <h4>Sumba</h4>
                 <div class="divider"></div>
@@ -91,7 +91,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
                 <div class="text">
                 <h4>Sumatra</h4>
                 <div class="divider"></div>
@@ -102,7 +102,7 @@
 
         <a href="">
             <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}'/>
+                <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
                 <div class="text">
                 <h4>Kalimantan</h4>
                 <div class="divider"></div>
@@ -116,13 +116,49 @@
 </section>
 
 {# section 3 - our mission #}
-<section>
+<section class='home-mission'>
+
     <h2>Notre mission</h2>
+    <h3>Des voyages authentiques et responsables</h3>
+
+    <div class='home-mission--values'>
+        <div class='value1'>
+            <h4>Expérience</h4>
+            <div>
+            <img src="{{ asset('../assets/images/icons/icon-experience.png') }}" alt="icon experience">
+            </div>
+            <p>lorem ipsum lorem ipsum lorem ipsum</p>
+        </div>
+
+        <div class='value2'>
+            <h4>Sur-mesure</h4>
+            <div>
+            <img src="{{ asset('../assets/images/icons/icon-measure.png') }}" alt="icon mesure">
+            </div>
+            <p>lorem ipsum lorem ipsum lorem ipsum</p>
+        </div>
+
+        <div class='value3'>
+            <h4>Éthique</h4>
+            <div>
+            <img src="{{ asset('../assets/images/icons/icon-nature.png') }}" alt="icon nature">
+            </div>
+            <p>lorem ipsum lorem ipsum lorem ipsum</p>
+        </div>
+        
+        
+    </div>
+
+
+
+
+
 </section>
 
 {# section 4 - reviews #}
 <section>
     <h2>Ils nous ont fait confiance</h2>
+
 </section>
 
 {% endblock %}
