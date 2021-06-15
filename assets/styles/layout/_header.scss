@@ -30,7 +30,7 @@
 .menu {
 
     background-color: $medium-violet;
-	
+	z-index: 100;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0; /* it does not reposition right away,

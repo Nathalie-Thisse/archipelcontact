@@ -2,7 +2,22 @@
 .home-presentation{
     padding: 4rem 12rem 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+    p{
+        max-width:900px;
+    }
+    
+}
+
+.home-destinations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .home-destinations h2{
@@ -11,85 +26,104 @@
     padding-bottom: 3rem;
 }
 
-.home-destinations--blocks{
+.home-destinations--blocks
+{
+
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    
-    
-    div{
+    justify-content: center;
+    text-align: center;
+    max-width:1200px;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-size: cover;
-        width: 230px;
-        height: 230px;
+    a, a:hover{
+        text-decoration: none;
         color: white;
+    }
+}
+
+
+.home-destinations--block
+{
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    background-color: $dark-violet;
+    display: inline-flex;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    
+    .divider{
+        width: 125px;
+        height: 1px;
+        background-color: white;
         text-align: center;
-        margin: 0 2rem 2rem ;
+        left: 47px;
+        position: absolute;
+        bottom: 26px;
     }
 
+    img{
 
-    h3{
-        font-family: 'Beth Ellen', cursive;
-        padding-bottom: 2rem;
-        text-decoration: none !important;
+    object-fit: cover;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    transition: all 0.4s ease-out;
+
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
     }
 
+    .text{
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    }
+    
     h4{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        margin:0;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        font-family: 'Beth Ellen', cursive;
     }
 
-   .divider{
-       width: 75%;
-       height: 1px;
-       background-color: white;
-       text-align: center;
-   }
-
-   
-}
-
-.home-destinations--blocks div:hover{
-   
-
-
-    h3{
-        font-size: 2rem;
+    p{
+        font-family: 'Quicksand', sans-serif;
+        margin:20px 0 0 0;
     }
- 
+
+    &:hover{
+        box-shadow: 0px 5px 17px -1px rgba(0,0,0,0.64);
+        transform:scale(1.05);
+    }
+
+    &:hover img{
+        opacity: 0.6;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
 }
 
-.home-destinations--bali{
-    background: url('../../images/homepage/low-quality-bali.jpg');
-}
 
-.home-destinations--java{
-    background-image: url('../../images/homepage/low-quality-java.jpg');
-}
 
-.home-destinations--lombok{
-    background-image: url('../../images/homepage/low-quality-lombok.jpg');
-}
 
-.home-destinations--sulawesi{
-    background-image: url('../../images/homepage/low-quality-sulawesi.jpg');
-}
-
-.home-destinations--komodoflores{
-    background-image: url('../../images/homepage/low-quality-komodo.jpg');
-}
-
-.home-destinations--sumba{
-    background-image: url('../../images/homepage/low-quality-sumba.jpg');
-}
-
-.home-destinations--sumatra{
-    background-image: url('../../images/homepage/low-quality-sumatra.jpg');
-}
-
-.home-destinations--kalimantan{
-    background-image: url('../../images/homepage/low-quality-kalimantan.jpg');
-}
-
+/* @media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+} */
