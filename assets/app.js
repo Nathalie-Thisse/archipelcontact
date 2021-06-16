@@ -13,3 +13,5 @@ import './bootstrap';
 
 // main JS file: 
 import './script';
+
+import './map';
