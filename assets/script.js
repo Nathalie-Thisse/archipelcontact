@@ -1,7 +1,7 @@
 
 // ------------------------------- sidebar for INFORMATION PAGE
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded',() => {
 
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
@@ -25,7 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 	// ------------------------------- reviews carousel on HOME PAGE
-	(function () {
+	carousel();
+	function carousel(){
 		'use strict';
 		var slides = document.querySelectorAll('.testimonial-item'),
 			 button = document.getElementById('button'),
@@ -84,7 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		// set timing of dispatch click events
 		scrollInterval = setInterval(autoScroll, interval);
 		
-	});
+	};
 });
 
 
