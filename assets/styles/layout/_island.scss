@@ -1,13 +1,26 @@
 
 #island{
     text-align: center;
+
+    .top-activities{
+        background-image: url('../../images/icons/papyrus.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 29%;
+        padding: 3rem;
+        margin-right: 2rem;
+    }
+
+    .tab__content{
+
+        img{
+            margin-top: 1rem
+        }
+
+        p{
+            font-style: italic;
+        }
+
+    }
 }
 
-.top-activities{
-    background-image: url('../../images/icons/papyrus.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 29%;
-    padding: 3rem;
-    margin-right: 2rem;
-}
