@@ -14,6 +14,28 @@ window.addEventListener('DOMContentLoaded', () => {
                 })
 
 
+                let regionName = document.querySelector('.region-name');
+                
+                switch(className){
+                    case'.map-sumatra':
+                    regionName.textContent = 'sumatra';
+
+                    case'.map-sulawesi':
+                    regionName.textContent = 'sulawesi';
+
+                    case'.map-kalimantan':
+                    regionName.textContent = 'kalimantan';
+
+                    case'.map-bali':
+                    regionName.textContent = 'bali';
+
+                    case'.map-java':
+                    regionName.textContent = 'java';
+
+                    case'.map-nusatenggara':
+                    regionName.textContent = 'nusatenggara';
+
+                }
             })
 
             region.addEventListener('mouseleave', function(){
@@ -22,10 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 })
             })
 
-
         })
-
-
     }
 
     mapAnimation('.map-sumatra');
@@ -46,8 +65,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 itemm.classList.add('essayy');
             })
 
-            let nom = document.querySelector('.nom');
-            nom.textContent = 'coucou'
             
         })
 
