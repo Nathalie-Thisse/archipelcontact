@@ -115,4 +115,9 @@
 
 </div>
 
+{% block javascripts %}
+     {{ parent() }}
+     {{ encore_entry_script_tags('agencypage') }}
+{% endblock %}
+
 {% endblock %}
