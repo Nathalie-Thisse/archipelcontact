@@ -4,236 +4,236 @@
 
 {% block body %}
 
-{# section 1 - presentation #}
-<section class="home-presentation">
+<div id="home">
 
-    <p>Nous sommes avant tout des amoureux de l’Indonésie, de sa culture, de sa nature et de ses valeurs. Nous respectons et valorisons les différentes communautés indonésiennes, leurs temps de prière et leurs coutumes. Notre désir premier est de faire découvrir cette richesse culturelle à vos clients
-    </p>
-    
-    <p>
-    Chaque fois que cela sera possible, nous mettrons en contact les clients et les habitants. En indonésien, « client » se dit « tamu » et signifie aussi « invité » : la tradition d’accueil des Indonésiens et la disponibilité de notre équipe sur place permet de faire d’un voyage, une aventure unique et inoubliable.   
-    </p>
+    {# section 1 - presentation #}
+    <section class="home-presentation">
 
-</section>
-
-{# section 2 - destinations #}
-<section class='home-destinations'>
-
-    <h2>Nos destinations</h2>
-
-    <div class="home-destinations--blocks">
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
-                <div class="text">
-                <h4>Bali</h4>
-                <div class="divider"></div>
-                <p>L'île des dieux</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
-                <div class="text">
-                <h4>Java</h4>
-                <div class="divider"></div>
-                <p>Terre des volcans</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
-                <div class="text">
-                <h4>Lombok</h4>
-                <div class="divider"></div>
-                <p>Entre rizières et sables</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
-                <div class="text">
-                <h4>Sulawesi</h4>
-                <div class="divider"></div>
-                <p>Entre tribus et plages de rêves</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}' alt="Komodo et Flores"/>
-                <div class="text">
-                <h4>Komodo Flores</h4>
-                <div class="divider"></div>
-                <p>Paradis authentiques</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}' alt="Sumba"/>
-                <div class="text">
-                <h4>Sumba</h4>
-                <div class="divider"></div>
-                <p>La Mystérieuse</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
-                <div class="text">
-                <h4>Sumatra</h4>
-                <div class="divider"></div>
-                <p>Entre jungle et tribus</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="home-destinations--block"> 
-                <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
-                <div class="text">
-                <h4>Kalimantan</h4>
-                <div class="divider"></div>
-                <p>La Sauvage</p>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-</section>
-
-{# section 3 - our mission #}
-<section class='home-mission'>
-
-    <h2>Notre mission</h2>
-    <h3>Des voyages authentiques et responsables</h3>
-
-    <div class='home-mission--values'>
-        <div class='value1'>
-            <h4>Expérience</h4>
-            <div>
-            <img src="{{ asset('../assets/images/icons/icon-experience.png') }}" alt="icon experience">
-            </div>
-            <p>lorem ipsum lorem ipsum lorem ipsum</p>
-        </div>
-
-        <div class='value2'>
-            <h4>Sur-mesure</h4>
-            <div>
-            <img src="{{ asset('../assets/images/icons/icon-measure.png') }}" alt="icon mesure">
-            </div>
-            <p>lorem ipsum lorem ipsum lorem ipsum</p>
-        </div>
-
-        <div class='value3'>
-            <h4>Éthique</h4>
-            <div>
-            <img src="{{ asset('../assets/images/icons/icon-nature.png') }}" alt="icon nature">
-            </div>
-            <p>lorem ipsum lorem ipsum lorem ipsum</p>
-        </div>
+        <p>Nous sommes avant tout des amoureux de l’Indonésie, de sa culture, de sa nature et de ses valeurs. Nous respectons et valorisons les différentes communautés indonésiennes, leurs temps de prière et leurs coutumes. Notre désir premier est de faire découvrir cette richesse culturelle à vos clients
+        </p>
         
-        
-    </div>
+        <p>
+        Chaque fois que cela sera possible, nous mettrons en contact les clients et les habitants. En indonésien, « client » se dit « tamu » et signifie aussi « invité » : la tradition d’accueil des Indonésiens et la disponibilité de notre équipe sur place permet de faire d’un voyage, une aventure unique et inoubliable.   
+        </p>
 
-</section>
+    </section>
 
-{# section 4 - reviews #}
-<section id="reviews-carousel">
-    <h2>Ils nous ont fait confiance</h2>
+    {# section 2 - destinations #}
+    <section class='home-destinations'>
 
-    <section class="section-testimonials">
-    <div class="slider">
-      <div class="slider__slides">
-        <div class="slider__slide slider__slide--1">
-          <figure class="testimonial slider__slide-content">
-            <blockquote class="testimonial__text">
-              <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-              <p class="testimonial__quote">
-                “ I’ve been interested in coding for a while but never taken the jump, until now.
-                I couldn’t recommend this course enough. I’m now in the job of my dreams and so
-                excited about the future. ”
-              </p>
-              <cite class="testimonial__cite">
-                <span class="testimonial__cite--name">Tanya Sinclair </span>
-                <span class="testimonial__cite--role">UX Engineer</span>
-              </cite>
-            </blockquote>
-          </figure>
+        <h2>Nos destinations</h2>
+
+        <div class="home-destinations--blocks">
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
+                    <div class="text">
+                    <h4>Bali</h4>
+                    <div class="divider"></div>
+                    <p>L'île des dieux</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
+                    <div class="text">
+                    <h4>Java</h4>
+                    <div class="divider"></div>
+                    <p>Terre des volcans</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
+                    <div class="text">
+                    <h4>Lombok</h4>
+                    <div class="divider"></div>
+                    <p>Entre rizières et sables</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
+                    <div class="text">
+                    <h4>Sulawesi</h4>
+                    <div class="divider"></div>
+                    <p>Entre tribus et plages de rêves</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}' alt="Komodo et Flores"/>
+                    <div class="text">
+                    <h4>Komodo Flores</h4>
+                    <div class="divider"></div>
+                    <p>Paradis authentiques</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}' alt="Sumba"/>
+                    <div class="text">
+                    <h4>Sumba</h4>
+                    <div class="divider"></div>
+                    <p>La Mystérieuse</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
+                    <div class="text">
+                    <h4>Sumatra</h4>
+                    <div class="divider"></div>
+                    <p>Entre jungle et tribus</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="home-destinations--block"> 
+                    <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
+                    <div class="text">
+                    <h4>Kalimantan</h4>
+                    <div class="divider"></div>
+                    <p>La Sauvage</p>
+                    </div>
+                </div>
+            </a>
+
         </div>
 
-        <div class="slider__slide slider__slide--2">
-          <figure class="testimonial slider__slide-content">
-            <blockquote class="testimonial__text">
-              <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-              <p class="testimonial__quote">
-                “ If you want to lay the best foundation possible I’d recommend taking this course.
-                The depth the instructors go into is incredible. I now feel so confident about
-                starting up as a professional developer. ”
-              </p>
-              <cite class="testimonial__cite">
-                <span class="testimonial__cite--name">John Tarkpor </span>
-                <span class="testimonial__cite--role">Junior Front-end Developer</span>
-              </cite>
-            </blockquote>
-          </figure>
+    </section>
+
+    {# section 3 - our mission #}
+    <section class='home-mission'>
+
+        <h2>Notre mission</h2>
+        <h3>Des voyages authentiques et responsables</h3>
+
+        <div class='home-mission--values'>
+            <div class='value1'>
+                <h4>Expérience</h4>
+                <div>
+                <img src="{{ asset('../assets/images/icons/icon-experience.png') }}" alt="icon experience">
+                </div>
+                <p>lorem ipsum lorem ipsum lorem ipsum</p>
+            </div>
+
+            <div class='value2'>
+                <h4>Sur-mesure</h4>
+                <div>
+                <img src="{{ asset('../assets/images/icons/icon-measure.png') }}" alt="icon mesure">
+                </div>
+                <p>lorem ipsum lorem ipsum lorem ipsum</p>
+            </div>
+
+            <div class='value3'>
+                <h4>Éthique</h4>
+                <div>
+                <img src="{{ asset('../assets/images/icons/icon-nature.png') }}" alt="icon nature">
+                </div>
+                <p>lorem ipsum lorem ipsum lorem ipsum</p>
+            </div>
+            
+            
         </div>
-      </div>
 
-      <div class="slider__buttons">
-        <div class="slider__button slider__button--prev">
-          <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
-            <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" /></svg>
+    </section>
+
+    {# section 4 - reviews #}
+    <section id="reviews-carousel">
+        <h2>Ils nous ont fait confiance</h2>
+
+        <section class="section-testimonials">
+        <div class="slider">
+        <div class="slider__slides">
+            <div class="slider__slide slider__slide--1">
+            <figure class="testimonial slider__slide-content">
+                <blockquote class="testimonial__text">
+                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                <p class="testimonial__quote">
+                    “ I’ve been interested in coding for a while but never taken the jump, until now.
+                    I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+                    excited about the future. ”
+                </p>
+                <cite class="testimonial__cite">
+                    <span class="testimonial__cite--name">Tanya Sinclair </span>
+                    <span class="testimonial__cite--role">UX Engineer</span>
+                </cite>
+                </blockquote>
+            </figure>
+            </div>
+
+            <div class="slider__slide slider__slide--2">
+            <figure class="testimonial slider__slide-content">
+                <blockquote class="testimonial__text">
+                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                <p class="testimonial__quote">
+                    “ If you want to lay the best foundation possible I’d recommend taking this course.
+                    The depth the instructors go into is incredible. I now feel so confident about
+                    starting up as a professional developer. ”
+                </p>
+                <cite class="testimonial__cite">
+                    <span class="testimonial__cite--name">John Tarkpor </span>
+                    <span class="testimonial__cite--role">Junior Front-end Developer</span>
+                </cite>
+                </blockquote>
+            </figure>
+            </div>
         </div>
-        <div class="slider__button slider__button--next">
-          <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
-            <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" /></svg>
+
+        <div class="slider__buttons">
+            <div class="slider__button slider__button--prev">
+            <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" /></svg>
+            </div>
+            <div class="slider__button slider__button--next">
+            <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" /></svg>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-</section>
-
-
-{# section 5 - photos slider#}
-
-
-<section id="photos-slider">
-
-
-    <div id="image-slider" class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="{{ asset('../assets/images/preist.jpg') }}">
-                </li>
-                <li class="splide__slide">
-                    <img src="{{ asset('../assets/images/header.jpg') }}">
-                </li>
-                <li class="splide__slide">
-                    <img src="{{ asset('../assets/images/wedding.jpg') }}">
-                </li>
-            </ul>
         </div>
-    </div>
+    </section>
 
-</section>
+    </section>
 
 
+    {# section 5 - photos slider#}
 
+    <section id="photos-slider">
+
+        <h2>Galerie Photos</h2>
+
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="{{ asset('../assets/images/preist.jpg') }}">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('../assets/images/header.jpg') }}">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('../assets/images/wedding.jpg') }}">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</div>
 
 {% endblock %}

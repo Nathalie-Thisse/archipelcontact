@@ -15,7 +15,8 @@ import './bootstrap';
 import './reviews';
 import './map';
 import './sidebar';
-import './splide';
+import './photo-slider-homepage';
+import './photo-slider-agencypage';
 
 
 
