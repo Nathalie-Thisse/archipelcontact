@@ -3,21 +3,18 @@ import Splide from '@splidejs/splide';
 // function for photo carousel on AGENCY page (--> see photo-slider-homepag.js for the other photos carousel)
 
 	document.addEventListener( 'DOMContentLoaded', function () {
-		new Splide( '#secondary-slider', {
-			fixedWidth  : 100,
-			height      : 60,
-			gap         : 10,
-			cover       : true,
-			isNavigation: true,
-			focus       : 'center',
-			breakpoints : {
-				'600': {
-					fixedWidth: 66,
-					height    : 40,
-				}
-			},
+		new Splide( '#image-slideragency', {
+			'cover'      : true,
+			'heightRatio': 0.5,
+			'height' : '200px',
+			'width' : '100%',
+			perPage: 4,
+			perMove: 1,
+			'gap' : '1rem',
+			autoplay : 'true',
+			type   : 'loop',
 		} ).mount();
 	} );
-
+	
 
 
