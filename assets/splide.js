@@ -7,6 +7,9 @@ import Splide from '@splidejs/splide';
 			'height' : '400px',
 			'width' : '70%',
 			type   : 'loop',
+			autoplay : 'true',
+			type  : 'fade',
+			rewind: true,
 		} ).mount();
 	} );
 	
