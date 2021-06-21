@@ -4,22 +4,20 @@
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
-    margin-top: 2rem;
-}
+    margin-top: 8rem;
+    padding: 4rem 3rem 3rem 12rem;
 
-
-.footer h4{
-    font-family: 'Beth Ellen', cursive;
-    text-align: center;
-    padding: 3rem 0;
-
+    h4{
+        text-align: center;
+        font-family: 'Beth Ellen', cursive;
+        margin-bottom: 4rem; 
+    }
 }
 
 .footer-content{
 
     display: flex;
     justify-content: space-around;
-    padding-bottom: 4rem;
 
     a{
         color: white !important;
@@ -28,6 +26,20 @@
    
     img{
         width: 100px;
+        margin-top: 1rem;
+    }
+
+    h5{
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    h5:last-of-type{
+        margin-top: 2rem;
+    }
+
+    p{
+        margin: 0;
     }
 
 }
