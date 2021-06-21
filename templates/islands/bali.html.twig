@@ -7,7 +7,7 @@
     <div id="island">
     
         {# section 1 - introduction #}
-        <section>
+        <section class="introduction">
             <h2>Bali</h2>
             <h3>L'île des Dieux</h3>
             <p>Bali, l’île la plus connue d’Indonésie vous dévoile son charme inégalable. </p>
@@ -15,8 +15,15 @@
             <p>Quant aux balinais, peuple doux et paisible, ils ont su garder leurs traditions : un fascinant mélange d’hindouisme et d’animisme. Leur quotidien est rythmé par les rituels et des cérémonies hautes en couleur où les visiteurs sont accueillis chaleureusement. </p>
             <p>Pour expérimenter Bali, il faut s’aventurer en dehors des sentiers battus, c’est là où la magie balinaise vous enchantera !</p>
         </section>
+
+        {# section 2 - photo carousel #}
+        <section>
+
+
+
+        </section>
         
-        {# section 2 - top & iframe #}    
+        {# section 3 - top & iframe #}    
         <section class="flexbox-sidebyside">
             <div class="top-activities">
                 <h4>Top des activités à Bali</h4>
@@ -33,8 +40,7 @@
             </div>
         </section>
 
-        {# section 3 - activities #}
-
+        {# section 4 - activities #}
         <div class="container">
 
             <h3>Les activités à Bali - Nos recommandations :</h3>
@@ -67,8 +73,8 @@
                     <p>Prendre un cours de cuisine balinais, consulter un guérisseur traditionnel (balian), fabriquer des propres cosmétiques naturelles, concocter des boissons à base de plantes médicinales (jamus) ; fabriquer des offrandes</p>
                     <h4>Les soins & le bien-être</h4>
                     <p>Profiter d’un massage traditionnel balinais ; apprendre le yoga et la méditation</p>
-                </div>                
-                <img src="../../../assets/images/icons/house.jpg">
+                </div>
+                <img src="{{ asset('../assets/images/icons/house.jpg') }}">
             </div>
 
             <div class="tab__content flexbox-sidebyside">
@@ -82,7 +88,7 @@
                     <h4>Les musées & galeries</h4>
                     <p>Visite des musées et des galeries d’art à Ubud et à Denpasar.</p>
                 </div>
-                <img src="../../../assets/images/icons/brush.jpg" alt="">
+                <img src="{{ asset('../assets/images/icons/brush.jpg') }}" alt="house-icon">
             </div>
 
             <div class="tab__content flexbox-sidebyside">
@@ -100,7 +106,7 @@
                     <h4>Les sorties en bateau</h4>
                     <p>Balade en pirogue à Lovina ; en prahu à Ahmed, en catamaran à Nusa Lemongan</p>
                 </div>
-                <img src="../../../assets/images/icons/snorkelling.jpg" alt="snorkelling-icon">
+                <img src="{{ asset('../assets/images/icons/snorkelling.jpg') }}" alt="snorkelling-icon">
             </div>
 
             <div class="tab__content flexbox-sidebyside">
@@ -112,13 +118,13 @@
                     <h4>Faune</h4>
                     <p>Des fonds marins riches en poissons et en coraux à Amed, Pemuteran, Nusa Lembongan, Nusa Penida, etc. Des singes, des dauphins, des biches, des oiseaux, …</p>
                 </div>                
-                <img src="../../../assets/images/icons/flower.jpg" alt="flower-icon">
+                <img src="{{ asset('../assets/images/icons/flower.jpg') }}"  alt="flower-icon">
             </div>
 
         </div>
 
-        {# section 4 - presentation #}
-        <section>
+        {# section 5 - presentation #}
+        <section class="presentation">
             <h3>Découvrez l’île de Bali</h3>
             <p>Parmi toutes les îles qui composent l’Indonésie, il en est une petite, <strong>véritable perle</strong> qui n’a cessé d’exciter l’imagination des voyageurs : Bali, paradis des Dieux… et des peuples ; terre des cérémonies et des offrandes, du sourire et de l’accueil.</p>
             <p>A côté des <strong>paysages somptueux</strong>, il y a surtout une population <strong>gaie et paisible</strong>. Quand arrive la fin du jour, tous les balinais se baignent dans les rivières avec innocence et simplicité, on ne peut s’empêcher d’évoquer la notion de paradis terrestre.</p>
@@ -129,28 +135,32 @@
         
         </section>
 
-        {# section 5 - tours #}
+        {# section 6 - tours #}
 
-        <section class="flexbox-center-tours">
+        <section class="tours-section">
             <h3>Nos circuits à Bali</h3>
 
-            <div class="center-tours">
-
-                {# To display several tours here:  #}            
+            <div class="tours-cards">
+                {# To display several tours here:  #}
+                {# tour nº1 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
+                    <div class="tour-card">
                         <a href="{{ path('show_tour', {id: tour.id}) }}">
-                            <div>
+                            
                                 <p>{{ tour.title }}</p>
                                 <p>{{ tour.duration }} jours</p>
                                 <p>A partir de {{ tour.price }} € par personne</p>
-                            </div>
+                           
                         </a>
+                    </div>
                     {% endif %}
                 {% endfor %}
 
+                {# tour nº2 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
+                    <div class="tour-card">
                         <a href="{{ path('show_tour', {id: tour.id}) }}">
                             <div>
                                 <p>{{ tour.title }}</p>
@@ -158,11 +168,14 @@
                                 <p>A partir de {{ tour.price }} € par personne</p>
                             </div>
                         </a>
+                    </div>
                     {% endif %}
                 {% endfor %}
 
+                {# tour nº3 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
+                    <div class="tour-card">
                         <a href="{{ path('show_tour', {id: tour.id}) }}">
                             <div>
                                 <p>{{ tour.title }}</p>
@@ -170,17 +183,15 @@
                                 <p>A partir de {{ tour.price }} € par personne</p>
                             </div>
                         </a>
+                    </div>
                     {% endif %}
                 {% endfor %}
             </div>
         </section>
 
-     {# section 6 - photos #}
+ 
 
-    <section id="carousel">
-    
-    </section>
-
+        </section>
 
     </div>
 {% endblock %}

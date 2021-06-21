@@ -2,15 +2,31 @@
 #island{
     text-align: center;
 
+    h2{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-family: 'Beth Ellen', cursive;
+        padding: 3rem 0;
+        font-size: 2rem;
+    }
+
+    .introduction, .presentation{
+        padding: 2rem 11rem;
+    }
+
     .top-activities{
-        background-image: url('../../images/test-bambou.jpg');        
-        background-position: bottom -8px right 0rem;
+        background-image: url('../../images/test-frame.jpg');        
+        background-position: bottom -55px right 0rem;
         background-repeat: no-repeat;
         background-size: 100%;
-        width: 29%;
-        padding: 7rem;
-        margin-right: 2rem;
-        margin-bottom: 2rem;
+        width: 30%;
+        padding-top: 5rem;
+
+        h4{
+            font-weight: bold;
+        }
     }
 
     .tab__content{

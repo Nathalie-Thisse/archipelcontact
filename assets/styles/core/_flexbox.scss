@@ -6,19 +6,8 @@
     text-align: center;
 }
 
-.flexbox-center-tours{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .center-tours{
-        display: flex;
-        text-align: center;
-    }
-}
-
 .flexbox-sidebyside{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
 }
