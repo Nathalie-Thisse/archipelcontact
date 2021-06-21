@@ -31,7 +31,7 @@ Encore
     .addEntry('map', './assets/destinations.js')
     .addEntry('agencypage', './assets/agencypage.js')
     .addEntry('homepage', './assets/homepage.js')
-    .addEntry('informationspage', './assets/informationpage.js')
+    .addEntry('informationpage', './assets/informationpage.js')
     .addEntry('destinations', './assets/destinations.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
