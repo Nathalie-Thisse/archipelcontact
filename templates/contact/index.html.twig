@@ -4,13 +4,15 @@
 
 {% block body %}
 
-<div id="contact">
+<div id="contact" class="container">
     <h2>Nous contacter</h2>
 
-    <p>Un voyage en Indonésie ?</p>
-    <p>Envoyez-nous votre demande et notre équipe vous répondra dans les plus brefs délais.</p>
+    <div class="intro">
+        <p>Un voyage en Indonésie ?</p>
+        <p>Envoyez-nous votre demande et notre équipe vous répondra au plus vite.</p>
+    </div>
 
-    <div class="flexbox-sidebyside">
+    <div class="location">
         
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3944.635750943792!2d115.2077867!3d-8.6309228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f3f78259ff9%3A0x6059f99ae62de153!2zUmFiaW5hIFRvdXJzIOGsreGsqeGstuGspuGsouGsuOGsg-Gtnw!5e0!3m2!1sfr!2sfr!4v1623395175694!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         
@@ -27,8 +29,11 @@
     
     </div>
 
-    <div>
-        <img src="{{ asset('../../assets/images/contact.jpg') }}" alt="local team photo">
+    <div class="team">
+        <div>
+            <h3>Nous serons ravis de vous recevoir chez nous ...</h3>
+            <img src="{{ asset('../assets/images/contact.jpg') }}" alt="local team photo">
+        </div>
     </div>
     
 </div>

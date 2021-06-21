@@ -1,8 +1,39 @@
 
-#contact img{
-    width: 50%;
+#contact .intro{
+    margin-bottom: 5rem;
 
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+        }
 }
+
+#contact .location{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;    
+    margin-bottom: 5rem;
+
+    h3{
+        margin-top: 2rem;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#contact .team{
+    text-align: center;
+
+        img{
+            width: 50%;
+            margin-top: 2rem;
+        }
+} 
+
+
 
 
 
