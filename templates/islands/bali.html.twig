@@ -141,57 +141,64 @@
             <h3>Nos circuits à Bali</h3>
 
             <div class="tours-cards">
-                {# To display several tours here:  #}
+            {# To display several tours here:  #}
                 {# tour nº1 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
-                    <div class="tour-card">
-                        <a href="{{ path('show_tour', {id: tour.id}) }}">
-                            
-                                <p>{{ tour.title }}</p>
-                                <p>{{ tour.duration }} jours</p>
+                        <figure class="image-block">
+                            <h3>{{ tour.islands }}</h3>
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
                                 <p>A partir de {{ tour.price }} € par personne</p>
-                           
-                        </a>
-                    </div>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
                     {% endif %}
                 {% endfor %}
 
                 {# tour nº2 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
-                    <div class="tour-card">
-                        <a href="{{ path('show_tour', {id: tour.id}) }}">
-                            <div>
-                                <p>{{ tour.title }}</p>
-                                <p>{{ tour.duration }} jours</p>
+                        <figure class="image-block">
+                            <h3>{{ tour.islands }}</h3>
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
                                 <p>A partir de {{ tour.price }} € par personne</p>
-                            </div>
-                        </a>
-                    </div>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
                     {% endif %}
                 {% endfor %}
 
                 {# tour nº3 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
-                    <div class="tour-card">
-                        <a href="{{ path('show_tour', {id: tour.id}) }}">
-                            <div>
-                                <p>{{ tour.title }}</p>
-                                <p>{{ tour.duration }} jours</p>
+                        <figure class="image-block">
+                            <h3>{{ tour.islands }}</h3>
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
                                 <p>A partir de {{ tour.price }} € par personne</p>
-                            </div>
-                        </a>
-                    </div>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
                     {% endif %}
                 {% endfor %}
             </div>
-        </section>
 
- 
-
-        </section>
-
+    </section>
+    
     </div>
+
 {% endblock %}
