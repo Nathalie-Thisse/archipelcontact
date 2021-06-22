@@ -62,11 +62,26 @@
         max-width: 100em;
         width: 90%;
         margin: 0 auto;
+
+        .content{
+            padding: 0 4rem;
+        }
     }
 
-    /** enlarge the sections for this demo, so that we have a long scrollable page **/
-    section {
-        padding-bottom: 20rem;
+    /** margin/padding stuff**/
+    h3, h4{        
+        text-align: center;
+        font-family: 'Beth Ellen', cursive;
+    }
+
+    h3{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    h4{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
 }
