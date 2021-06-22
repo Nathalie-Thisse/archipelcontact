@@ -16,17 +16,21 @@
         padding: 2rem 11rem;
     }
 
-    .top-activities{
-        background-image: url('../../images/test-frame.jpg');        
-        background-position: bottom -55px right 0rem;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 30%;
-        padding-top: 5rem;
+    .topandmap{
+        display: flex;
+        justify-content: center;
+        margin: 4rem 0;
 
-        h4{
-            font-weight: bold;
-        }
+            h4{
+                font-weight: bold;
+            }
+        
+            .top-activities{
+                margin-right: 2rem;
+            }
+            iframe{
+                margin-left: 2rem;
+            }
     }
 
     .tab__content{
@@ -34,11 +38,9 @@
         img{
             margin-top: 1rem
         }
-
         p{
             font-style: italic;
         }
-
     }
 }
 
