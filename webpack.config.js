@@ -33,6 +33,7 @@ Encore
     .addEntry('homepage', './assets/homepage.js')
     .addEntry('informationpage', './assets/informationpage.js')
     .addEntry('destinations', './assets/destinations.js')
+    .addEntry('island', './assets/island.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
