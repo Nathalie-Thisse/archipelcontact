@@ -3,24 +3,22 @@
     text-align: center;
     
     p{
-        padding: 0 10rem;
+        padding: 0 8rem;
+        font-size: 1.2rem;
     }
 }
 
-
-
-#agency .articleslist{
-  
+#agency .articleslist{  
     
     .article{
         display:flex;
         justify-content: space-between;
-        padding: 2rem 0;
-      
+        padding: 2rem 0;      
     }
 
     .article-description{
-        width: 60%
+        width: 60%;
+        text-align: justify;
     }
 
     .article-image{
@@ -29,6 +27,16 @@
 
     .article-image img{
         width: 100%;
+    }
+
+    .article-first{
+
+        .article-description{
+            width: 70%
+        }    
+        .article-image{
+            width: 20%;
+        }      
     }
 
     .article h4{
@@ -42,7 +50,6 @@
     article:nth-child(odd){
         flex-direction: row-reverse;
     }
-
 }
 
 #agency .splide__slide img {
