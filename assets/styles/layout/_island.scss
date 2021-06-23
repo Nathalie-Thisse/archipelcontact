@@ -1,5 +1,8 @@
 
+
 #island{
+
+    /** -------- General css for Island pages --------- **/
     text-align: center;
 
     h2{
@@ -12,30 +15,42 @@
         font-size: 2rem;
     }
 
+    /** -------- section 1 & 2  --------- **/
     .introduction, .presentation{
         padding: 2rem 11rem;
     }
 
+    /** -------- section 3 : Top activities and Map  --------- **/
     .topandmap{
         display: flex;
         justify-content: center;
         margin: 4rem 0;
 
-            h4{
-                font-weight: bold;
-            }
-        
             .top-activities{
                 margin-right: 2rem;
             }
+
+            h4{
+                font-weight: bold;
+                margin-bottom: 2rem;
+                margin-top: 0.6rem;            }
+            
+            li{
+                text-align: left;
+                margin: 1rem auto;
+            }
+            
             iframe{
                 margin-left: 2rem;
             }
     }
 
+    /** -------- section 4 : Activities  --------- **/
     .activities >p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        padding: 0 12rem;
     }
 
+    /** ---> for activities tabs ---> see tab.scss **/
 }
 

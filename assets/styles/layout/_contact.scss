@@ -1,4 +1,6 @@
 
+
+/** -------- section  : Introduction  --------- **/
 #contact .intro{
     margin-bottom: 5rem;
 
@@ -8,6 +10,7 @@
         }
 }
 
+/** -------- section 2 : Location  --------- **/
 #contact .location{
     display: flex;
     justify-content: space-around;
@@ -29,6 +32,7 @@
     }
 }
 
+/** -------- section 3 : Team  --------- **/
 #contact .team{
     text-align: center;
 
