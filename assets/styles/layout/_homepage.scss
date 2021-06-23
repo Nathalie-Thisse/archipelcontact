@@ -101,7 +101,7 @@
     }
 
     p{
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Beth Ellen', cursive;
         margin:20px 0 0 0;
     }
 
@@ -124,7 +124,7 @@
     text-align: center;
 
     h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
 }
@@ -133,10 +133,11 @@
 .home-mission--values{
     display: flex;
     justify-content: center;
-
+    margin: 0 5rem;
 
     div{
         margin: 1.5rem;
+        width: 25%;
     }
 
     h4{
