@@ -7,7 +7,7 @@ import Splide from '@splidejs/splide';
 
 	document.addEventListener( 'DOMContentLoaded', function () {
 
-		new Splide( '#image-slideragency', {
+		new Splide( '#image-sliderisland', {
 			'cover'      : true,
 			'heightRatio': 0.5,
 			'height' : '200px',
