@@ -5,7 +5,8 @@
         --dark-grayish-blue:#8585AC;
         /** SHADOWS **/
         --box-shadow-1: 0 4rem 5rem -3rem rgba(36,36,113,0.50);
-        --box-shadow-2: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10); }
+        --box-shadow-2: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
+       }
 
 #reviews-carousel{
 
@@ -117,10 +118,10 @@
           flex: 0 0 auto;
           width: 11.2rem;
           height: 5.6rem;
-          box-shadow: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
+          // box-shadow: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
           display: flex;
           position: absolute;
-          bottom: 6.5%;
+          bottom: 9.5%;
           right: 36%; }
           @media only screen and (max-width: 75em) {
             .slider__buttons {
@@ -140,7 +141,7 @@
               top: 70vw; } }
         .slider__button {
           flex: 0 0 50%;
-          background-color: #fff;
+          // background-color: #fff;
           cursor: pointer;
           display: flex;
           justify-content: center;
@@ -163,8 +164,7 @@
         width: 100%; }
         .testimonial__text {
           color: var(--dark-blue);
-          flex: 0 1 57.2%;
-          margin-right: -5.8%;
+          flex: 0 1 80%;
           z-index: 1;
           position: relative; }
           @media only screen and (max-width: 63em) {
@@ -183,7 +183,9 @@
         .testimonial__quotation-marks {
           position: absolute;
           top: -4rem;
-          left: 2.5rem;
+          left: -2.5rem;
+          width: 8%;
+          height: 60%; 
         }
           @media only screen and (max-width: 63em) {
             .testimonial__quotation-marks {
