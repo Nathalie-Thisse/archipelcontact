@@ -1,4 +1,25 @@
 
-#island{
-    text-align: center;
+
+.destinations-map{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    max-width:1200px;
+
+    svg, .destination-map--details{
+        margin: 25px;
+    }
+
+    svg{
+        width: 50%;
+    }
+
+}
+
+.destination-map--details{
+    width: 30%;
+
+    h4{
+        font-family: 'Beth Ellen', cursive;
+    }
 }

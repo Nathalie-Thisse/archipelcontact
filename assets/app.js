@@ -12,12 +12,3 @@ import './styles/app.scss';
 import './bootstrap';
 
 // main JS file: 
-/* import './reviews';
-import './destinations';
-import './informationpage';
-import './photo-slider-homepage';
-import './agencypage'; */
-
-
-
-

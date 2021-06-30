@@ -10,13 +10,6 @@
 
 #reviews-carousel{
 
-      h2{
-          text-align: center;
-      }
-      
-      body {
-        font-family: 'Inter', sans-serif; }
-      
       .section-testimonials {
         height: 100vh;
         width: 100%;
@@ -244,6 +237,8 @@
             .testimonial__cite {
               font-size: 1rem; } }
           .testimonial__cite--name {
+            font-family: 'Beth Ellen', cursive;
+            font-size: 1.8rem;
             font-weight: 700;
             margin-right: 8px; }
             @media only screen and (max-width: 75em) {
@@ -251,6 +246,8 @@
                 margin-right: 0;
                 display: block; } }
           .testimonial__cite--role {
-            color: var(--grayish-blue); }
+            color: var(--grayish-blue); 
+            font-size: 1.4rem;
+          }
       
 }

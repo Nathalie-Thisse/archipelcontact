@@ -1,6 +1,7 @@
 
 // import Splide for carousel photos, the installation has been done with npm install @splidejs/splide 
 // more info: https://splidejs.com/
+
 import Splide from '@splidejs/splide';
 
 // function for photo carousel on ISLAND page
@@ -18,7 +19,9 @@ import Splide from '@splidejs/splide';
 			autoplay : 'true',
 			type   : 'loop',
 		} ).mount();
-	} );
+
+
+
+
+	} ); 
 	
-
-

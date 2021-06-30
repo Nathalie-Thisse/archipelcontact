@@ -18,7 +18,7 @@ import Splide from '@splidejs/splide';
 			autoplay : 'true',
 			type   : 'loop',
 		} ).mount();
-	} );
+} );
 	
 
 

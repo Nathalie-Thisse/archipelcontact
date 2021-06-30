@@ -15,26 +15,38 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
                 let regionName = document.querySelector('.region-name');
-                
-                switch(className){
-                    case'.map-sumatra':
-                    regionName.textContent = 'sumatra';
+                let regionDetail = document.querySelector('.region-detail');
 
-                    case'.map-sulawesi':
-                    regionName.textContent = 'sulawesi';
+                switch (className){
+                    case '.map-sumatra':
+                    regionName.textContent = "L'île de Sumatra";
+                    regionDetail.textContent = ""
+                    break;
 
-                    case'.map-kalimantan':
-                    regionName.textContent = 'kalimantan';
+                    case '.map-sulawesi':
+                    regionName.textContent = "L'île de Sulawesi";
+                    regionDetail.textContent = ""
+                    break;
 
-                    case'.map-bali':
-                    regionName.textContent = 'bali';
+                    case '.map-kalimantan':
+                    regionName.textContent = "L'île de Kalimantan";
+                    regionDetail.textContent = ""
+                    break;
 
-                    case'.map-java':
-                    regionName.textContent = 'java';
+                    case '.map-bali':
+                    regionName.textContent = "L'île de Bali";
+                    regionDetail.textContent = ""
+                    break;
 
-                    case'.map-nusatenggara':
-                    regionName.textContent = 'nusatenggara';
+                    case '.map-java':
+                    regionName.textContent = "L'île de Java";
+                    regionDetail.textContent = ""
+                    break;
 
+                    case '.map-nusatenggara':
+                    regionName.textContent = 'La province de Nusa Tenggara Timur';
+                    regionDetail.textContent = "Elle est composée de la partie orientale des petites îles de la Sonde."
+                    break;
                 }
             })
 
@@ -58,25 +70,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    item = document.querySelectorAll('.essay').forEach(item => {
-        item.addEventListener('mouseover', function(event){
-
-            document.querySelectorAll('.essay').forEach(itemm => {
-                itemm.classList.add('essayy');
-            })
-
-            
-        })
-
-        item.addEventListener('mouseleave', function(event){
-            document.querySelectorAll('.essay').forEach(itemmm => {
-                itemmm.classList.remove('essayy');
-            })
-        })
-
-        
-
-
-    });
+    
 
 });
