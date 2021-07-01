@@ -8,7 +8,7 @@ import Splide from '@splidejs/splide';
 
 	document.addEventListener( 'DOMContentLoaded', function () {
 
-		new Splide( '#image-sliderisland', {
+		new Splide( '#image-slider', {
 			'cover'      : true,
 			'heightRatio': 0.5,
 			'height' : '200px',
@@ -19,9 +19,6 @@ import Splide from '@splidejs/splide';
 			autoplay : 'true',
 			type   : 'loop',
 		} ).mount();
-
-
-
 
 	} ); 
 	

@@ -46,9 +46,13 @@
     }
 
     /** -------- section 4 : Activities  --------- **/
-    .activities >p{
+    .activities-container >p{
         font-size: 1.2rem;
         padding: 0 12rem;
+    }
+
+    .activities-container{
+        text-align: center;
     }
 
     /** ---> for activities tabs ---> see tab.scss **/
