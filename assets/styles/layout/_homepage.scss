@@ -132,12 +132,13 @@
 
 .home-mission--values{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 5rem;
 
     div{
         margin: 1.5rem;
-        width: 25%;
+        max-width: 275px;
         display: flex;
         align-items: center;
         flex-direction: column;
