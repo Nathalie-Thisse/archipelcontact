@@ -18,23 +18,31 @@
 /** -------- section 2 : Location  --------- **/
 #contact .location{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: left;    
     margin-bottom: 5rem;
 
-    h3{
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
+        iframe{
+            margin-right: 5rem;
+        }
 
-    h4{
-        margin-top: 1.8rem;
-    }
+        div{
+            margin-left: 5rem;
+        }
 
-    a{
-        color: black;
-        text-decoration: none;
-    }
+        h3{
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+
+        h4{
+            margin-top: 1.8rem;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
 }
 
 /** -------- section 3 : Team  --------- **/
@@ -42,7 +50,7 @@
     text-align: center;
 
         img{
-            width: 50%;
+            width: 40%;
             margin-top: 2rem;
         }
 } 
