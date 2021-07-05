@@ -15,9 +15,18 @@
         font-size: 2rem;
     }
 
-    /** -------- section 1 & 2  --------- **/
+    /** -------- section 1 Introduction & 5 Presentation  --------- **/
     .introduction, .presentation{
         padding: 2rem 11rem;
+    }
+
+    /** -------- section 2 : Photo carousel  --------- **/
+
+    .photo-carousel{
+
+        h4 {
+            background-color: red;
+        }
     }
 
     /** -------- section 3 : Top activities and Map  --------- **/

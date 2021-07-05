@@ -16,24 +16,45 @@
             <p>Pour expérimenter Bali, il faut s’aventurer en dehors des sentiers battus, c’est là où la magie balinaise vous enchantera !</p>
         </section>
 
+
         {# section 2 - photo carousel #}
-        <section>
-            <div id="image-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/priest.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/header.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/wedding.jpg') }}">
-                        </li>
-                    </ul>
+        
+
+        {# <img src="{{ asset('../assets/images/wedding.jpg') }}"> #}
+
+        <section class="photo-carousel">
+            
+            <h4>photos carousel</h4>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="{{ asset('../assets/images/wedding.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ asset('../assets/images/sebatu.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ asset('../assets/images/sunset.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
         </section>
+
         
         {# section 3 - top & iframe #}    
         <section class="topandmap">
@@ -156,7 +177,68 @@
 
         {# section 6 - tours #}
 
-        
+        <section class="tours-section">
+            <h3>Nos circuits à Bali</h3>
+
+            <div class="tours-cards">
+            {# To display several tours here:  #}
+                {# tour nº1 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 1 %}
+                        <figure class="image-block">
+                            <h3>{{ tour.islands }}</h3>
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>A partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+
+                {# tour nº2 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 1 %}
+                        <figure class="image-block">
+                            <h3>{{ tour.islands }}</h3>
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>A partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+
+                {# tour nº3 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 1 %}
+                        <figure class="image-block">
+                            <h3>{{ tour.islands }}</h3>
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>A partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+
+    </section>
     
     </div>
 
