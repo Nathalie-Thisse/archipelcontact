@@ -88,8 +88,9 @@
 
     /** margin/padding stuff**/
     h3, h4{        
-        text-align: center;
+        
         font-family: 'Beth Ellen', cursive;
+        padding-top: 5rem;
     }
 
     h3{
@@ -97,9 +98,11 @@
         margin-bottom: 1rem;
     }
     
+    
     h4{
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin: 2rem 0;
+        text-align: center;
     }
+
 
 }
