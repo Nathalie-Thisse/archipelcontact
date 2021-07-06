@@ -19,10 +19,19 @@ class IslandsController extends AbstractController
         ]);
     }
 
-    #[Route('/islands/bali', name: 'bali')]
+    #[Route('/bali', name: 'bali')]
     public function bali(ToursRepository $toursRepository): Response
     {
         return $this->render('islands/bali.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/java', name: 'java')]
+    public function java(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/java.html.twig', [
             'controller_name' => 'IslandsController',                        
             'tours' => $toursRepository->findAll(),
         ]);
