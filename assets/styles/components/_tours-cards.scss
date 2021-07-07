@@ -23,8 +23,9 @@ $base-duration: 500ms;
 	height: 400px;
 	border-radius: 10px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 	overflow: hidden;
+
 	&:hover {
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 		img {
@@ -32,9 +33,14 @@ $base-duration: 500ms;
 		}
 		figcaption {
 			bottom: 0;
-			text-align: left;
+			/* text-align: left; */
+		}
+		button{
+			-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+					animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
 	}
+
 	h3 {
 		position: absolute;
 		top: 110px;
@@ -44,11 +50,15 @@ $base-duration: 500ms;
 		font-weight: 100;
 		line-height: 1;
 	}
+
 	img {
 		height: 100%;
-		transition: 0.25s;
+		transition: 0.5s;
 	}
+
 	figcaption {
+		display: flex;
+		flex-direction: column;
 		position: absolute;
 		bottom: -33%;
 		left: 0;
@@ -60,27 +70,48 @@ $base-duration: 500ms;
 		box-shadow: 0 0 20px rgba(black,0.4);
 		color: white;
 		line-height: 1;
-		transition: 0.25s;
+		transition: 0.5s;
+		
 		h4 {
 			margin: 0 0 20px;
 			padding: 0;
 		}
+		
 		p {
 			font-size: 14px;
 			line-height: 1.75;
 		}
+		
 		button {
 			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin: 10px 0 0;
+			margin: 15px 81px;
 			padding: 10px 30px;
 			background-color: $medium-violet;
 			border: none;
 			border-radius: 5px;
 			color: white;
 			font-size: 14px;
+		}
+
+		button:hover{
+			
+			background-color: $medium-green ;
+		}
+
+		@keyframes scale-in-center {
+			0% {
+			-webkit-transform: scale(0);
+					transform: scale(0);
+			opacity: 1;
+			}
+			100% {
+			-webkit-transform: scale(1);
+					transform: scale(1);
+			opacity: 1;
+			}
 		}
 	}
 }
