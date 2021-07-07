@@ -6,19 +6,18 @@
     text-align: center;
 
     h2{
-        font-size: 4rem;
-    }
-
-    h3{
-        font-family: 'Beth Ellen', cursive;
-        padding: 3rem 0;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     /** -------- section 1 Introduction & 5 Presentation  --------- **/
     .introduction, .presentation{
-        padding: 2rem 11rem;
+        padding: 4rem 18rem 0;
     }
+
+    .introduction{
+        p{
+            font-size: 1.05rem;
+    }}
 
 
     /** -------- section 3 : Top activities and Map  --------- **/
@@ -47,7 +46,7 @@
     }
 
     .topandmap {
-
+        // ---------- css for TOP ACTIVITIES LIST
         /*** VARIABLES ***/
         /* Colors */
         $black: #1d1f20;
@@ -120,15 +119,13 @@
             margin-top: 2rem;
             }
         }
-}
-
-
+    }
     }
 
     /** -------- section 4 : Activities  --------- **/
     .activities-container >p{
-        font-size: 1.2rem;
-        padding: 0 12rem;
+        font-size: 1.05rem;
+        padding: 0 16rem;
     }
 
     .activities-container{
