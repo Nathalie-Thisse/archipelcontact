@@ -132,6 +132,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 5rem;
+    
+
 
     div{
         margin: 0 2.5rem;
@@ -162,8 +164,15 @@
         left: 5px;
         z-index: -2;    
     }
+    
+    span{
+        font-family: 'Beth Ellen', cursive;
+        font-size: 3rem;
+        line-height: 2;
 
-    img{
+    }
+
+    img, span{
         width: 100px;
         height: 100px;
     }
