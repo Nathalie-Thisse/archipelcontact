@@ -109,7 +109,7 @@
             }
             @for $i from 1 through 5 {
             &:nth-child(10n+#{$i}):before {
-                background: linear-gradient(135deg, rgba($flashy-violet, $i * 0.2) 0%,rgba($light-green-plus, $i * 0.2) 100%);
+                background: linear-gradient(135deg, rgba($dark-green, $i * 0.2) 0%,rgba($light-green-plus, $i * 0.2) 100%);
             }
             }
             @for $i from 6 through 10 {
