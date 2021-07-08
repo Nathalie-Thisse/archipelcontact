@@ -20,32 +20,37 @@ window.addEventListener('DOMContentLoaded', () => {
                 switch (className){
                     case '.map-sumatra':
                     regionName.textContent = "L'île de Sumatra";
-                    regionDetail.textContent = ""
+                    regionDetail.textContent = "";
                     break;
 
                     case '.map-sulawesi':
                     regionName.textContent = "L'île de Sulawesi";
-                    regionDetail.textContent = ""
+                    regionDetail.textContent = "";
                     break;
 
                     case '.map-kalimantan':
                     regionName.textContent = "L'île de Kalimantan";
-                    regionDetail.textContent = ""
+                    regionDetail.textContent = "";
                     break;
 
                     case '.map-bali':
                     regionName.textContent = "L'île de Bali";
-                    regionDetail.textContent = ""
+                    regionDetail.textContent = "";
                     break;
 
                     case '.map-java':
                     regionName.textContent = "L'île de Java";
-                    regionDetail.textContent = ""
+                    regionDetail.textContent = "";
                     break;
 
                     case '.map-nusatenggara':
                     regionName.textContent = 'La province de Nusa Tenggara Timur';
-                    regionDetail.textContent = "Elle est composée de la partie orientale des petites îles de la Sonde."
+                    regionDetail.textContent = "Elle est composée de la partie orientale des petites îles de la Sonde.";
+                    break;
+
+                    case '.map-papua':
+                    regionName.textContent = 'Papouasie';
+                    regionDetail.textContent = "";
                     break;
                 }
             })
@@ -65,6 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
     mapAnimation('.map-bali');
     mapAnimation('.map-java');
     mapAnimation('.map-nusatenggara');
+    mapAnimation('.map-papua');
     
 
 
