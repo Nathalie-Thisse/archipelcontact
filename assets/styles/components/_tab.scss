@@ -113,17 +113,13 @@ $tab-wrap-border-radius: 6px;
   h4{
     font-size: 1.2rem;
   }
-  
-  /* p{
-    font-style: italic;
-  } */
 
-  img{
-    width: 75%;
-    max-height: 300px;
-    margin: 1rem;
-    object-fit: contain;
-  }
+  // img{
+  //   width: 100%;
+  //   max-height: 300px;
+  //   margin: 1rem;
+  //   object-fit: contain;
+  // }
   
 }
 
@@ -173,5 +169,4 @@ $tab-wrap-border-radius: 6px;
 
 .tab-image{
   width: 30%;
-  
 }

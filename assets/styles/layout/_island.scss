@@ -7,6 +7,8 @@
 
     h2{
         font-size: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 0;
     }
 
     /** -------- section 1 Introduction & 5 Presentation  --------- **/
@@ -15,19 +17,21 @@
     }
 
     .introduction{
+
+        margin-bottom: 8rem;
+
         p{
             font-size: 1.05rem;
     }}
-
 
     /** -------- section 3 : Top activities and Map  --------- **/
     .topandmap{
         display: flex;
         justify-content: center;
-        margin: 4rem 0;
+        margin: 8rem 0;
 
             .top-activities{
-                margin-right: 2rem;
+                margin-right: 4rem;
             }
 
             h4{
@@ -41,7 +45,7 @@
             }
             
             iframe{
-                margin-left: 2rem;
+                margin-left: 4rem;
             }
     }
 
