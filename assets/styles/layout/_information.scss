@@ -9,6 +9,8 @@
     }    
 }
 
+
+
 /** ------- SIDEBAR CSS ON INFORMATION PAGE ------- **/
 
 #information{
@@ -74,7 +76,8 @@
         grid-template-columns: 1fr 20em;
         max-width: 100em;
         width: 90%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin-top: 5rem;
 
         .content{
             padding: 0 4rem;
@@ -92,6 +95,11 @@
         margin-top: 3rem;
         margin-bottom: 1rem;
     }
+
+   h3:first-child{
+       padding-top: 1.5rem;
+       
+   }
     
     
     h4{
