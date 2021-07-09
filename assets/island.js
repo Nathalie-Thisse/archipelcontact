@@ -10,7 +10,7 @@ import Splide from '@splidejs/splide';
  			'cover'      : true,
  			'heightRatio': 0.5,
  			'height' : '400px',
- 			'width' : '70%',
+ 			'width' : '100%',
  			type   : 'loop',
  			autoplay : 'true',
  			type  : 'fade',
