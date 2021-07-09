@@ -10,8 +10,14 @@
     align-items: center;
     
     h2{
-        line-height: 3.5rem;
+        padding: 1rem 0;
     }
+
+    h4{
+        margin-bottom: 3rem;
+    }
+
+
     p{
         max-width:900px;
         font-size: 1.05rem;
@@ -27,7 +33,6 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding-bottom: 2rem;
 }
 
 .home-destinations--blocks
@@ -75,26 +80,25 @@
     }
 
     img{
+        object-fit: cover;
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:0;
+        transition: all 0.4s ease-out;
 
-    object-fit: cover;
-    height:100%;
-    width:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:0;
-    transition: all 0.4s ease-out;
-
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
     }
 
     .text{
-    position:absolute;
-    text-align: center;
-    width: 100%;
+        position:absolute;
+        text-align: center;
+        width: 100%;
     }
     
     h4{
@@ -125,6 +129,7 @@
 
 .home-mission{
     text-align: center;
+    /* margin-bottom: 5rem; */
 }
 
 .home-mission--values{
@@ -152,7 +157,6 @@
     h4:before{
 
         content: "";
-        
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
