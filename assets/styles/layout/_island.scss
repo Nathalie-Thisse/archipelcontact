@@ -104,7 +104,7 @@
             align-items: flex-end;
             @extend %boxshadow;
             content: counter(gradient-counter);
-            color: $black;
+            color: white;
             display: flex;
             font: 900 1.5em/1 'Quicksand';
             justify-content: flex-end;
