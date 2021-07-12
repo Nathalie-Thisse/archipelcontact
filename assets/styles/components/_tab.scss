@@ -97,6 +97,7 @@
 
   .text-map-sidebyside{
     display: flex; 
+    justify-content: space-between;
   }
 
   .tab__content{
@@ -105,8 +106,12 @@
     flex-direction: column;
     justify-content: space-between;
 
-    :first-child{
-      width: 100%;
+    // :first-child{
+    //   width: 100%;
+    // }
+
+    .text{
+      width: 120%;
     }
     
     h4 + p{
@@ -119,6 +124,7 @@
 
     h4{
       font-size: 1.2rem;
+      margin-top: 1rem !important;
     }
     
   }
@@ -172,8 +178,6 @@
 
   .dropdown {
     display: flex;
-    align-items: center;
-    justify-content: left;
   }
   .dropdown h4 {
     color: white;
@@ -181,12 +185,12 @@
   }
   .icon {
     display: flex;
-    align-items: center;
+  }
+  .btn{
+    padding: 1rem 3rem;
   }
   .textcontent {
-    width: 90%;
-    // !!! - Nath: TO DO -> adapt height according to size of each text content
-    height: 15rem;
+    // width: 90%;
     margin-bottom: 1rem;
     padding: 1rem;
     text-align: left;
