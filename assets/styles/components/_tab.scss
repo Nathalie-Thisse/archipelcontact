@@ -12,7 +12,7 @@
     position: relative;
     list-style: none;
     background-color: #fff;
-    margin: 40px 10%;
+    margin: 40px 0;
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
     
       &:hover {
@@ -95,6 +95,10 @@
     }
   }
 
+  .text-map-sidebyside{
+    display: flex; 
+  }
+
   .tab__content{
     
     display: flex;
@@ -167,7 +171,6 @@
   // ****** CSS for drop down information inside tabs
 
   .dropdown {
-
     display: flex;
     align-items: center;
     justify-content: left;
