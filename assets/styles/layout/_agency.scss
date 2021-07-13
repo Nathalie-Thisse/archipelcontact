@@ -8,10 +8,14 @@
 
 /** -------- section 2 : ARTICLES LIST --------- **/
 #agency .articleslist{  
+
+    margin: 0 2rem;
+    position: relative;
     
     .article{
         display:flex;
         justify-content: space-between;
+        align-items: center;
         padding: 2rem 0;      
     }
 
@@ -31,11 +35,9 @@
     // css special for first article because of the photo size
     .article-first{
 
-        .article-description{
-            width: 60%;
-        }    
+        
         .article-image{
-            width: 20%;
+            max-width: 300px;
         }      
     }
 
@@ -49,7 +51,56 @@
 
     article:nth-child(odd){
         flex-direction: row-reverse;
+        position: relative;
+        
+        &::before{
+            content: "";
+            display: block;
+            position: absolute; 
+            background-image: url('/assets/images/batik1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80px;
+            height: 200px;
+            top: 0rem;
+            right: -6.5rem;
+            z-index: -1;    
+        }
+        
     }
+
+    article:nth-child(even){
+        
+        position: relative;
+        
+        &::before{
+            content: "";
+            display: block;
+            position: absolute; 
+            background-image: url('/assets/images/batik2.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80px;
+            height: 200px;
+            top: 0rem;
+            left: -2rem;
+            z-index: -1;    
+        }
+    }
+}
+
+.try::before{
+    content: "";
+    display: block;
+    position: absolute; 
+    background-image: url('/assets/images/batik1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 200px;
+    top: 1rem;
+    left: 77rem;
+    z-index: -1;
 }
 
 /** -------- section 3 : PHOTOS SLIDER --------- **/
