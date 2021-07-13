@@ -37,5 +37,61 @@ class IslandsController extends AbstractController
         ]);
     }
 
+    #[Route('/lombok', name: 'lombok')]
+    public function lombok(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/lombok.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/sulawesi', name: 'sulawesi')]
+    public function sulawesi(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/sulawesi.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/flores', name: 'flores')]
+    public function flores(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/flores.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/sumba', name: 'sumba')]
+    public function sumba(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/sumba.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/sumatra', name: 'sumatra')]
+    public function sumatra(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/sumatra.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+    #[Route('/kalimantan', name: 'kalimantan')]
+    public function kalimantan(ToursRepository $toursRepository): Response
+    {
+        return $this->render('islands/kalimantan.html.twig', [
+            'controller_name' => 'IslandsController',                        
+            'tours' => $toursRepository->findAll(),
+        ]);
+    }
+
+
+
    
 }

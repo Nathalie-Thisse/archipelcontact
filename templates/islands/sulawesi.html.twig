@@ -1,0 +1,421 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Sulawesi {% endblock %}
+
+{% block body %}
+
+    <div id="island" class="wrapper">
+    
+        {# section 1 - introduction #}
+        <section class="introduction">
+            <h2>Sulawesi</h2>
+            <h4>Terre des volcans</h4>
+            <div class="introduction-paragraph">
+                <div class=''>
+                    <p>Java est une île hospitalière où il fait bon vivre. Les javanais vous feront découvrir leur culture, mélange de traditions et de modernité.</p>
+                    <p>Les villes bruyantes et captivantes contrastent avec les paysages naturels d’une grande beauté.</p>
+                    <p>Voyager à travers ses magnifiques paysages de plaines et de volcans, couverts de forêts tropicales et de plantations, enchantera les amoureux de la nature.</p>
+                </div>
+                <div>
+                    <img src="{{ asset('../assets/images/icons/flower.jpg') }}" alt="hibiscus">
+                </div>
+            </div>
+        </section>
+
+
+        {# section 2 - photo carousel #}        
+        <section id="photos-slider">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="{{ asset('../assets/images/javapage/borobudur.jpg') }}">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('../assets/images/javapage/bromo3.jpg') }}">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('../assets/images/javapage/street-java.jpg') }}">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('../assets/images/javapage/prambanan2.jpg') }}">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('../assets/images/javapage/ijen.jpg') }}">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="{{ asset('../assets/images/javapage/street-java8.jpg') }}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        {# section 3 - top activites & map #}    
+        <section class="topandmap">
+            <div class="top-activities">
+                <h4>Top des activités à Java</h4>
+
+                <ol class="gradient-list">
+                    <li>Visites culturelles</li>
+                    <li>Volcans</li>
+                    <li>Randonnées</li>
+                </ol>
+            </div>            
+
+            <div>
+                <img src="{{ asset('../assets/images/balipage/indomap-bali.png') }}" alt="Carte indonésie">
+            </div>
+        </section>
+  
+        {# section 4 - activities #}
+        <div class="activities-container">
+
+            <h3>Les activités à Java - Nos recommandations :</h3>
+            <p>Les principales activités à faire à Java en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
+
+            <div class="tab-wrap">
+
+                <!-- active tab on page load gets checked attribute -->
+                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                <label for="tab1">JOGJAKARTA ET SA RÉGION</label>
+
+                <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                <label for="tab2">JAVA EST</label>
+
+                <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                <label for="tab3">JAVA CENTRAL</label>
+
+                <input type="radio" id="tab4" name="tabGroup1" class="tab">
+                <label for="tab4">JAVA OUEST</label>
+
+                <div class="tab__content tab1">
+                    <div class="text-map-sidebyside">
+                        <div class="text">
+
+                            <div class="dropdown">
+                                <h4>• La ville de Jogja</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="a textcontent">
+                                <p>Visite de la CAPITALE CULTURELLE de Jogjakarta, appelée aussi Yogyakarta ou Jogja ; visite du Kraton, le PALAIS du SULTAN et les piscines du sultan ; atelier de fabrication de Batik, le TISSU traditionnel ; ATELIER de marionnettes ; visite du marché aux OISEAUX, véritable passion des javanais ; balade en cyclopousse BECAK ; balade en VÉLO dans le quartier d’artisans de Kotagede</p>
+                            </div>
+
+                            <div class="dropdown">
+                                <h4>• Prambanan</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="b textcontent">
+                                <p>Visite du magnifique temple hindouiste de PRAMBANAN, classé au Patrimoine mondial de l’Unesco, il est un sanctuaire de l’hindouisme ; spectacle de DANSES traditionnel de Ramayana ; balade en VÉLO autour des temples et à travers les villages</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <h4>• Borobudur</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="c textcontent">
+                                <p>Visite du complexe archéologique de BOROBUDUR, joyaux de l’art bouddhiste ; COURS DE CUISINE chez une famille d’artistes ; séjour chez l’habitant dans le village de CANDIREJO ; découverte des soins ancestraux : yoga, massages traditionnels et fabrication d’huile</p>
+                            </div>
+
+                            <div class="dropdown">
+                                <h4>• Solo, Cetoh & Sukuh</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d textcontent">
+                                <p>Visite de la ville de SOLO, du PALAIS du SULTAN de Magnkunegaran ; visite du marché aux puces de TRIWINDHU, des MUSÉES de Danarhadi (batik) et Radya Pustaka (art et artisanat) ; découverte des TEMPLES de CETHO et SUKUH sur les flancs du Mont Lawu et des PLANTATIONS de thé</p>
+                            </div>
+
+                            <div class="dropdown">
+                                <h4>• Les environs de Jogja</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="e textcontent">
+                                <p>Les PLANTATIONS de café et de fruits à LOSARI ; vue sur les VOLCANS des alentours Merbatu, Merapi, Telomoyo, Sumbing, Sindoro et Ungaran ; le MUSÉE du volcan Merapi à KALIURANG</p>
+                                <p>Découverte de la GASTRONOMIE ancestrale de la région : balade dans les plantations, découvertes et cueillettes des ingrédients, visite du marché traditionnel et cours de cuisine dans un village</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=14Y7RP6XF8YD4Ax4TpKfektB3tBx_ZQ_b" width="480" height="480"></iframe>
+                        </div>                                            
+                    </div>
+                </div>
+
+                <div class="tab__content tab2">
+                    <div class="text-map-sidebyside">
+                        <div class="text">
+
+                            <div class="dropdown">                   
+                                <h4> • Surabaya & Bromo</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="a textcontent">
+                                <p>Visite de la VILLE méconnue de SURABAYA, ses marchés, ses quartiers authentiques, ses musées.</p>
+                                <p>Excursion matinale en jeep au MONT PANANJAKAN pour admirer le lever du soleil sur le Mont Bromo ; traversée de la mer de sable et ascension du VOLCAN BROMO</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <h4>• Ijen</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="b textcontent">                            
+                                <p>Ascension du VOLCAN IJEN ; découverte de son LAC de couleur turquoise ; rencontre avec les PORTEURS de soufre et découverte de leur travail ; ascension de nuit pour observer les FLAMMES BLEUES du volcan (dues aux vapeurs de soufre)</p>
+                            </div>
+
+                            <div class="dropdown">
+                                <h4>• Meru Betiri</h4>
+                                <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                            </div>
+                            <div class="c textcontent">
+                                <p>Découverte du Parc National de MERU BETIRI ; RANDONNÉE dans la jungle ; le village de PÊCHEUR de Sarongan ; la PLAGE de Rajegwesi ; le village de SUKAMADE et son centre de protection des TORTUES MARINES ; observation des tortues qui pondent leurs ŒUFS sur la plage, la nuit</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <h4> • Malang</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d textcontent">
+                                <p>Visite de la petite ville peu touristique de MALANG ; le village de JODIPAN aux TOITS colorés ; le MARCHÉ des oiseaux ; ses bonnes petites GARGOTTES ; les TEMPLES de Blitar, Candi Penataran, Candi Badut, Candi Jago</p>
+                            </div>
+
+                            <div class="dropdown">
+                                <h4> • Semeru</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>                            
+                            <div class="e textcontent">
+                                <p>Ascension du VOLCAN en bivouac, randonnée au LAC KUMBOLO, jusqu’à KALIMATI pour observer les fumerolles constantes du mont SEMERU, assister au LEVER du SOLEIL sur le sommet</p>
+                            </div>                                                        
+                        </div>
+
+                        <div>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1GvYfqh-Bw1PIH7RFIWYN5bBKpDZJm9nw" width="480" height="480"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab__content tab3">
+                    <div class="text-map-sidebyside">
+                        <div class="text">
+                            <div class="dropdown">                    
+                                <h4>• Jakarta</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="a textcontent">
+                                <p>Visite de Jakarta, la CAPTITALE JAVANAISE ; la VIELLE VILLE Kota Tua ; la place Fatahillah Square ; le MUSÉE NATIONAL de Jakarta, Gedung Gajah ; la plus grande mosquée d’Asie ISIQLAL ; le MONUMENT NATIONAL de la tour Monas de 132 m de haut</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <h4>• Bandung</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="b textcontent">
+                                <p>Visite du JARDIN BOTANIQUE de Bogor ; les PLANTATIONS de Thé à Puncak Pass ; visite de Bandung, la CAPITALE de Java Ouest</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <h4>• Ujung Kulon</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="c textcontent">
+                                <p>Le PARC NATIONAL d’Ujung Kulon, classé au patrimoine mondial de l’Humanité par l’UNESCO, il est l’habitat de nombreuses espèces protégées</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1gyljFwiXXW5lwIVklC-6DYYLLILWJaDr" width="480" height="480"></iframe>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="tab__content tab4">
+                    <div class="text-map-sidebyside">
+                        <div class="text">
+                            <div class="dropdown">                    
+                            <h4>• Dieng</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="a textcontent">
+                                <p>Sur le PLATEAU DE DIENG à 2000 mètres d’altitude, visite du TEMPLE hindouiste le plus ancien d’Indonésie ; découverte du CRATÈRE du volcan, toujours actif et des LACS</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                            <h4>• Semarang</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="b textcontent">
+                                <p>Visite de la VILLE de Semarang, son quartier chinois, le bâtiment historique hollandais Lawang Sewu, etc.</p>
+                            </div>
+                            
+                            <div class="dropdown">
+                            <h4>• Karimunjawa</h4>
+                                <div class="icon">
+                                    <span class="btn">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="c textcontent">
+                                <p>Les ILES PARADISIAQUES de Karimunjawa, ses plages de sable blanc et ses spots de Snorkeling</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1U8ZawHgi8pCLkgXW8q-bWPBYHMKjoGlR" width="480" height="480"></iframe>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        
+
+        {# section 5 - presentation #}
+        <section class="presentation">
+
+            <h3>Découvrez l’île de Java</h3>
+
+            <div class="main-paragraph-wrapper">
+            <p>Considérée comme le cœur de l’archipel et symbole de la devise indonésienne « <strong>l’unité dans la diversité</strong> », Java mérite tous les superlatifs !</p>
+            <p>D’une taille égale à plus de deux fois celle de la France, 4ème en superficie des îles de la Sonde, elle abrite plus de la moitié de la population du pays, <strong>mosaïque aux multiples ethnies</strong> et entités distinctes, à la culture raffinée, où les arts occupent une place majeure.</p>
+            <p>Tout ici éveille les sens… les plages, les forêts tropicales et les vallées verdoyantes succédant aux zones montagneuses abritent quelques-uns des plus beaux paysages de l’archipel indonésien.</p>
+            <p>Paradis des amateurs de <strong>randonnées</strong>, Java compte des dizaines de volcans, parcourant l’île d’Ouest en Est, tels Ijen et ses porteurs de soufre, le mont Bromo et sa mer de sable, avec, non loin, le volcan Semeru, qui culmine à plus de 3600 mètres !</p>
+            <p>Les villes et villages ne sont pas en reste : D’un côté <strong>Jakarta</strong>, tentaculaire capitale financière et politique, ou encore <strong>Yogyakarta</strong>, sultanat javanais au fort héritage culturel, point de départ pour les célèbres temples de Borobudur et Prambanan. De l’autre des <strong>villages encore authentiques</strong> et traditionnels, où les agriculteurs conduisant leurs buffles sur des sols parmi les plus fertiles du monde, offrent un contraste saisissant avec la modernité des centres urbains.</p>
+            <p>La voiture et le train, dont le réseau est bien développé, sont certainement les meilleurs moyens de parcourir Java, qui se combine parfaitement avec Bali (mais pas que !), à seulement 30 minutes de ferry.</p>
+            <p>Java et Bali, deux « Mondes » différents d’un même Etat qui vous feront toucher du doigt la <strong>prodigieuse diversité</strong> qu’offre l’Indonésie…</p>
+            </div>
+        
+        </section>
+
+        {# section 6 - tours #}
+
+        <section class="tours-section">
+            
+            <h3>Nos circuits</h3>
+
+            <div class="tours-cards">
+            {# To display several tours here:  #}
+                {# tour nº1 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 1 %}
+                        <figure class="image-block">
+                            {# <h3>{{ tour.islands }}</h3> #}
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>À partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+
+                {# tour nº2 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 1 %}
+                        <figure class="image-block">
+                            {# <h3>{{ tour.islands }}</h3> #}
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>À partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+
+                {# tour nº3 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 1 %}
+                        <figure class="image-block">
+                            {# <h3>{{ tour.islands }}</h3> #}
+                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>À partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+
+        
+    
+    </div>
+
+{% block javascripts %}
+     {{ parent() }}
+     {{ encore_entry_script_tags('island') }}
+{% endblock %}
+
+{% endblock %}
