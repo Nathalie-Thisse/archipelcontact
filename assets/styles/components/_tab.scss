@@ -106,12 +106,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    .text{
-      width: 120%;
-    }
-    
+  }
 
-    
+  .dropdown-list{
+    width: 100%;
   }
 
   #tab1{
@@ -164,6 +162,7 @@
   .dropdown {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .icon {

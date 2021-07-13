@@ -12,7 +12,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '#image-slider', {
  		'cover'      : true,
  		'heightRatio': 0.5,
- 		'height' : '400px',
+ 		'height' : '500px',
  		'width' : '100%',
  		type   : 'loop',
  		autoplay : 'true',
