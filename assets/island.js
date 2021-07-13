@@ -43,17 +43,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
 			element.classList.toggle('display');
 	};
 		
-<<<<<<< HEAD
 		const btns = document.querySelectorAll('.dropdown');
 		btns.forEach(btn => {
 			btn.addEventListener('click', onClick);
 		});
      })
-=======
-	const btns = document.querySelectorAll('.dropdown .btn');
-	btns.forEach(btn => {
-		btn.addEventListener('click', onClick);
-	});
-
-})
->>>>>>> master
