@@ -28,6 +28,7 @@
     .topandmap{
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 8rem 0;
 
             .top-activities{
@@ -43,92 +44,84 @@
                 text-align: left;
                 margin: 1rem auto;
             }
-            
-            iframe{
-                margin-left: 4rem;
+
+            img{
+                max-width: 500px;
+                margin-left: 10rem;
             }
-    }
-
-    .topandmap {
+ 
         // ---------- css for TOP ACTIVITIES LIST
-        /*** VARIABLES ***/
-        /* Colors */
-        $black: #1d1f20;
-        $blue: #83e4e2;
-        $light-green-plus: #a2ed56;
-        $yellow: #fddc32;
-        $white: #fafafa;
 
-        /*** EXTEND ***/
         /* box-shadow */
         %boxshadow {
         box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
         }
 
         /*** STYLE ***/
-        *,
-        *:before,
-        *:after {
-        box-sizing: border-box;
-        }
 
         ol.gradient-list {
         counter-reset: gradient-counter;
         list-style: none;
         margin: 1.75rem 0;
         padding-left: 1rem;
-        > li {
-            background: white;
-            border-radius: 0 0.5rem 0.5rem 0.5rem;
-            @extend %boxshadow;
-            counter-increment: gradient-counter;
-            margin-top: 1rem;
-            min-height: 3rem;
-            padding: 1rem 1rem 1rem 3rem;
-            position: relative;
+            > li {
+                background: white;
+                border-radius: 0 0.5rem 0.5rem 0.5rem;
+                @extend %boxshadow;
+                counter-increment: gradient-counter;
+                margin-top: 1rem;
+                min-height: 3rem;
+                padding: 1rem 1rem 1rem 3rem;
+                position: relative;
 
-            &::before,
-            &::after {
-            background: linear-gradient(135deg, $light-green 0%,$light-green-plus 100%);
-            border-radius: 1rem 1rem 0 1rem;
-            content: '';
-            height: 3rem;
-            left: -1rem;
-            overflow: hidden;
-            position: absolute;
-            top: -1rem;
-            width: 3rem;
-            }
-            
-            &::before {
-            align-items: flex-end;
-            @extend %boxshadow;
-            content: counter(gradient-counter);
-            color: white;
-            display: flex;
-            font: 900 1.5em/1 'Quicksand';
-            justify-content: flex-end;
-            padding: 0.125em 0.25em;
-            z-index: 1;
-            }
-            @for $i from 1 through 5 {
-            &:nth-child(10n+#{$i}):before {
-                background: linear-gradient(135deg, rgba($dark-green, $i * 0.2) 0%,rgba($light-green-plus, $i * 0.2) 100%);
-            }
-            }
-            @for $i from 6 through 10 {
-            &:nth-child(10n+#{$i}):before {
-                background: linear-gradient(135deg, rgba($flashy-violet, 1 - (($i - 5) * 0.2)) 0%,rgba($light-green-plus, 1 - (($i - 5) * 0.2)) 100%);
-            }
-            }
-            + li {
-            margin-top: 2rem;
+                &::before,
+                &::after {
+                background: linear-gradient(135deg, $light-green 0%,$light-green-plus 100%);
+                border-radius: 1rem 1rem 0 1rem;
+                content: '';
+                height: 3rem;
+                left: -1rem;
+                overflow: hidden;
+                position: absolute;
+                top: -1rem;
+                width: 3rem;
+                }
+                
+                &::before {
+                align-items: flex-end;
+                @extend %boxshadow;
+                content: counter(gradient-counter);
+                color: white;
+                display: flex;
+                font: 900 1.5em/1 'Quicksand';
+                justify-content: flex-end;
+                padding: 0.125em 0.25em;
+                z-index: 1;
+                }
+                @for $i from 1 through 5 {
+                &:nth-child(10n+#{$i}):before {
+                    background: linear-gradient(135deg, rgba($dark-green, $i * 0.2) 0%,rgba($light-green-plus, $i * 0.2) 100%);
+                }
+                }
+                @for $i from 6 through 10 {
+                &:nth-child(10n+#{$i}):before {
+                    background: linear-gradient(135deg, rgba($flashy-violet, 1 - (($i - 5) * 0.2)) 0%,rgba($light-green-plus, 1 - (($i - 5) * 0.2)) 100%);
+                }
+                }
+                + li {
+                margin-top: 2rem;
+                }
             }
         }
+
     }
-    }
+    
+    
 
     /** -------- section 4 : Activities  --------- **/
+
+
+
     .activities-container >p{
         font-size: 1.05rem;
         padding: 0 16rem;
