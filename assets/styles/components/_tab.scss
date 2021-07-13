@@ -106,34 +106,11 @@
     flex-direction: column;
     justify-content: space-between;
 
-    // :first-child{
-    //   width: 100%;
-    // }
-
     .text{
       width: 120%;
     }
     
-    h4 + p{
-      padding-bottom: 1rem;
-    };
-    
-    p, h4{
-      text-align: left;
-    }
 
-    h4{
-      font-size: 1.2rem;
-      margin-top: 1rem !important;
-    }
-
-    p{
-      margin: 1rem;
-    }
-
-    .coutumes p{
-      padding-right: 20rem;
-    }
     
   }
 
@@ -186,30 +163,47 @@
 
   .dropdown {
     display: flex;
+    justify-content: space-between;
   }
-  .dropdown h4 {
-    color: white;
-    margin-top: 2rem;
-  }
+
   .icon {
     display: flex;
   }
   .btn{
     padding: 1rem 3rem;
   }
-  .textcontent {
-    // width: 90%;
-    margin-bottom: 1rem;
-    padding: 1rem;
+  .textcontent {      
+    display: none;
     text-align: left;
+
+    p{
+      padding-right: 2rem;
+    }
   }
+  
   .icon span i {
     color: white;
   }
-  .textcontent {
-    display: none;
-  }
+
   .display {
     display: block;
+  }
+
+  p, h4{
+    text-align: left;
+  }
+
+  h4{
+    font-size: 1.2rem;
+    margin-bottom: 0rem !important;
+    color: white;
+  }
+
+  .coutumes p{
+    padding-right: 20rem;
+  }
+
+  .coutumes img{
+    width: 100%;
   }
 }

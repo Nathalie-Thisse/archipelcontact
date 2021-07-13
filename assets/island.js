@@ -39,7 +39,7 @@ import Splide from '@splidejs/splide';
 			element.classList.toggle('display');
 		}
 		
-		const btns = document.querySelectorAll('.dropdown .btn');
+		const btns = document.querySelectorAll('.dropdown');
 		btns.forEach(btn => {
 			btn.addEventListener('click', onClick);
 		});
