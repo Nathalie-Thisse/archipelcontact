@@ -10,17 +10,27 @@
     .introduction-paragraph{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         text-align: left;
         font-size: 1.2rem;
         padding: 0 10rem;
 
         img{
-            width: 200px;
-            
+            width: 100%;
         }
 
         div:first-child{
            margin-right: 60px;
+           width: 60%;
+        }
+
+        div:last-child{
+            width: 30%;
+        }
+
+        //specifics for Kalimantan page
+        .kalimantant-svg{
+            width: 20%;
         }
     }
 
