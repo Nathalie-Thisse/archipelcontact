@@ -69,8 +69,11 @@ window.addEventListener('DOMContentLoaded', () => {
     mapAnimation('.map-kalimantan');
     mapAnimation('.map-bali');
     mapAnimation('.map-java');
-    mapAnimation('.map-nusatenggara');
+    mapAnimation('.map-floreskomodo');
+    mapAnimation('.map-lombok');
+    mapAnimation('.map-sumba');
     mapAnimation('.map-papua');
+    mapAnimation('.map-maluku');
     
 
 
