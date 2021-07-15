@@ -251,12 +251,30 @@
 
             <div class="tours-cards">
             {# To display several tours here:  #}
+                {# tour nº11 #}
+                {% for tour in tours %} 
+                    {% if tour.id == 11 %}
+                        <figure class="image-block">
+                            {# <h3>{{ tour.islands }}</h3> #}
+                            <img src="{{ asset('../assets/images/tours/11.jpg') }}" alt="" />
+                            <figcaption>
+                                <h4>{{ tour.title }}</h4>
+                                <p>{{ tour.description }}</p>
+                                <p>À partir de {{ tour.price }} € par personne</p>
+                                <button>
+                                    Découvrez
+                                </button>
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+
                 {# tour nº1 #}
                 {% for tour in tours %} 
                     {% if tour.id == 1 %}
                         <figure class="image-block">
                             {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <img src="{{ asset('../assets/images/tours/1.jpg') }}" alt="" />
                             <figcaption>
                                 <h4>{{ tour.title }}</h4>
                                 <p>{{ tour.description }}</p>
@@ -269,30 +287,12 @@
                     {% endif %}
                 {% endfor %}
 
-                {# tour nº2 #}
+                {# tour nº9 #}
                 {% for tour in tours %} 
-                    {% if tour.id == 1 %}
+                    {% if tour.id == 9 %}
                         <figure class="image-block">
                             {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº3 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 1 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/bukit.jpg') }}" alt="" />
+                            <img src="{{ asset('../assets/images/tours/9.jpg') }}" alt="" />
                             <figcaption>
                                 <h4>{{ tour.title }}</h4>
                                 <p>{{ tour.description }}</p>
