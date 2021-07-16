@@ -106,7 +106,97 @@
     h4{
         margin: 2rem 0;
         text-align: center;
+        position: relative;
+
+    /* ::before titles */
+        &::before{
+            content: "";
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            bottom: 4rem;
+            left: 20rem;
+        }
+
     }
+
+
+    #when--climate h4::before{
+        background-image: url('../../images/informationpage/icon-sun.png');
+    }
+
+    #when--temperatures h4::before{
+        background-image: url('../../images/informationpage/icon-thermometre.png');
+    }
+
+    #formalities--passport h4::before{
+        background-image: url('../../images/informationpage/icon-passport.png');
+    }
+
+    #formalities--passport h4::before{
+        background-image: url('../../images/informationpage/icon-passport.png');
+    }
+
+    #danger--health h4::before{
+        background-image: url('../../images/informationpage/icon-health.png');
+    }
+
+    #danger--water h4::before{
+        background-image: url('../../images/informationpage/icon-water.png');
+    }
+
+    #formalities--vaccination h4::before{
+        background-image: url('../../images/informationpage/icon-vaccination.png');
+    }
+
+    #money--bargaining h4::before{
+        background-image: url('../../images/informationpage/icon-money.png');
+    }
+
+    #food--specialities h4::before{
+        background-image: url('../../images/informationpage/icon-meal.png');
+    }
+
+    #food--wheretoeat h4::before{
+        background-image: url('../../images/informationpage/icon-locationpin.png');
+    }
+
+    #transport--driving h4::before{
+        background-image: url('../../images/informationpage/icon-compass.png');
+    }
+
+    #transport--taxis h4::before{
+        background-image: url('../../images/informationpage/icon-car.png');
+    }
+
+    #transport--severalislands h4::before{
+        background-image: url('../../images/informationpage/icon-map.png');
+    }
+
+    #time h3{
+
+        position: relative;
+
+        &::before{
+        content: "";
+        background-image: url('../../images/informationpage/icon-clock.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        bottom: 4rem;
+        left: 20rem;
+        }
+       
+    }
+    
 
 
 }
