@@ -1,523 +1,567 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Bali {% endblock %}
+{% block title %}
+	Bali
+{% endblock %}
 
 {% block body %}
 
-    <div id="island" class="wrapper">
-    
-        {# section 1 - introduction #}
-        <section class="introduction">
-            <h2>Bali</h2>
-            <h4>L'île des Dieux</h4>
-            <div class="introduction-paragraph">
-                <div class=''>
-                    <p>Bali, l’île la plus connue d’Indonésie vous dévoile son charme inégalable.</p>
-                    <p>Entre jungles, volcans, rizières en terrasses, hibiscus, cocotiers, forêts de bambous : les paysages rivalisent de beauté !</p>
-                    <p>Quant aux balinais, peuple doux et paisible, ils ont su garder leurs traditions : un fascinant mélange d’hindouisme et d’animisme. Leur quotidien est rythmé par les rituels et des cérémonies hautes en couleur où les visiteurs sont accueillis chaleureusement.</p>
-                    <p>Pour expérimenter Bali, il faut s’aventurer en dehors des sentiers battus, c’est là où la magie balinaise vous emportera !</p>
-                </div>
-                <div>
-                    <img src="{{ asset('../assets/images/icons/icon-housebali.png') }}" alt="bali house icon">
-                </div>
-            </div>
-        </section>
+	<div
+		id="island" class="wrapper">
+
+		{# section 1 - introduction #}
+		<section class="introduction">
+			<h2>Bali</h2>
+			<h4>L'île des Dieux</h4>
+			<div class="introduction-paragraph">
+				<div class=''>
+					<p>Bali, l’île la plus connue d’Indonésie vous dévoile son charme inégalable.</p>
+					<p>Entre jungles, volcans, rizières en terrasses, hibiscus, cocotiers, forêts de bambous : les paysages rivalisent de beauté !</p>
+					<p>Quant aux balinais, peuple doux et paisible, ils ont su garder leurs traditions : un fascinant mélange d’hindouisme et d’animisme. Leur quotidien est rythmé par les rituels et des cérémonies hautes en couleur où les visiteurs sont accueillis chaleureusement.</p>
+					<p>Pour expérimenter Bali, il faut s’aventurer en dehors des sentiers battus, c’est là où la magie balinaise vous emportera !</p>
+				</div>
+				<div>
+					<img src="{{ asset('../assets/images/icons/icon-housebali.png') }}" alt="bali house icon">
+				</div>
+			</div>
+		</section>
 
 
-        {# section 2 - photo carousel #}        
-        <section id="photos-slider">
-            <div id="image-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/balipage/agung-2.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/balipage/procession-2.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/balipage/ricefields.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/balipage/sebatu.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/balipage/surf-3.jpg') }}">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/balipage/ulun-danu-2.jpg') }}">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        {# section 3 - top activites & map #}    
-        <section class="topandmap">
-            <div class="top-activities">
-                <h4>Top des activités à Bali</h4>
+		{# section 2 - photo carousel #}
+		<section id="photos-slider">
+			<div id="image-slider" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/balipage/agung-2.jpg') }}">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/balipage/procession-2.jpg') }}">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/balipage/ricefields.jpg') }}">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/balipage/sebatu.jpg') }}">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/balipage/surf-3.jpg') }}">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/balipage/ulun-danu-2.jpg') }}">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-                <ol class="gradient-list">
-                    <li>Visites culturelles & vie locale</li>
-                    <li>Randonnées</li>
-                    <li>Yoga & bien-être</li>
-                    <li>Plongée & snorkelling</li>
-                </ol>
-            </div>            
+		{# section 3 - top activites & map #}
+		<section class="topandmap">
+			<div class="top-activities">
+				<h4>Top des activités à Bali</h4>
 
-            <div>
-                <img src="{{ asset('../assets/images/balipage/indomap-bali.png') }}" alt="Carte indonésie">
-            </div>
-        </section>
-  
-        {# section 4 - activities #}
-        <div class="activities-container">
+				<ol class="gradient-list">
+					<li>Visites culturelles & vie locale</li>
+					<li>Randonnées</li>
+					<li>Yoga & bien-être</li>
+					<li>Plongée & snorkelling</li>
+				</ol>
+			</div>
 
-            <h3>Les activités à Bali - Nos recommandations :</h3>
-            <p>Les principales activités à faire à Bali en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
+			<div>
+				<img src="{{ asset('../assets/images/balipage/indomap-bali.png') }}" alt="Carte indonésie">
+			</div>
+		</section>
 
-            <div class="tab-wrap">
+		{# section 4 - activities #}
+		<div class="activities-container">
 
-                <!-- active tab on page load gets checked attribute -->
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">LES RÉGIONS</label>
+			<h3>Les activités à Bali - Nos recommandations :</h3>
+			<p>Les principales activités à faire à Bali en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
 
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">LES PLAGES</label>
+			<div
+				class="tab-wrap">
 
-                <input type="radio" id="tab3" name="tabGroup1" class="tab">
-                <label for="tab3">SPORT & AVENTURE</label>
+				<!-- active tab on page load gets checked attribute -->
+				<input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+				<label for="tab1">LES RÉGIONS</label>
 
-                <input type="radio" id="tab4" name="tabGroup1" class="tab">
-                <label for="tab4">VIE & COUTUMES</label>
+				<input type="radio" id="tab2" name="tabGroup1" class="tab">
+				<label for="tab2">LES PLAGES</label>
 
-                <div class="tab__content tab1">
-                    <div class="text-map-sidebyside">
-                        <div class="dropdown-list">
-                            <div class="dropdown">
-                                <h4>• Au centre, Ubud</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Visite de la CAPITALE CULTURELLE de l’île : découvertes des GALERIES d’ART et des MUSÉES ; balade dans la FORÊT des SINGES ; initiation au YOGA ; dégustation de spécialités dans les RESTAURANTS traditionnels ; Shopping au grand MARCHÉ d’art et d’artisanat et dans les boutiques du centre-ville.</p>
-                                <p>Dans les alentours d’Ubud, découverte des ATELIERS d’artisans de Batubulan, Celuk et Mas où l’on travaille la pierre, l’or et l’argent et le bois.</p>
-                                <p>Balade dans les RIZIÈRES de Tegallalang ; promenade à VÉLO ou à pied dans la campagne environnante ; sortie en RAFTING ou en JEEP.</p>
-                                <p>Visites des TEMPLES de Goa Gajah et Gunung Kawi ; les SOURCES SACRÉES de Sebatu.</p>
-                            </div>
+				<input type="radio" id="tab3" name="tabGroup1" class="tab">
+				<label for="tab3">SPORT & AVENTURE</label>
 
-                            <div class="dropdown">
-                                <h4>• Les campagnes à l’Ouest</h4>
-                                    <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>La région de Tabanan et ses villages traditionnels, ses plantations et ses rizières, ses habitants accueillants. C’est ici qu’on découvre le vrai Bali ! On s’y balade paisiblement à pied ou en vélo à travers les campagnes.</p>
-                                <p>A Mengwi, visite du TEMPLE de Taman Ayun ; en bord de mer, celui de Tanah Lot, l’un des plus réputé de l’île.</p>
-                                <p>A Blimbling, plus au centre, découverte des fruits et des épices locales en traversant les PLANTATIONS.</p>
-                                <p>Sur la côte Ouest, la région de Negara est moins connue. Visite des TEMPLES de Rambut Siwi ; à Perancak, visite du temple et du PETIT PORT de pêcheur Perancak. Entraînement aux courses de BUFFLES à Delob Berawah. </p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• La région des lacs au Nord</h4>
-                                    <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Au Nord d’Ubud, près de Munduk : la région des LACS Buyan, Tamblingan et Bratan est plus fraîche et plus montagneuse. Dans le petit village de Munduk, on randonne dans la forêt tropicale, on se baigne dans les cascades et on rencontre les habitants pour partager leur culture.</p>
-                                <p>Plus au Nord, les SOURCES CHAUDES de Banjar sont situées au milieu d’un jardin luxuriant et d’une jungle accueillante ; visite du TEMPLE de Banjar, le seul monastère bouddhique de Bali.</p>
-                                <p>Autour du village de Bedugul, au bord du lac BRATAN, découverte du TEMPLE semi-aquatique d’Ulun Danu, consacré à la déesse des eaux. Plus bas, balade dans les RIZIÈRES en terrasses de Jatiluwih, classées au Patrimoine de l’Unesco.</p>
-                            </div>
+				<input type="radio" id="tab4" name="tabGroup1" class="tab">
+				<label for="tab4">VIE & COUTUMES</label>
 
-                            <div class="dropdown">
-                                <h4>• Volcans et authenticité à l'Est</h4>
-                                    <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="d textcontent">
-                                <p>La région des VOLCANS Batur et Agung au Nord-Est de l’île, découverte du LAC de CRATÈRE Danau, déjeuner au VILLAGE de MONTAGNE de Kintamani avec vue panoramique ; descente en VÉLO au travers des villages ; ASCENSION des volcans ; baignade dans les SOURCES CHAUDES ; visite du temple mère BESAKIH, le plus important de Bali.</p>
-                                <p>Au centre, le VILLAGE AUTHENTIQUE de Sidemen pour vivre la magie balinaise ! Rencontre avec les HABITANTS, découverte de leur culture et leur vie quotidienne, ATELIERS de fabrication d’artisanat, cours de cuisine traditionnelle, etc.</p>
-                                <p>BALADE dans les rizières et les villages de campagne, à pied, à vélo ou en scooter ; RAFTING sur la rivière ; cours de YOGA ; cérémonies traditionnelles au TEMPLE avec les Balinais</p>
-                                <p>Plus au sud, visite des BAINS ROYAUX de Tirtagganga ou de Taman Ujung ; balade au village ANIMISTE de Tenganan ; découverte du GRAND MARCHÉ de Klungklung ; visite du TEMPLE de Goa Lawah</p>
-                            </div>
+				<div class="tab__content tab1">
+					<div class="text-map-sidebyside">
+						<div class="dropdown-list">
+							<div class="dropdown">
+								<h4>• Au centre, Ubud</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="a textcontent">
+								<p>Visite de la CAPITALE CULTURELLE de l’île : découvertes des GALERIES d’ART et des MUSÉES ; balade dans la FORÊT des SINGES ; initiation au YOGA ; dégustation de spécialités dans les RESTAURANTS traditionnels ; Shopping au grand MARCHÉ d’art et d’artisanat et dans les boutiques du centre-ville.</p>
+								<p>Dans les alentours d’Ubud, découverte des ATELIERS d’artisans de Batubulan, Celuk et Mas où l’on travaille la pierre, l’or et l’argent et le bois.</p>
+								<p>Balade dans les RIZIÈRES de Tegallalang ; promenade à VÉLO ou à pied dans la campagne environnante ; sortie en RAFTING ou en JEEP.</p>
+								<p>Visites des TEMPLES de Goa Gajah et Gunung Kawi ; les SOURCES SACRÉES de Sebatu.</p>
+							</div>
 
-                            <div class="dropdown">
-                                <h4>• Les îles de Nusa Penida et Lembongan</h4>
-                                    <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="e textcontent">
-                                <p>A 20 minutes en bateau de Bali, les deux îles sont des petits paradis de tranquillité.</p>
-                                <p>Nusa Lembongan, est la plus petite et seuls les scooters circulent. On profite de la PLAGE et de la MER : sorties plongée ou Snorkeling autours des deux îles de Lembongan et Penida, spots de surf accessibles en bateau.</p>
-                                <p>A Nusa Penida, les plages sont plus sauvages et l’on peut organiser des visites : au TEMPLE de Goa Giri Putri situé dans une grotte, les ATELIERS de tissages à Tanglad, les PISCINES NATURELLES à Tembling, etc.</p>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1WMD10Vw463wgIh_H3ryUVRrpMN4rLy3s&z=9" width="500" height="480"></iframe>
-                        </div>   
-                                             
-                    </div>
-                </div>
+							<div class="dropdown">
+								<h4>• Les campagnes à l’Ouest</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="b textcontent">
+								<p>La région de Tabanan et ses villages traditionnels, ses plantations et ses rizières, ses habitants accueillants. C’est ici qu’on découvre le vrai Bali ! On s’y balade paisiblement à pied ou en vélo à travers les campagnes.</p>
+								<p>A Mengwi, visite du TEMPLE de Taman Ayun ; en bord de mer, celui de Tanah Lot, l’un des plus réputé de l’île.</p>
+								<p>A Blimbling, plus au centre, découverte des fruits et des épices locales en traversant les PLANTATIONS.</p>
+								<p>Sur la côte Ouest, la région de Negara est moins connue. Visite des TEMPLES de Rambut Siwi ; à Perancak, visite du temple et du PETIT PORT de pêcheur Perancak. Entraînement aux courses de BUFFLES à Delob Berawah.
+								</p>
+							</div>
 
-                <div class="tab__content tab2">
-                    <div class="text-map-sidebyside">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                   
-                                <h4> • Sanur (Sud-Est)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Station balnéaire calme qui a su garder son authenticité et où les balinais se rendent souvent le weekend. La grande plage de sable blond est très agréable avec sa jetée bordée de petits bars et restaurants.</p>
-                                <p>Dans la station on trouve des petites boutiques de vêtements et d’artisanat. On peut aussi faire un tour au marché de nuit et manger dans les échoppes traditionnelles.</p>
-                                <p>Protégées par une barrière de corail, les eaux y sont tranquilles et la baignade facile à marée haute. La plage convient bien aux familles.</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Kuta et ses environs (Sud-Ouest)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="b textcontent">                            
-                                <p>La côte sud-ouest accueille la plus grande station de l’île, elle commence à Kuta et est très animée.On profite des nombreux bars, restaurants et boutiques, vendeurs ambulants, ambiance garantie !  Si vous recherchez le calme et l’authenticité, et souhaitez éviter l’agitation et les embouteillages, cette station n’est pas pour vous.</p>
-                                <p>La plage de sable blond est très large et s’étend sur plusieurs kilomètres. Il y a quelques spots de surf très connus dispersés tout le long et la baignade se fait donc en fonction des conditions maritimes. C’est aussi le lieu idéal pour profiter des plus beaux couchers de soleil de Bali, allongés sur le sable ou en buvant un verre dans l’un des nombreux bars branchés du secteur.</p>
-                                <p>KUTA est la plage la plus connue et la plus animée, elle est surtout prisée par les jeunes. Tout à côté, LEGIAN fait maintenant partie de Kuta.</p>
-                                <p>Un peu plus chic, SEMINYAK propose de très bonnes tables, des bars et des boîtes de nuits branchées.</p>
-                                <p>CANGGU commence à ressembler à sa voisine Seminyak, tout en gardant une ambiance plus détendue avec ses plages, bars et restaurants décontractés fréquentés par les jeunes, les surfeurs et les yogis.</p>
-                            </div>
+							<div class="dropdown">
+								<h4>• La région des lacs au Nord</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="c textcontent">
+								<p>Au Nord d’Ubud, près de Munduk : la région des LACS Buyan, Tamblingan et Bratan est plus fraîche et plus montagneuse. Dans le petit village de Munduk, on randonne dans la forêt tropicale, on se baigne dans les cascades et on rencontre les habitants pour partager leur culture.</p>
+								<p>Plus au Nord, les SOURCES CHAUDES de Banjar sont situées au milieu d’un jardin luxuriant et d’une jungle accueillante ; visite du TEMPLE de Banjar, le seul monastère bouddhique de Bali.</p>
+								<p>Autour du village de Bedugul, au bord du lac BRATAN, découverte du TEMPLE semi-aquatique d’Ulun Danu, consacré à la déesse des eaux. Plus bas, balade dans les RIZIÈRES en terrasses de Jatiluwih, classées au Patrimoine de l’Unesco.</p>
+							</div>
 
-                            <div class="dropdown">
-                                <h4>• Jimbaran (Sud)</h4>
-                                <div class="icon">
-                                            <span class="btn">
-                                                <i class="fas fa-plus"></i>
-                                            </span>
-                                        </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Jimbaran est un ancien village de pêcheurs devenu une station touristique bordée par une grande et belle plage de sable blond. Les eaux sont relativement tranquilles et l’on peut y nager sans danger.</p>
-                                <p>On peut y admirer les pirogues traditionnelles sur la plage, se balader au marché aux poissons et déguster la pêche du jour dans l’un des restos de plage, les pieds dans l’eau !</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4> • Au sud, Bukit (Sud)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="d textcontent">
-                                <p>A l’extrême Sud de Bali se trouve la péninsule du Bukit moins fréquentées que les villes côtières du sud. Les paysages sont plus arides et les plages préservées, en bas des falaises. On peut s’y baigner ou surfer sur les fameux spots d’Uluwatu, Bingin, Dreambeach, etc.</p>
-                                <p>C’est là également que se trouve le temple d’Uluwatu, connu pour son panorama, ses singes et ses spectacles quotidiens de danse Kecak.</p>
-                            </div>
+							<div class="dropdown">
+								<h4>• Volcans et authenticité à l'Est</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="d textcontent">
+								<p>La région des VOLCANS Batur et Agung au Nord-Est de l’île, découverte du LAC de CRATÈRE Danau, déjeuner au VILLAGE de MONTAGNE de Kintamani avec vue panoramique ; descente en VÉLO au travers des villages ; ASCENSION des volcans ; baignade dans les SOURCES CHAUDES ; visite du temple mère BESAKIH, le plus important de Bali.</p>
+								<p>Au centre, le VILLAGE AUTHENTIQUE de Sidemen pour vivre la magie balinaise ! Rencontre avec les HABITANTS, découverte de leur culture et leur vie quotidienne, ATELIERS de fabrication d’artisanat, cours de cuisine traditionnelle, etc.</p>
+								<p>BALADE dans les rizières et les villages de campagne, à pied, à vélo ou en scooter ; RAFTING sur la rivière ; cours de YOGA ; cérémonies traditionnelles au TEMPLE avec les Balinais</p>
+								<p>Plus au sud, visite des BAINS ROYAUX de Tirtagganga ou de Taman Ujung ; balade au village ANIMISTE de Tenganan ; découverte du GRAND MARCHÉ de Klungklung ; visite du TEMPLE de Goa Lawah</p>
+							</div>
 
-                            <div class="dropdown">
-                                <h4> • Nusa Dua (Sud-Est)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>                            
-                            <div class="e textcontent">
-                                <p>La station de Nusa Dua, partie Est de la péninsule du Bukit, offre de belles plages de sable blanc protégées par la barrière de corail.  La baignade y est très sûre et les eaux cristallines.</p>
-                                <p>C’est là que sont regroupés la plupart des hôtels 4 et 5* de standing européen, qui séduiront les plus exigeants. Certains établissements proposent des formules « tout inclus ».</p>
-                                <p>De nombreuses activités aquatiques y sont proposées (jetski, bouées, parasailing, etc.). Et on peut pratiquer le Kitesurf certains jours.</p>
-                            </div>
+							<div class="dropdown">
+								<h4>• Les îles de Nusa Penida et Lembongan</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="e textcontent">
+								<p>A 20 minutes en bateau de Bali, les deux îles sont des petits paradis de tranquillité.</p>
+								<p>Nusa Lembongan, est la plus petite et seuls les scooters circulent. On profite de la PLAGE et de la MER : sorties plongée ou Snorkeling autours des deux îles de Lembongan et Penida, spots de surf accessibles en bateau.</p>
+								<p>A Nusa Penida, les plages sont plus sauvages et l’on peut organiser des visites : au TEMPLE de Goa Giri Putri situé dans une grotte, les ATELIERS de tissages à Tanglad, les PISCINES NATURELLES à Tembling, etc.</p>
+							</div>
+						</div>
 
-                            <div class="dropdown">
-                                <h4> • Côte Est</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="f textcontent">
-                                <p>Candidasa est une station peu fréquentée, principalement par une clientèle retraitée, où quelques hôtels sont dispersés sur la côte. Les plages sont petites et disparaissent à marée haute à cause de l’érosion, la baignade se fait donc en fonction des marées.</p>
-                                <p>Sur la côte Est, on trouve quelques spots de surf de niveau assez difficile (Ketewel, Keramas, Padang Bai, etc.) ainsi que quelques spots de plongée.</p>
-                                <p>Padang Bai est aussi un embarcadère d’où partent les bateaux rapides vers les îles Gilis, Nusa Lembongan, etc. On peut aussi faire du Snorkelling dans les environs comme à Blue Lagoon Beach.</p>
-                                <p>Pasir Putih ou Virgin Beach est une très belle plage de sable blanc, l’une des plus belles de BALI. On y déguste des grillades de poissons frais sur la plage. On peut également profiter de sortie Snorkeling en Prahu, petit bateau traditionnel.</p>
-                            </div>
+						<div>
+							<iframe src="https://www.google.com/maps/d/embed?mid=1WMD10Vw463wgIh_H3ryUVRrpMN4rLy3s&z=9" width="500" height="480"></iframe>
+						</div>
 
-                            <div class="dropdown">
-                                <h4> • Amed (Est)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="g textcontent">
-                                <p>Amed est un regroupement de villages de pêcheurs qui s’étendent sur la côte Est. L’endroit est très connu des plongeurs et on y trouve de nombreux clubs pour organiser ses sorties. A Tulamben, L’épave du cargo américain le « Liberty » est l’un des spots les plus connus de Bali.</p>
-                                <p>Les amateurs de Snorkeling seront conquis eux aussi !</p>
-                                <p>Dans ce secteur, la baignade est facile et les plages de sable noir sont peu fréquentées. On trouve moins de restaurants et de bars que dans le sud de l’île et l’ambiance y est donc plus calme.</p>
-                            </div>
+					</div>
+				</div>
 
-                            <div class="dropdown">
-                                <h4> • Lovina (Nord)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="h textcontent">
-                                <p>La station de Lovina, située tout au Nord de Bali est fréquentée par les familles qui souhaitent un peu plus de calme que sur les plages du Sud.</p>
-                                <p>La station offre des plages de sable noir, frangées de cocotiers, où il fait bon se baigner.</p>
-                                <p>On peut aller à la rencontre des dauphins en partant à l’aube à bord de pirogues motorisées. Attention, ces sorties organisées sont devenues très touristiques.</p>
-                            </div>
+				<div class="tab__content tab2">
+					<div class="text-map-sidebyside">
+						<div class="dropdown-list">
+							<div class="dropdown">
+								<h4>
+									• Sanur (Sud-Est)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="a textcontent">
+								<p>Station balnéaire calme qui a su garder son authenticité et où les balinais se rendent souvent le weekend. La grande plage de sable blond est très agréable avec sa jetée bordée de petits bars et restaurants.</p>
+								<p>Dans la station on trouve des petites boutiques de vêtements et d’artisanat. On peut aussi faire un tour au marché de nuit et manger dans les échoppes traditionnelles.</p>
+								<p>Protégées par une barrière de corail, les eaux y sont tranquilles et la baignade facile à marée haute. La plage convient bien aux familles.</p>
+							</div>
 
-                            <div class="dropdown">
-                                <h4> • Pemuteran (Nord-Ouest)</h4>
-                                <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="i textcontent">
-                                <p>Au nord-ouest de Bali, Pemuteran est un petit village calme, bordé par une grande et belle plage de sable noir aux eaux tranquilles. En couple, en famille ou entre amis, plongeurs ou non, chacun y trouvera son bonheur (à part les amateurs de discothèques) !</p>
-                                <p>Le village est également le point de départ idéal pour randonner dans le Parc National de Bali Barat et observer les singes, cerfs, iguanes, écureuils, sangliers, etc.) ; plonger ou faire du Snorkeling autour de l’île de Menjangan (les spots sont fabuleux !), se balader en kayak ou à cheval…</p>
-                                <p>Au cœur du parc national, face à l’île de Menjangan se trouvent quelques éco-resorts, au bord de plages coraliennes de sable blanc avec de très beaux fonds sous-marins.</p>
-                            </div>
-                        </div>
+							<div class="dropdown">
+								<h4>• Kuta et ses environs (Sud-Ouest)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="b textcontent">
+								<p>La côte sud-ouest accueille la plus grande station de l’île, elle commence à Kuta et est très animée.On profite des nombreux bars, restaurants et boutiques, vendeurs ambulants, ambiance garantie !  Si vous recherchez le calme et l’authenticité, et souhaitez éviter l’agitation et les embouteillages, cette station n’est pas pour vous.</p>
+								<p>La plage de sable blond est très large et s’étend sur plusieurs kilomètres. Il y a quelques spots de surf très connus dispersés tout le long et la baignade se fait donc en fonction des conditions maritimes. C’est aussi le lieu idéal pour profiter des plus beaux couchers de soleil de Bali, allongés sur le sable ou en buvant un verre dans l’un des nombreux bars branchés du secteur.</p>
+								<p>KUTA est la plage la plus connue et la plus animée, elle est surtout prisée par les jeunes. Tout à côté, LEGIAN fait maintenant partie de Kuta.</p>
+								<p>Un peu plus chic, SEMINYAK propose de très bonnes tables, des bars et des boîtes de nuits branchées.</p>
+								<p>CANGGU commence à ressembler à sa voisine Seminyak, tout en gardant une ambiance plus détendue avec ses plages, bars et restaurants décontractés fréquentés par les jeunes, les surfeurs et les yogis.</p>
+							</div>
 
-                        <div>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1EH0Q0gxQPSHvJl-tmBwSh7TU2bPoss3r" width="480" height="480"></iframe>
-                        </div>
-                    </div>
-                </div>
+							<div class="dropdown">
+								<h4>• Jimbaran (Sud)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="c textcontent">
+								<p>Jimbaran est un ancien village de pêcheurs devenu une station touristique bordée par une grande et belle plage de sable blond. Les eaux sont relativement tranquilles et l’on peut y nager sans danger.</p>
+								<p>On peut y admirer les pirogues traditionnelles sur la plage, se balader au marché aux poissons et déguster la pêche du jour dans l’un des restos de plage, les pieds dans l’eau !</p>
+							</div>
 
-                <div class="tab__content tab3">
-                    <div class="text-map-sidebyside">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                    
-                            <h4>• Vélo</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="a textcontent">
-                            <p>Descente du volcan Batur à VÉLO ; balade dans les campagnes, à travers les villages et les rizières de Tabanan, à Blimbling, à Pemuteran et Sidemen ; promenade jusqu’au temple de Tanah Lot</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Randonnée & volcans</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="b textcontent">
-                            <p>L’ascension des VOLCANS Batur et Agung ; les randonnées dans la JUNGLE, les rizières ou les forêts de toute l’île… On peut se balader un peu partout sur l’île, Bali est un merveilleux terrain de randonnée !</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Plongée & Snorkeling</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="c textcontent">
-                            <p>Sur les sites d’AMED et de TULAMBEN ; dans le Parc National de MENJGANGAN, près de Pemuteran ; autours des îles de NUSA PENIDA et NUSA LEMBONGAN</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Rafting, canyoning et cascades</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="d textcontent">
-                            <p>Des sorties RAFTING à Ubud et à Sidemen ; du CANYONING près de Munduk ; baignade dans les CASCADES de la région Nord, à Gitgit, Sekumpul, Blimbilng, Munduk, etc.</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Surf & kite surf</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="e textcontent">
-                            <p>Les spots de KITE SURT de Sanur et NUSA DUA ; les nombreux spots de SURF du Bukit, de Kuta, Seminyak, Canggu, de Medewi, Nusa Lemongan, Keramas…</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Sorties en bateau</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="f textcontent">
-                            <p>Balade en PIROGUE à Lovina ; en PRAHU, petit bateau de pêcheur, à Amed ; en CATAMARAN à Nusa Lemongan ; sorties SNORKELING à Menjangan, Nusa Penida et Nusa Lembongan</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Golf</h4>
-                            <div class="icon">
-                                        <span class="btn">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class="g textcontent">
-                            <p>3 parcours de golf de 18 trous à Bali : New Kuta Golf et Bali National Golf Club au sud, et Bali Handara Golf, au Nord, près de Bedugul</p>
-                            </div>
-                        </div>
+							<div class="dropdown">
+								<h4>
+									• Au sud, Bukit (Sud)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="d textcontent">
+								<p>A l’extrême Sud de Bali se trouve la péninsule du Bukit moins fréquentées que les villes côtières du sud. Les paysages sont plus arides et les plages préservées, en bas des falaises. On peut s’y baigner ou surfer sur les fameux spots d’Uluwatu, Bingin, Dreambeach, etc.</p>
+								<p>C’est là également que se trouve le temple d’Uluwatu, connu pour son panorama, ses singes et ses spectacles quotidiens de danse Kecak.</p>
+							</div>
 
-                        <div>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1cGaN0_usvU0rypAGwOmmBRMbNSDenATl" width="480" height="480"></iframe>
-                        </div>
-                    </div>   
-                </div>
+							<div class="dropdown">
+								<h4>
+									• Nusa Dua (Sud-Est)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="e textcontent">
+								<p>La station de Nusa Dua, partie Est de la péninsule du Bukit, offre de belles plages de sable blanc protégées par la barrière de corail.  La baignade y est très sûre et les eaux cristallines.</p>
+								<p>C’est là que sont regroupés la plupart des hôtels 4 et 5* de standing européen, qui séduiront les plus exigeants. Certains établissements proposent des formules « tout inclus ».</p>
+								<p>De nombreuses activités aquatiques y sont proposées (jetski, bouées, parasailing, etc.). Et on peut pratiquer le Kitesurf certains jours.</p>
+							</div>
 
-                <div class="tab__content tab4">
-                    <div class="text-map-sidebyside coutumes">
-                        <div>
-                            <p>Partout sur l'île, découvrez la culture balinaise et la vie quotidienne de ses habitants.</p>                    
-                            <h4>• Artisanat</h4>
-                            <p>Tous les balinais sont de grands artistes ! Travail du BOIS, de l’ARGENT, de l’OR, de la PIERRE autour d’Ubud ; la POTERIE à Tabanan ; les ateliers de TISSAGE d’Ikats, les tissus traditionnels, à Sidemen ; les PEINTRES et les SCULPTEURS à Ubud</p>
-                            
-                            <h4>• Savoir-faire</h4>
-                            <p>COURS de CUISINE balinaise, atelier de cosmétiques naturelles et de boissons à base de plantes médicinales (JAMUS) ; fabrication d’OFFRANDES ; découverte de la distillation de l’Arak, l’ALCOOL local ; ATELIERS d’INITIAITON à la fabrication d’huile de noix de coco et d’objet en noix de coco ; de torréfaction du café</p>
-                            
-                            <h4>• Cérémonies</h4>
-                            <p>Processions, offrandes, CÉRÉMONIES matinales au temple… elles sont partout à Bali et les visiteurs sont les bienvenus !</p>
-                            
-                            <h4>• Soins & bien-être</h4>
-                            <p>MASSAGE traditionnel balinais ; SOIN au spa ; cours de YOGA et de MÉDITATION ; GUÉRISSEUR traditionnel (balian) ; lecture des CHAKRAS.</p>
-                            <p>Bali est le lieu idéal pour prendre soin de soi !</p>
-                        </div>
-                    <div>
-                        <img src="{{ asset('../assets/images/icons/icon-whitehibiscusflower.png') }}">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+							<div class="dropdown">
+								<h4>
+									• Côte Est</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="f textcontent">
+								<p>Candidasa est une station peu fréquentée, principalement par une clientèle retraitée, où quelques hôtels sont dispersés sur la côte. Les plages sont petites et disparaissent à marée haute à cause de l’érosion, la baignade se fait donc en fonction des marées.</p>
+								<p>Sur la côte Est, on trouve quelques spots de surf de niveau assez difficile (Ketewel, Keramas, Padang Bai, etc.) ainsi que quelques spots de plongée.</p>
+								<p>Padang Bai est aussi un embarcadère d’où partent les bateaux rapides vers les îles Gilis, Nusa Lembongan, etc. On peut aussi faire du Snorkelling dans les environs comme à Blue Lagoon Beach.</p>
+								<p>Pasir Putih ou Virgin Beach est une très belle plage de sable blanc, l’une des plus belles de BALI. On y déguste des grillades de poissons frais sur la plage. On peut également profiter de sortie Snorkeling en Prahu, petit bateau traditionnel.</p>
+							</div>
 
-        {# section 5 - presentation #}
-        <section class="presentation">
+							<div class="dropdown">
+								<h4>
+									• Amed (Est)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="g textcontent">
+								<p>Amed est un regroupement de villages de pêcheurs qui s’étendent sur la côte Est. L’endroit est très connu des plongeurs et on y trouve de nombreux clubs pour organiser ses sorties. A Tulamben, L’épave du cargo américain le « Liberty » est l’un des spots les plus connus de Bali.</p>
+								<p>Les amateurs de Snorkeling seront conquis eux aussi !</p>
+								<p>Dans ce secteur, la baignade est facile et les plages de sable noir sont peu fréquentées. On trouve moins de restaurants et de bars que dans le sud de l’île et l’ambiance y est donc plus calme.</p>
+							</div>
 
-            <h3>Découvrez l’île de Bali</h3>
+							<div class="dropdown">
+								<h4>
+									• Lovina (Nord)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="h textcontent">
+								<p>La station de Lovina, située tout au Nord de Bali est fréquentée par les familles qui souhaitent un peu plus de calme que sur les plages du Sud.</p>
+								<p>La station offre des plages de sable noir, frangées de cocotiers, où il fait bon se baigner.</p>
+								<p>On peut aller à la rencontre des dauphins en partant à l’aube à bord de pirogues motorisées. Attention, ces sorties organisées sont devenues très touristiques.</p>
+							</div>
 
-            <div class="main-paragraph-wrapper">
-            <p>Parmi toutes les îles qui composent l’Indonésie, il en est une petite, <strong>véritable perle</strong> qui n’a cessé d’exciter l’imagination des voyageurs : Bali, paradis des Dieux… et des peuples ; terre des cérémonies et des offrandes, du sourire et de l’accueil.</p>
-            <p>A côté des <strong>paysages somptueux</strong>, il y a surtout une <strong>population gaie et paisible</strong>. Quand arrive la fin du jour, tous les balinais se baignent dans les rivières avec innocence et simplicité, on ne peut s’empêcher d’évoquer la notion de paradis terrestre.</p>
-            <p>Les balinais ont un sens inné de la <strong>beauté</strong> et leur <strong>hospitalité</strong> n’a d’égal que leur gentillesse. Ils vivent dans l’harmonie et leur spiritualité atteint même les européens les plus pragmatiques.</p>
-            <p>Ce qui frappe les esprits à Bali, c’est la force de leurs croyances : <strong>l’hindouisme</strong> de la population balinaise est unique au monde : c’est ce qui fait son charme et sa magie. Les balinais vivent leur religion quotidiennement et passent beaucoup de temps à faire des offrandes aux dieux, à se réunir lors de <strong>cérémonies</strong>, des processions ou de fêtes de temples, combats de coq ou réunions de village. Il ne se passe pas un jour sans qu’un village ou un temple soit en <strong>fête</strong> : longues processions dans les plus beaux atours et <strong>danses traditionnelles</strong> au son du gamelan.</p>
-            <p><strong>Les plages</strong> de Bali sont très variées : sable blond, noir ou gris, spots de surf ou de plongée, eaux plus ou moins calme ; il y en a aussi pour tous les styles : familiales, branchées, sauvages, etc.</p>
-            <p>Mais c’est <strong>au cœur de l’île</strong> que vous trouverez <strong>l’émerveillement</strong>, c’est en sillonnant les petites routes de rizières en terrasses où la vie quotidienne n’a pas changé depuis des siècles que vous serez pénétrés de la magie balinaise, de ses rites et de ses parfums enivrants.</p>
-            </div>
-        
-        </section>
+							<div class="dropdown">
+								<h4>
+									• Pemuteran (Nord-Ouest)</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="i textcontent">
+								<p>Au nord-ouest de Bali, Pemuteran est un petit village calme, bordé par une grande et belle plage de sable noir aux eaux tranquilles. En couple, en famille ou entre amis, plongeurs ou non, chacun y trouvera son bonheur (à part les amateurs de discothèques) !</p>
+								<p>Le village est également le point de départ idéal pour randonner dans le Parc National de Bali Barat et observer les singes, cerfs, iguanes, écureuils, sangliers, etc.) ; plonger ou faire du Snorkeling autour de l’île de Menjangan (les spots sont fabuleux !), se balader en kayak ou à cheval…</p>
+								<p>Au cœur du parc national, face à l’île de Menjangan se trouvent quelques éco-resorts, au bord de plages coraliennes de sable blanc avec de très beaux fonds sous-marins.</p>
+							</div>
+						</div>
 
-        {# section 6 - tours #}
+						<div>
+							<iframe src="https://www.google.com/maps/d/embed?mid=1EH0Q0gxQPSHvJl-tmBwSh7TU2bPoss3r" width="480" height="480"></iframe>
+						</div>
+					</div>
+				</div>
 
-        <section class="tours-section">
-            
-            <h3>Nos circuits à Bali</h3>
+				<div class="tab__content tab3">
+					<div class="text-map-sidebyside">
+						<div class="dropdown-list">
+							<div class="dropdown">
+								<h4>• Vélo</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
 
-            <div class="tours-cards">
-            {# To display several tours here:  #}
-                {# tour nº1 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 1 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/1.jpg') }}" alt="" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
+							<div class="a textcontent">
+								<p>Descente du volcan Batur à VÉLO ; balade dans les campagnes, à travers les villages et les rizières de Tabanan, à Blimbling, à Pemuteran et Sidemen ; promenade jusqu’au temple de Tanah Lot</p>
+							</div>
 
-                {# tour nº7 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 7 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/7.jpg') }}" alt="" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
+							<div class="dropdown">
+								<h4>• Randonnée & volcans</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
 
-                {# tour nº6 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 6 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/6.jpg') }}" alt="" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
+							<div class="b textcontent">
+								<p>L’ascension des VOLCANS Batur et Agung ; les randonnées dans la JUNGLE, les rizières ou les forêts de toute l’île… On peut se balader un peu partout sur l’île, Bali est un merveilleux terrain de randonnée !</p>
+							</div>
 
-        
-    
-    </div>
+							<div class="dropdown">
+								<h4>• Plongée & Snorkeling</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
 
-{% block javascripts %}
-     {{ parent() }}
-     {{ encore_entry_script_tags('island') }}
-{% endblock %}
+							<div class="c textcontent">
+								<p>Sur les sites d’AMED et de TULAMBEN ; dans le Parc National de MENJGANGAN, près de Pemuteran ; autours des îles de NUSA PENIDA et NUSA LEMBONGAN</p>
+							</div>
+
+							<div class="dropdown">
+								<h4>• Rafting, canyoning et cascades</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="d textcontent">
+								<p>Des sorties RAFTING à Ubud et à Sidemen ; du CANYONING près de Munduk ; baignade dans les CASCADES de la région Nord, à Gitgit, Sekumpul, Blimbilng, Munduk, etc.</p>
+							</div>
+
+							<div class="dropdown">
+								<h4>• Surf & kite surf</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="e textcontent">
+								<p>Les spots de KITE SURT de Sanur et NUSA DUA ; les nombreux spots de SURF du Bukit, de Kuta, Seminyak, Canggu, de Medewi, Nusa Lemongan, Keramas…</p>
+							</div>
+
+							<div class="dropdown">
+								<h4>• Sorties en bateau</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="f textcontent">
+								<p>Balade en PIROGUE à Lovina ; en PRAHU, petit bateau de pêcheur, à Amed ; en CATAMARAN à Nusa Lemongan ; sorties SNORKELING à Menjangan, Nusa Penida et Nusa Lembongan</p>
+							</div>
+
+							<div class="dropdown">
+								<h4>• Golf</h4>
+								<div class="icon">
+									<span class="btn">
+										<i class="fas fa-plus"></i>
+									</span>
+								</div>
+							</div>
+							<div class="g textcontent">
+								<p>3 parcours de golf de 18 trous à Bali : New Kuta Golf et Bali National Golf Club au sud, et Bali Handara Golf, au Nord, près de Bedugul</p>
+							</div>
+						</div>
+
+						<div>
+							<iframe src="https://www.google.com/maps/d/embed?mid=1cGaN0_usvU0rypAGwOmmBRMbNSDenATl" width="480" height="480"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab__content tab4">
+					<div class="text-map-sidebyside coutumes">
+						<div>
+							<p>Partout sur l'île, découvrez la culture balinaise et la vie quotidienne de ses habitants.</p>
+							<h4>• Artisanat</h4>
+							<p>Tous les balinais sont de grands artistes ! Travail du BOIS, de l’ARGENT, de l’OR, de la PIERRE autour d’Ubud ; la POTERIE à Tabanan ; les ateliers de TISSAGE d’Ikats, les tissus traditionnels, à Sidemen ; les PEINTRES et les SCULPTEURS à Ubud</p>
+
+							<h4>• Savoir-faire</h4>
+							<p>COURS de CUISINE balinaise, atelier de cosmétiques naturelles et de boissons à base de plantes médicinales (JAMUS) ; fabrication d’OFFRANDES ; découverte de la distillation de l’Arak, l’ALCOOL local ; ATELIERS d’INITIAITON à la fabrication d’huile de noix de coco et d’objet en noix de coco ; de torréfaction du café</p>
+
+							<h4>• Cérémonies</h4>
+							<p>Processions, offrandes, CÉRÉMONIES matinales au temple… elles sont partout à Bali et les visiteurs sont les bienvenus !</p>
+
+							<h4>• Soins & bien-être</h4>
+							<p>MASSAGE traditionnel balinais ; SOIN au spa ; cours de YOGA et de MÉDITATION ; GUÉRISSEUR traditionnel (balian) ; lecture des CHAKRAS.</p>
+							<p>Bali est le lieu idéal pour prendre soin de soi !</p>
+						</div>
+						<div>
+							<img src="{{ asset('../assets/images/icons/icon-whitehibiscusflower.png') }}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			{# section 5 - presentation #}
+			<section class="presentation">
+
+				<h3>Découvrez l’île de Bali</h3>
+
+				<div class="main-paragraph-wrapper">
+					<p>Parmi toutes les îles qui composent l’Indonésie, il en est une petite,
+						<strong>véritable perle</strong>
+						qui n’a cessé d’exciter l’imagination des voyageurs : Bali, paradis des Dieux… et des peuples ; terre des cérémonies et des offrandes, du sourire et de l’accueil.</p>
+					<p>A côté des
+						<strong>paysages somptueux</strong>, il y a surtout une
+						<strong>population gaie et paisible</strong>. Quand arrive la fin du jour, tous les balinais se baignent dans les rivières avec innocence et simplicité, on ne peut s’empêcher d’évoquer la notion de paradis terrestre.</p>
+					<p>Les balinais ont un sens inné de la
+						<strong>beauté</strong>
+						et leur
+						<strong>hospitalité</strong>
+						n’a d’égal que leur gentillesse. Ils vivent dans l’harmonie et leur spiritualité atteint même les européens les plus pragmatiques.</p>
+					<p>Ce qui frappe les esprits à Bali, c’est la force de leurs croyances :
+						<strong>l’hindouisme</strong>
+						de la population balinaise est unique au monde : c’est ce qui fait son charme et sa magie. Les balinais vivent leur religion quotidiennement et passent beaucoup de temps à faire des offrandes aux dieux, à se réunir lors de
+						<strong>cérémonies</strong>, des processions ou de fêtes de temples, combats de coq ou réunions de village. Il ne se passe pas un jour sans qu’un village ou un temple soit en
+						<strong>fête</strong>
+						: longues processions dans les plus beaux atours et
+						<strong>danses traditionnelles</strong>
+						au son du gamelan.</p>
+					<p>
+						<strong>Les plages</strong>
+						de Bali sont très variées : sable blond, noir ou gris, spots de surf ou de plongée, eaux plus ou moins calme ; il y en a aussi pour tous les styles : familiales, branchées, sauvages, etc.</p>
+					<p>Mais c’est
+						<strong>au cœur de l’île</strong>
+						que vous trouverez
+						<strong>l’émerveillement</strong>, c’est en sillonnant les petites routes de rizières en terrasses où la vie quotidienne n’a pas changé depuis des siècles que vous serez pénétrés de la magie balinaise, de ses rites et de ses parfums enivrants.</p>
+				</div>
+
+			</section>
+
+			{# section 6 - tours #}
+
+			<section class="tours-section">
+
+				<h3>Nos circuits à Bali</h3>
+
+				<div class="tours-cards">
+					{# To display several tours here:  #}
+					{# tour nº1 #}
+						{% for tour in tours %}
+							{% if tour.id == 1 %}
+								<figure
+								class="image-block"> {# <h3>{{ tour.islands }}</h3> #}
+								<img src="{{ asset('../assets/images/tours/1.jpg') }}" alt=""/>
+								<figcaption>
+									<h4>{{ tour.title }}</h4>
+									<p>{{ tour.description }}</p>
+									<p>À partir de
+										{{ tour.price }}
+										€ par personne</p>
+									<button>
+										Découvrez
+									</button>
+								</figcaption>
+							</figure>
+						{% endif %}
+					{% endfor %}
+
+					{# tour nº7 #}
+					{% for tour in tours %}
+						{% if tour.id == 7 %}
+							<figure
+								class="image-block">
+								{# <h3>{{ tour.islands }}</h3> #}
+								<img src="{{ asset('../assets/images/tours/7.jpg') }}" alt=""/>
+								<figcaption>
+									<h4>{{ tour.title }}</h4>
+									<p>{{ tour.description }}</p>
+									<p>À partir de
+										{{ tour.price }}
+										€ par personne</p>
+									<button>
+										Découvrez
+									</button>
+								</figcaption>
+							</figure>
+						{% endif %}
+					{% endfor %}
+
+					{# tour nº6 #}
+					{% for tour in tours %}
+						{% if tour.id == 6 %}
+							<figure
+								class="image-block">
+								{# <h3>{{ tour.islands }}</h3> #}
+								<img src="{{ asset('../assets/images/tours/6.jpg') }}" alt=""/>
+								<figcaption>
+									<h4>{{ tour.title }}</h4>
+									<p>{{ tour.description }}</p>
+									<p>À partir de
+										{{ tour.price }}
+										€ par personne</p>
+									<button>
+										Découvrez
+									</button>
+								</figcaption>
+							</figure>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</section>
+		</div>
+	</div>
+
+	{% block javascripts %}
+		{{ parent() }}
+		{{ encore_entry_script_tags('island') }}
+	{% endblock %}
 
 {% endblock %}
