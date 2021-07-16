@@ -198,11 +198,17 @@
     color: white;
   }
 
+  // special CSS for "Coutumes" tab on Bali Page
   .coutumes p{
     padding-right: 20rem;
   }
 
-  .coutumes img{
-    width: 100%;
+  .coutumes-icon{    
+    padding-right: 5rem;
+    padding-top: 2rem;
+
+      img{
+        width: 100%;
+      }
   }
 }
