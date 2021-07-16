@@ -13,8 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     regionPiece.classList.add('map-overlay');
                 });
 
-                
-
             })
 
             region.addEventListener('mouseleave', function(){
