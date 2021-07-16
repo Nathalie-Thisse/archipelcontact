@@ -1,0 +1,46 @@
+
+#construction{
+
+    padding: 3rem;
+
+    color: white;
+
+    height: 100%;
+
+    background-image: url("../../images/construction.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -19rem;
+
+        .fas{
+            margin-right: 1rem;
+        }
+
+        .center{
+            text-align: center;
+        }
+        h2{
+            padding: 0 !important;
+        }
+
+        img{
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        a{
+            color: white; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .border{
+            border: 0.05rem solid white;
+            margin: 10rem 35rem;
+            padding: 2rem 5rem;
+
+            a{
+                font-size: 1.5rem;
+            }
+        }
+}
