@@ -9,7 +9,7 @@ import Splide from '@splidejs/splide';
  		new Splide( '#image-slider', {
  			'cover'      : true,
  			'heightRatio': 0.5,
- 			'height' : '400px',
+ 			'height' : '500px',
  			'width' : '100%',
  			type   : 'loop',
  			autoplay : 'true',
@@ -19,8 +19,7 @@ import Splide from '@splidejs/splide';
 
 
 
-// ------ function for Smooth Scrolling Sticky ScrollSpy Navigation
-// https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/
+// ------ function Reviews Slider
 
 	// /* ========== SLIDER LOGIC ==========
 	// 1. Create selectors for the slider container, each slide, the next button and the previous button
