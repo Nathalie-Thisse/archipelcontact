@@ -11,8 +11,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
  	
 	new Splide( '#image-slider', {
  		'cover'      : true,
- 		'heightRatio': 0.5,
- 		'height' : '500px',
+ 		'height' : '800px',
  		'width' : '100%',
  		type   : 'loop',
  		autoplay : 'true',

@@ -8,8 +8,7 @@ import Splide from '@splidejs/splide';
  	document.addEventListener( 'DOMContentLoaded', function () {
  		new Splide( '#image-slider', {
  			'cover'      : true,
- 			'heightRatio': 0.5,
- 			'height' : '500px',
+ 			'height' : '600px',
  			'width' : '100%',
  			type   : 'loop',
  			autoplay : 'true',
