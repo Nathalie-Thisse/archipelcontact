@@ -7,13 +7,15 @@
 
 /* APP.SCSS */
 @import 'core/variables';
+@import 'core/general';
+@import 'core/breakpoints';
 
 @import 'components/map-indonesia';
 @import 'components/reviews-carousel';
 @import 'components/tab';
 @import 'components/tours-cards';
 
-@import 'core/general';
+
 @import 'layout/header';
 @import 'layout/homepage';
 @import 'layout/destinations';
