@@ -1,6 +1,5 @@
 
 #contact{
-
     padding-bottom: 8rem;
 }
 
@@ -28,12 +27,26 @@
     color: #ffffff;
     padding-top: 3rem;
 
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
         iframe{
             margin-right: 4.5rem;
+
+                @media only screen and (max-width: 767px) {
+                    margin-right: 0rem;
+                }
         }
 
         .location-details{
             margin-left: 4.5rem;
+
+                @media only screen and (max-width: 767px) {
+                    margin-left: 0rem;
+                    margin-top: 2rem;
+                }
         }
 
         h4{
@@ -66,13 +79,32 @@
     text-align: center;
     padding-top: 5rem;
 
+        @media only screen and (max-width: 767px) {
+            padding: 2rem 2rem;
+        }
+
         img{
             width: 45%;
             margin-top: 2rem;
+
+            @media only screen and (max-width: 767px) {
+                width: 80%;
+            }
         }
 } 
 
 
+@media only screen and (max-width: 767px) {   
+    .map-responsive{
+        width: 300px;
+        height: 300px;
+    }
+
+    .map-responsive iframe{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 
 
