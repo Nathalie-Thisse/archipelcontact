@@ -17,6 +17,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
  		autoplay : 'true',
  		type  : 'fade',
 		rewind: true,
+		isNavigation: true,
 	}).mount();
 
 

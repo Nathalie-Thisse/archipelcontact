@@ -21,25 +21,40 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 0;      
+        padding: 2rem 0; 
     }
 
     .article-description{
         width: 60%;
         text-align: justify;
+
+        @include media('<=phone') {
+            width: 80%;
+        }
     }
 
     .article-image{
         width: 35%;
+        
+            @include media('<=tablet') {
+                margin-top: 5rem;
+            }
+
+            @include media('<=phone') {
+                width: 100%;
+            }
     }
 
     .article-image img{
         width: 100%;
+
+            @include media('<=phone') {
+                width: 100%;
+            }
     }
 
     // css special for first article because of the photo size
     .article-first{
-
         
         .article-image{
             max-width: 300px;
@@ -48,15 +63,27 @@
 
     .article h4{
         padding-bottom: 1rem;
+
+        @include media('<=phone') {
+            margin: 1rem 0 !important; 
+        }
     }
    
     .article p, h4{
         text-align: left !important;
+
+        @include media('<=phone') {
+            text-align: center !important;
+        }
     }
 
     article:nth-child(odd){
         flex-direction: row-reverse;
         position: relative;
+
+        @include media('<=phone') {
+            flex-direction: column;
+        }
         
         &::before{
             content: "";
@@ -69,13 +96,25 @@
             height: 200px;
             top: 0rem;
             right: -2.5rem;
-            z-index: -1;    
+            z-index: -1;
+            
+                @include media('<=tablet') {
+                    top: 6rem;
+                }
+                
+                @include media('<=phone') {
+                    top: 5rem;
+                }      
         }
     }
 
     article:nth-child(even){
         
         position: relative;
+
+            @include media('<=phone') {
+                flex-direction: column;
+            }
         
         &::before{
             content: "";
@@ -89,6 +128,14 @@
             top: 0rem;
             left: -2rem;
             z-index: -1;    
+
+                @include media('<=tablet') {
+                    top: 8rem;
+                }
+
+                @include media('<=phone') {
+                    top: 5rem;
+                }      
         }
     }
 }
