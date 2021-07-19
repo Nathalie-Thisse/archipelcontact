@@ -96,6 +96,10 @@
       transform: translateY(-3px);
       color: white;
       /* border-radius: $tab-wrap-border-radius; */
+
+        @include media('<=phone') {          
+          padding: 1.5rem;
+    }   
     }
   }
 
@@ -105,7 +109,38 @@
       
       @include media('<=phone') {
         flex-direction: column;
+        align-items: center;
   }
+
+    // to makethe iframes responsive
+    .map-responsive{
+      width: 500px;
+      height: 450px;
+
+      @include media('<=tablet') {
+        width: 350px;
+        height: 280px;
+      }
+      @include media('<=phone') {
+        width: 300px;
+        height: 300px;
+        margin-top: 2rem;
+      }
+    }
+
+    .map-responsive iframe{
+      width: 500px;
+      height: 450px;
+
+      @include media('<=tablet') {
+        width: 350px;
+        height: 280px;
+      }
+      @include media('<=phone') {
+        width: 300px;
+        height: 300px;
+      }
+}
 
   .tab__content{    
     display: flex;
@@ -183,7 +218,11 @@
     text-align: left;
 
     p{
-      padding-right: 2rem;
+      padding: 0 2rem;
+
+        @include media('<=phone') {          
+          padding: 0 1rem;
+        }
     }
   }
   

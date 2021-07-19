@@ -5,6 +5,10 @@
     /** -------- General css for Island pages --------- **/
     text-align: center;
 
+        @include media('<=tablet') {
+            padding: 2rem;
+        } 
+
     /** -------- section 1 Introduction & 5 Presentation  --------- **/
 
     .introduction-paragraph{
@@ -53,12 +57,19 @@
         align-items: center;
         margin: 8rem 0;
 
+            @include media('<=tablet') {
+                margin: 4rem 0;
+            }
             @media only screen and (max-width: 767px) {
                 flex-direction: column;
             }
 
             .top-activities{
                 margin-right: 4rem;
+
+                    @include media('<=tablet') {
+                        margin-right: 2rem;
+                    }
             }
 
             h4{
@@ -75,6 +86,15 @@
             img{
                 max-width: 500px;
                 margin-left: 10rem;
+
+                    @include media('<=tablet') {
+                        margin-left: 2rem;
+                    }
+                    @include media('<=phone') {
+                        max-width: 400px;
+                        margin-left: 0rem;
+                        margin-top: 3rem;
+                    }
             }
  
         // ---------- css for TOP ACTIVITIES LIST
@@ -140,7 +160,6 @@
                 }
             }
         }
-
     } 
     
 
