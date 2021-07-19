@@ -11,28 +11,12 @@
 #reviews-carousel{
 
       .section-testimonials {
-        /* height: 100vh; */
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap; 
-        // background-image: url('../../images/icons/reviews/test2.jpg');
-        // background-repeat: no-repeat;
-        // background-size: 50%;
-        // background-position: bottom 130px right 9rem;
-        }
-        @media only screen and (max-width: 75em) {
-          .section-testimonials {
-            height: auto; } }
-        @media only screen and (max-width: 63em) {
-          .section-testimonials {
-            padding: 4rem 8rem;
-            background-size: 76%; } }
-        @media only screen and (max-width: 41em) {
-          .section-testimonials {
-            padding: 2.4rem;
-            align-items: flex-start; } }
+        flex-wrap: wrap;
+      } 
       
       @keyframes slideInNext {
         0% {
@@ -72,88 +56,66 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden; }
-        @media only screen and (max-width: 75em) {
-          .slider {
-            background-size: 48%; } }
-        @media only screen and (max-width: 63em) {
-          .slider {
-            padding: 0;
-            background-position: top center;
-            background-size: 62% auto;
-            align-items: flex-start; } }
-        @media only screen and (max-width: 52.5em) {
-          .slider {
-            background-size: 75% auto; } }
-        @media only screen and (max-width: 41em) {
-          .slider {
-            background-size: 100% auto; } }
+        overflow: hidden;     
+      }
+
+
         .slider__slides {
           width: 100%;
-          display: flex; }
-          @media only screen and (max-width: 63em) {
-            .slider__slides {
-              margin-top: 3rem; } }
+          display: flex;
+
+            @include media('<=tablet') {              
+              padding: 0;
+            }
+          }
+
         .slider__slide {
           padding: 0px 10rem;
           flex: 1 0 100%;
-          margin-right: 21.5rem; }
-          @media only screen and (max-width: 63em) {
-            .slider__slide {
-              flex: 1 0 100%; } }
+          margin-right: 21.5rem; 
+
+            @include media('<=tablet') {              
+              padding: 0;
+            }
+        }
+
         .slider__slide-content {
           display: flex;
           justify-content: center;
-          align-items: center; }
-          @media only screen and (max-width: 63em) {
-            .slider__slide-content {
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: center; } }
+          align-items: center;         
+        }
+
         .slider__buttons {
           flex: 0 0 auto;
           width: 10.2rem;
-         height: 3rem;
-          // box-shadow: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
+          height: 3rem;
           display: flex;
-          /* position: absolute;
-          bottom: 9.5%;
-          right: 36%;  */
           margin-top: 1.5rem;
           margin-bottom: 2rem;
           box-shadow: 0.25rem 0.25rem 0.6rem rgb(0 0 0 / 5%), 0 0.5rem 1.125rem rgb(75 0 0 / 5%);
           border-radius: 10px;
+
+            @include media('<=tablet') {              
+              margin-top: 0;              
+              margin-bottom: 1rem;
+          }
         }
 
-          @media only screen and (max-width: 75em) {
-            .slider__buttons {
-              bottom: 7.5%; } }
-          @media only screen and (max-width: 63em) {
-            .slider__buttons {
-              top: 41vw;
-              right: 50%;
-              transform: translateX(50%); } }
-          @media only screen and (max-width: 52.5em) {
-            .slider__buttons {
-              top: 48vw; } }
-          @media only screen and (max-width: 41em) {
-            .slider__buttons {
-              width: 8rem;
-              height: 4rem;
-              top: 70vw; } }
         .slider__button {
           flex: 0 0 50%;
-          // background-color: #fff;
           cursor: pointer;
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center; 
+        }
+
           .slider__button--prev {
             border-top-left-radius: 50%;
             border-bottom-left-radius: 50%; }
           .slider__button--next {
             border-top-right-radius: 50%;
             border-bottom-right-radius: 50%; }
+        
         .slider__button-icon {
           stroke: var(--dark-grayish-blue);
           transition: stroke 0.2s; }
@@ -169,90 +131,44 @@
           color: var(--dark-blue);
           flex: 0 1 80%;
           z-index: 1;
-          position: relative; }
-          @media only screen and (max-width: 63em) {
-            .testimonial__text {
-              order: 1;
-              flex: initial;
-              margin-right: 0;
-              margin-top: 13rem;
-              text-align: center; } }
-          @media only screen and (max-width: 41em) {
-            .testimonial__text {
-              margin-top: 7rem; } }
-          @media only screen and (max-width: 22.5em) {
-            .testimonial__text {
-              margin-top: 5rem; } }
+          position: relative; 
+        }        
+      }
+
         .testimonial__quotation-marks {
           position: absolute;
           top: -0.5rem;
           left: -4.5rem;
+
+            @include media('<=tablet') {              
+              top: -2.2rem;
+              left: -2.5rem;
+            }
         }
-          @media only screen and (max-width: 63em) {
-            .testimonial__quotation-marks {
-              left: 50%;
-              transform: translateX(-50%); } }
-          @media only screen and (max-width: 41em) {
-            .testimonial__quotation-marks {
-              width: 6rem;
-              height: 5rem;
-              top: -2.5rem; } }
-          @media only screen and (max-width: 22.5em) {
-            .testimonial__quotation-marks {
-              width: 4rem;
-              height: auto;
-              top: -1rem; } }
+
         .testimonial__quote {
           font-size: 1.1rem;
           font-weight: 300;
           line-height: 1.375;
-          margin-bottom: 3.2rem; }
-          @media only screen and (max-width: 75em) {
-            .testimonial__quote {
-              font-size: 1.3rem; } }
-          @media only screen and (max-width: 63em) {
-            .testimonial__quote {
-              font-size: 1.3rem; } }
-          @media only screen and (max-width: 52.5em) {
-            .testimonial__quote {
-              font-size: 1.3rem; } }
-          @media only screen and (max-width: 41em) {
-            .testimonial__quote {
-              font-size: 1.3rem;
-              margin-bottom: 1.9rem; } }
-          @media only screen and (max-width: 22.5em) {
-            .testimonial__quote {
-              font-size: 1.6rem;
-              margin-bottom: 1.5rem; } }
+          margin-bottom: 3.2rem;         
+        }
+
         .testimonial__cite {
           font-size: 1.1rem;
-          font-style: normal; }
-          @media only screen and (max-width: 75em) {
-            .testimonial__cite {
-              font-size: 1rem; } }
-          @media only screen and (max-width: 63em) {
-            .testimonial__cite {
-              font-size: 1rem; } }
-          @media only screen and (max-width: 63em) {
-            .testimonial__cite {
-              font-size: 1rem;
-              line-height: 1.5; } }
-          @media only screen and (max-width: 41em) {
-            .testimonial__cite {
-              font-size: 1rem;
-              line-height: 1.3; } }
-          @media only screen and (max-width: 22.5em) {
-            .testimonial__cite {
-              font-size: 1rem; } }
+          font-style: normal;
+          
+            @include media('<=tablet') {              
+              display: flex; 
+              flex-direction: column;
+            }
+        }
+
           .testimonial__cite--name {
             font-family: 'Beth Ellen', cursive;
             font-size: 1.2rem;
             font-weight: 700;
-            margin-right: 8px; }
-            @media only screen and (max-width: 75em) {
-              .testimonial__cite--name {
-                margin-right: 0;
-                display: block; } }
+            margin-right: 8px; 
+
           .testimonial__cite--role {
             color: var(--grayish-blue); 
             font-size: 1.1rem;
