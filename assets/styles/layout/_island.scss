@@ -15,6 +15,12 @@
         font-size: 1.2rem;
         padding: 0 10rem;
 
+        @media only screen and (max-width: 767px) {
+            flex-direction: column-reverse;
+            padding: 2rem;
+            text-align: center;
+        }
+
         img{
             width: 100%;
         }
@@ -22,6 +28,12 @@
         div:first-child{
            margin-right: 60px;
            width: 60%;
+           
+            @media only screen and (max-width: 767px) {
+                margin-right: 0px;
+                width: 100%;
+                padding-top: 2rem; 
+            }
         }
 
         div:last-child{
@@ -40,6 +52,10 @@
         justify-content: center;
         align-items: center;
         margin: 8rem 0;
+
+            @media only screen and (max-width: 767px) {
+                flex-direction: column;
+            }
 
             .top-activities{
                 margin-right: 4rem;
@@ -125,17 +141,19 @@
             }
         }
 
-    }
-    
+    } 
     
 
     /** -------- section 4 : Activities  --------- **/
 
-
-
     .activities-container >p{
         font-size: 1.05rem;
         padding: 0 16rem;
+
+        @media only screen and (max-width: 767px) {
+            padding: 3rem;
+            text-align: center;
+        }
     }
 
     .activities-container{
