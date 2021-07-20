@@ -1,0 +1,143 @@
+
+#tour{
+
+    // -------- SECTION 1 introduction -------- 
+    .introduction p{
+        padding: 0 10rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    // -------- SECTION 2 summary and map -------- 
+    .summaryandmap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+
+            @include media('<=tablet') {
+                margin: 4rem 0;
+            }
+            @media only screen and (max-width: 767px) {
+                flex-direction: column;
+            }
+
+            .summary{
+                margin-right: 4rem;
+
+                    @include media('<=tablet') {
+                        margin-right: 2rem;
+                    }
+            }
+
+            h4{
+                font-weight: bold;
+                margin-bottom: 2rem;
+                margin-top: 0.6rem;            }
+            
+            li{
+                text-align: left;
+                margin: 1rem auto;
+                font-size: 1.1rem;
+            }
+
+            iframe{
+                margin-left: 4rem;
+            }
+ 
+        // ---------- css for SUMMARY
+
+        /* box-shadow */
+        %boxshadow {
+        box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+        }
+
+        /*** STYLE ***/
+
+        ul.gradient-list {
+        counter-reset: gradient-counter;
+        list-style: none;
+        margin: 1.75rem 0;
+        padding-left: 1rem;
+
+            > li {
+                background: white;
+                border-radius: 0 0.5rem 0.5rem 0.5rem;
+                @extend %boxshadow;
+                counter-increment: gradient-counter;
+                margin-top: 1rem;
+                min-height: 3rem;
+                padding: 1rem 1rem 1rem 3rem;
+                position: relative;
+
+                &::before,
+                &::after {
+                background: linear-gradient(135deg, $light-green 0%,$light-green-plus 100%);
+                border-radius: 1rem 1rem 0 1rem;
+                content: '';
+                height: 3rem;
+                left: -1rem;
+                overflow: hidden;
+                position: absolute;
+                top: -1rem;
+                width: 3rem;
+                }
+                
+                &::before {
+                content: '✓';
+                align-items: center;
+                @extend %boxshadow;
+                color: white;
+                display: flex;
+                font: 900 1.5em/1 'Quicksand';
+                justify-content: center;
+                padding: 0.125em 0.25em;
+                z-index: 1;
+                }
+                @for $i from 1 through 5 {
+                &:nth-child(10n+#{$i}):before {
+                    background: linear-gradient(135deg, rgba($dark-green, $i * 0.2) 0%,rgba($light-green-plus, $i * 0.2) 100%);
+                }
+                }
+                @for $i from 6 through 10 {
+                &:nth-child(10n+#{$i}):before {
+                    background: linear-gradient(135deg, rgba($flashy-violet, 1 - (($i - 5) * 0.2)) 0%,rgba($light-green-plus, 1 - (($i - 5) * 0.2)) 100%);
+                }
+                }
+                + li {
+                margin-top: 2rem;
+                }
+            }
+        }
+    } 
+
+    //-------- SECTION 3 programme details -------- 
+    .programme-details{
+
+        display: flex;
+        flex-direction: column;
+
+        .programme-day{
+            display: flex;
+            margin-top: 2rem;
+            border-bottom: lightgrey solid 1px;
+
+            p:last-child{
+                font-style: italic;
+                padding-bottom: 1rem;
+            }
+        }    
+
+        .day-details{
+            width: 60%;
+        }
+
+        .day-photo{
+            width: 35%;
+
+            img{
+                width: 75%;
+            }
+        }
+    }
+}

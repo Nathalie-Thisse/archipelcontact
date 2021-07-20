@@ -1,11 +1,11 @@
 
-// tours cards : 3 cards to present serveral tours options, cliquable, they are displayed on Island Page, Tour Page. 
+// tours cards : 3 cards to present serveral tours options, cliquable, they are displayed on ISLAND Page and on TOURS Page. 
 
 .tours-section{
     display: flex;
     flex-direction: column;
     
-      .tours-cards{
+      	.tours-cards{
           display: flex;
           justify-content: center;
 
@@ -15,6 +15,13 @@
 			}	
     }
 }
+
+// special Wrap css for TOURS page
+#tours .tours-cards{
+	flex-wrap: wrap;
+}
+
+
 
 $base-duration: 500ms;
 
@@ -46,15 +53,16 @@ $base-duration: 500ms;
 		}
 	}
 
-	h3 {
-		position: absolute;
-		top: 110px;
-		left: 20px; 
-		margin: 0;
-		color: white;
-		font-weight: 100;
-		line-height: 1;
-	}
+	// h3 {
+	// 	position: absolute;
+	// 	top: 110px;
+	// 	left: 20px; 
+	// 	margin: 0;
+	// 	color: white;
+	// 	font-weight: 100;
+	// 	line-height: 1;
+	// 	text-align: center;
+	// }
 
 	img {
 		height: 100%;

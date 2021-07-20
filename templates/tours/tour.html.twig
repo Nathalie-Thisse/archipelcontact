@@ -5,28 +5,59 @@
 {% block body %}
 
     <div id="tour" class="wrapper">
-        <h1>{{ tour.title }}</h1>
-        <p>{{ tour.description }}</p>
 
-        <div>
-            <p>Durée : {{ tour.duration }}</p>
-            <p>Ile(s) visitée(s) : {{ tour.islands }}</p>
-            <p>Prix : à partir de {{ tour.price }} € par personne</p>
-        </div>
+        {# section 2 - introduction #}
+        <section class="introduction">
+            <h2>{{ tour.title }}</h2>
+            <div>
+                <p>{{ tour.description }}</p>
+            </div>
 
-        <iframe src="{{ tour.map }}" width="320" height="240"></iframe>
+        </section>
 
+        {# section 2 - summary & map #}
+        <section class="summaryandmap">                
+            <div class="summary">
+                <ul class="gradient-list">
+                    <li>Durée : {{ tour.duration }} nuits</li>
+                    <li>Iles visitées : {{ tour.islands }}</li>
+                    <li>Prix : à partir de {{ tour.price }} € par personne</li>
+                </ul>
+            </div>
+
+            <div class="map-responsive">
+                <iframe src="{{ tour.map }}" width="500" height="300"></iframe>
+            </div>
+        </section>
+
+        {# section 3 - programme details #}
         {# {{ dump(days) }} #}
 
-        <ul>        
-            {% for day in tour.days %}
-                <li>{{ day.title }}</li>
-                <li>{{ day.description }}</li>
-                <li>{{ day.photo }}</li>
-                <li>{{ day.hotel }}</li>
-            {% endfor %} 
-        </ul>
+        <section class="programme-details">
 
+            <h3>Détails du circuit : </br>
+                {{ tour.title }}</h3>
+
+            {% for day in tour.days %}
+
+            <div class="programme-day">
+
+                <div class="day-details"> 
+                    <h4>{{ day.title }}</h4>             
+                    <p>{{ day.description }}</p>                
+                    <p>{{ day.hotel }}</p>
+                </div>
+
+                <div class="day-photo">
+                    {# <img src="{{ day.photo }}" alt=""> #}
+                    <img src="{{ asset('../assets/images/tours/programme1/tanah-lot.jpg') }}" alt="">               
+                </div>
+            </div>
+
+            {% endfor %}
+        </section>
+
+        {# section 4 - final information #}
         <p>Prix : à partir de {{ tour.price }} €</p>
         <p>Note: prix en basse saison, en hôtel de charme de type 3*</p>
         <p>Notre prix comprend : {{ tour.included }}</p>

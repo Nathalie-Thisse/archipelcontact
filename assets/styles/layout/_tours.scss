@@ -1,0 +1,16 @@
+
+
+#tours{
+    text-align: center;
+
+        @include media('<=tablet') {
+            padding: 2rem;
+        } 
+
+    
+    .introduction p{
+        padding: 0 20rem;
+        font-size: 1.3rem;
+    }
+}
+
