@@ -9,6 +9,22 @@
     }    
 }
 
+#information .news{
+
+    padding: 0 15rem;
+    
+    h4{
+        border-top: solid black 1px;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    p:last-of-type{        
+        border-bottom: solid black 1px;
+        padding-bottom: 1rem;
+    }
+}
+
 
 
 /** ------- SIDEBAR CSS ON INFORMATION PAGE ------- **/
