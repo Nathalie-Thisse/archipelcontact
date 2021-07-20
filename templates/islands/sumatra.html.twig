@@ -211,9 +211,9 @@
                                 <h4>{{ tour.title }}</h4>
                                 <p>{{ tour.description }}</p>
                                 <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
+                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+									Découvrez
+								</button></a>
                             </figcaption>
                         </figure>
                     {% endif %}
@@ -229,9 +229,9 @@
                                 <h4>{{ tour.title }}</h4>
                                 <p>{{ tour.description }}</p>
                                 <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
+                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+									Découvrez
+								</button></a>
                             </figcaption>
                         </figure>
                     {% endif %}
@@ -247,9 +247,9 @@
                                 <h4>{{ tour.title }}</h4>
                                 <p>{{ tour.description }}</p>
                                 <p>À partir de {{ tour.price }} € par personne</p>
-                                <button>
-                                    Découvrez
-                                </button>
+                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+									Découvrez
+								</button></a>
                             </figcaption>
                         </figure>
                     {% endif %}
