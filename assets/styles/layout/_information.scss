@@ -7,11 +7,23 @@
         text-align: center;
         font-size: 1.3rem;
     }    
+
+    @include media('<=phone') {
+        h2{
+            line-height: 4.5rem;
+            margin: 0 2rem !important;
+            padding-top: 0rem;
+        }
+    }
 }
 
 #information .news{
 
     margin: 0 15rem;
+
+        @include media('<=phone') {
+            margin: 0 2rem;
+        }
     
     h4{
         border-top: solid black 1px;
