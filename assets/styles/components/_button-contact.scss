@@ -1,0 +1,20 @@
+
+// buttons on Tours and Tour Pages linking to Contact Page 
+	
+	.button-contact {
+		text-align: center;
+
+		button{
+			margin: 15px 81px;
+			padding: 10px 30px;
+			background-color: $medium-green;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-size: 1.1rem;
+		}
+
+		button:hover{		
+			background-color: $medium-violet;
+		}
+}
