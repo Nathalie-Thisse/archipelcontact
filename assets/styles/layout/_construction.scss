@@ -5,12 +5,15 @@
 
     color: white;
 
-    height: 100%;
-
     background-image: url("../../images/construction.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: -19rem;
+
+        @include media('<=tablet') {
+            background-size: cover;
+            background-position-y: 0;
+        }
 
         .fas{
             margin-right: 1rem;
@@ -21,6 +24,10 @@
         }
         h2{
             padding: 0 !important;
+
+            @include media('<=tablet') {                    
+                padding: 4rem !important;
+            }
         }
 
         img{
@@ -38,6 +45,15 @@
             border: 0.05rem solid white;
             margin: 10rem 35rem;
             padding: 2rem 5rem;
+            
+            @include media('<=tablet') {                    
+                padding: 2rem 5rem;
+                margin: 10rem 15rem;
+            }
+
+            @include media('<=phone') {    
+                margin: 5rem 3rem;
+            }
 
             a{
                 font-size: 1.5rem;
