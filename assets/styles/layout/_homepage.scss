@@ -22,16 +22,40 @@
 
 .home-presentation{ 
     .news-box {
-        position: relative;
-        margin: 40px auto;
-        width: 400px;
-        height: 350px;
+        position: absolute;
+        width: 250px;
+        height: 250px;
         background: #EFEFEF;
         border-radius: 2px;
-      }
+        left: 77rem;
+        top: 67rem;
+        padding: 1.5rem;
+        
+            h4{
+                font-family: 'Aleo';
+                font-weight: bold;
+                margin-bottom: 1rem !important; 
+            }
+        
+            h5{
+                font-size: 1.1rem;
+            }
+        
+            h6{
+                margin: 1.5rem auto;
+            }
+            
+            a{
+                color: black;        
+            }
+        
+            a:hover{
+                color: $flashy-violet;
+            }
+    }
       
-      .news-box::before,
-      .news-box::after {
+    .news-box::before,
+    .news-box::after {
         content: '';
         position: absolute;
         bottom: 10px;
@@ -40,34 +64,31 @@
         box-shadow: 0 5px 14px rgba(0,0,0,.7);
         z-index: -1;
         transition: all .3s ease-in-out;
-      }
-      
-      .news-box::before {
+    }
+    
+    .news-box::before {
         left: 15px;
         transform: skew(-5deg) rotate(-5deg);
-      }
-      
-      .news-box::after {
+    }
+    
+    .news-box::after {
         right: 15px;
         transform: skew(5deg) rotate(5deg);
-      }
-      
-      .news-box:hover::before,
-      .news-box:hover::after {
+    }
+    
+    .news-box:hover::before,
+    .news-box:hover::after {
         box-shadow: 0 2px 14px rgba(0,0,0,.4);
-      }
-      
-      .news-box:hover::before {
+    }
+    
+    .news-box:hover::before {
         left: 5px;
-      }
-      
-      .news-box:hover::after {
+    }
+    
+    .news-box:hover::after {
         right: 5px;
-      }
+    }
 
-        a{
-            color: black; 
-        }
 }
 
 
