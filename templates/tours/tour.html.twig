@@ -57,12 +57,26 @@
             {% endfor %}
         </section>
 
-        {# section 4 - final information #}
-        <p>Prix : à partir de {{ tour.price }} €</p>
-        <p>Note: prix en basse saison, en hôtel de charme de type 3*</p>
-        <p>Notre prix comprend : {{ tour.included }}</p>
-        <p>Notre prix ne comprend pas : {{ tour.notIncluded }}</p>
+        {# section 4 - final information and sales conditions #}
+        <section class="conditions">
+            <div class="price">
+                <h4>Nos conditions</h4>
+                <p>Prix : à partir de {{ tour.price }} €</p>
+                <p>Note : prix en basse saison, base 2 personnes, en hôtel de charme de type 3*</p>
+            </div>
+            
+            <div class="price-included">
+                <div>
+                    <p><i class="fas fa-check"></i>Nos prix comprennent</p>
+                    <p>{{ tour.included }}</p>
+                </div>
 
+                <div>
+                    <p><i class="fas fa-times"></i>Nos prix ne comprennent pas</p>
+                    <p>{{ tour.notIncluded }}</p>
+                </div>
+            </div>
+        </section>
     </div>
 
 {% endblock %}

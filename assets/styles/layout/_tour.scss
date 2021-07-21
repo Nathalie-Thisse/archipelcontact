@@ -117,6 +117,10 @@
         display: flex;
         flex-direction: column;
 
+        h3{
+            line-height: 4.5rem !important;
+        }
+
         .programme-day{
             display: flex;
             margin-top: 2rem;
@@ -130,14 +134,57 @@
 
         .day-details{
             width: 60%;
+            padding-left: 2rem;
         }
 
         .day-photo{
-            width: 35%;
+            width: 35%;            
+            text-align: right;
+            align-self: flex-end;
+            padding-bottom: 2rem;            
 
             img{
                 width: 75%;
             }
         }
     }
+
+    //-------- SECTION 4 final information and sales conditions -------- 
+
+    .conditions{
+
+        .price{
+            margin-left: 2rem;
+
+            >p{
+                font-size: 1.1rem;
+            }
+        }
+
+        .price-included{
+            display: flex;
+            margin-top: 4rem;
+
+            .fas{
+                margin-right: 1rem;
+            }
+
+            .fa-check{
+                color: #7ACD3C;
+            }
+
+            .fa-times{
+                color: #FC8271;
+            }
+
+            div{
+                width: 50%;
+                border: lightgrey solid 1px;
+                padding: 2rem;
+                padding-right: 5rem;
+            }
+        }
+    }
+
+
 }
