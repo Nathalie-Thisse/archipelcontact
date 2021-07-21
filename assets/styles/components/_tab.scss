@@ -112,10 +112,10 @@
         align-items: center;
   }
 
-    // to makethe iframes responsive
+    // to makethe iframes responsive : resizing div + iframe (below)
     .map-responsive{
       width: 500px;
-      height: 450px;
+      height: 350px;
 
       @include media('<=tablet') {
         width: 350px;
@@ -130,7 +130,7 @@
 
     .map-responsive iframe{
       width: 500px;
-      height: 450px;
+      height: 350px;
 
       @include media('<=tablet') {
         width: 350px;
