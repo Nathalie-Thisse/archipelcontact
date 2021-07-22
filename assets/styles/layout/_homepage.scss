@@ -14,20 +14,13 @@
     align-items: center;
 }
 
-.news-flexbox{
-        display: flex;
-}
-
-
 .home-presentation{ 
     .news-box {
-        position: absolute;
+        position: relative;
         width: 250px;
         height: 250px;
         background: #EFEFEF;
         border-radius: 2px;
-        left: 77rem;
-        top: 67rem;
         padding: 1.5rem;
         
             h4{
