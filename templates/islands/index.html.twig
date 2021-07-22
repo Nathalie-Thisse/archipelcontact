@@ -8,56 +8,9 @@
 
         <h2>Nos destinations</h2>
         
-        <section class='home-destinations'> 
+        <section class='destinations'> 
             
-            <div class="home-destinations--blocks">
-
-                <a href="{{ path('bali') }}">
-                    <div class="home-destinations--block"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
-                        <div class="text">
-                        <h4>Bali</h4>
-                        <div class="divider"></div>
-                        <p>L'île des dieux</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="{{ path('java') }}">
-                    <div class="home-destinations--block"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
-                        <div class="text">
-                        <h4>Java</h4>
-                        <div class="divider"></div>
-                        <p>Terre des volcans</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="{{ path('lombok') }}">
-                    <div class="home-destinations--block"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
-                        <div class="text">
-                        <h4>Lombok</h4>
-                        <div class="divider"></div>
-                        <p>Entre rizières et sables</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="{{ path('sulawesi') }}">
-                    <div class="home-destinations--block"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
-                        <div class="text">
-                        <h4>Sulawesi</h4>
-                        <div class="divider"></div>
-                        <p>L'île aux 1000 visages</p>
-                        </div>
-                    </div>
-                </a>
-
-                
-            </div>
+            
             <div class='destinations-map'>
 
 
@@ -864,7 +817,7 @@
                 </svg>
 
 
-                <div class="destination-map--details">
+                {# <div class="destination-map--details">
                     <div> 
                         <h4>Survolez les différentes îles</h4>
 
@@ -884,53 +837,85 @@
                         <p class="region-detail"></p>
                         <a href=""></a>
                     </div>
-                </div>
+                </div> #}
 
             </div>
 
 
-            <div class="home-destinations--blocks">
+            <div class="destinations--blocks">
+
+            
+                <a href="{{ path('bali') }}">
+                    <div class="destinations--block"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
+                        <div class="text">
+                        <h4>Bali</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ path('java') }}">
+                    <div class="destinations--block"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
+                        <div class="text">
+                        <h4>Java</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ path('lombok') }}">
+                    <div class="destinations--block"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
+                        <div class="text">
+                        <h4>Lombok</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ path('sulawesi') }}">
+                    <div class="destinations--block"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
+                        <div class="text">
+                        <h4>Sulawesi</h4>
+                        </div>
+                    </div>
+                </a>
+
+                
+            
 
                 <a href="{{ path('flores') }}">
-                    <div class="home-destinations--block"> 
+                    <div class="destinations--block"> 
                         <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}' alt="Komodo et Flores"/>
                         <div class="text">
                         <h4>Komodo Flores</h4>
-                        <div class="divider"></div>
-                        <p>Paradis authentiques</p>
                         </div>
                     </div>
                 </a>
 
                 <a href="{{ path('sumba') }}">
-                    <div class="home-destinations--block"> 
+                    <div class="destinations--block"> 
                         <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}' alt="Sumba"/>
                         <div class="text">
                         <h4>Sumba</h4>
-                        <div class="divider"></div>
-                        <p>La Mystérieuse</p>
                         </div>
                     </div>
                 </a>
 
                 <a href="{{ path('sumatra') }}">
-                    <div class="home-destinations--block"> 
+                    <div class="destinations--block"> 
                         <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
                         <div class="text">
                         <h4>Sumatra</h4>
-                        <div class="divider"></div>
-                        <p>Entre jungle et tribus</p>
                         </div>
                     </div>
                 </a>
 
                 <a href="{{ path('kalimantan') }}">
-                    <div class="home-destinations--block"> 
+                    <div class="destinations--block"> 
                         <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
                         <div class="text">
                         <h4>Kalimantan</h4>
-                        <div class="divider"></div>
-                        <p>La Sauvage</p>
                         </div>
                     </div>
                 </a>
