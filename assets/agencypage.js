@@ -7,17 +7,26 @@ import Splide from '@splidejs/splide';
 
 	document.addEventListener( 'DOMContentLoaded', function () {
 
-		new Splide( '#image-slideragency', {
+		new Splide('#image-slideragency', {
 			'cover'      : true,
 			'heightRatio': 0.5,
 			'height' : '200px',
 			'width' : '100%',
+			//responsive slider: 
 			perPage: 4,
+				breakpoints: {
+					640: {
+						perPage: 2,
+					},
+				},
+			
 			perMove: 1,
 			'gap' : '1rem',
 			autoplay : 'true',
 			type   : 'loop',
 		} ).mount();
+
+		
 } );
 	
 
