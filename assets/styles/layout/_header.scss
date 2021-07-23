@@ -67,6 +67,7 @@
 
 .hamburger {
     display: none;
+	padding-right: 20px;
 
 
 	.bar {
@@ -86,7 +87,6 @@
     justify-content: space-between;
     align-items: center;
 	margin: 0 !important;
-	width: 80%;
 
 	.nav-link{
 		font-size: 1.3rem;
