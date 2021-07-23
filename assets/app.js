@@ -35,6 +35,33 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+/* Transparent navbar when scrolling on tablet or phone */
+
+let mediaQueryList = window.matchMedia('(max-width: 990px)');
+const navbar = document.querySelector('.nav-bar');
+let topOfNav = navbar.offsetTop;
+
+if (mediaQueryList.matches) {
+
+   
+    
+    function transparentNav(){
+        if (window.scrollY >= topOfNav) {
+            navbar.style.backgroundColor = "#41216442"; 
+        }
+        else{
+            navbar.style.backgroundColor = "#7867D0";
+        }
+
+    }
+
+    window.addEventListener('scroll', transparentNav);
+
+}
+
+
+
 /// Cookies
 
     /* common fuctions */
