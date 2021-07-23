@@ -1,11 +1,20 @@
 
 #tour{
 
+    @include media('<=tablet') {
+        margin: 0 2rem;
+    }
+
     // -------- SECTION 1 introduction -------- 
     .introduction p{
         padding: 0 10rem;
         font-size: 1.3rem;
         text-align: center;
+
+        @include media('<=phone') {
+            margin: 0 2rem;
+            padding: 0;
+        }
     }
     
     // -------- SECTION 2 summary and map -------- 
@@ -16,9 +25,9 @@
         margin: 2rem 0;
 
             @include media('<=tablet') {
-                margin: 4rem 0;
+                margin: 2rem 0rem;
             }
-            @media only screen and (max-width: 767px) {
+            @include media('<=phone') {
                 flex-direction: column;
             }
 
@@ -41,8 +50,29 @@
                 font-size: 1.1rem;
             }
 
-            iframe{
+            // to makethe iframes responsive
+            .map-responsive{
+                width: 400px;
+                height: 350px;
+
+                    @include media('<=tablet') {
+                        width: 400px;
+                        height: 300px;
+                        margin-top: 2rem;
+                    }
+            }
+
+            .map-responsive iframe{
+                width: 400px;
+                height: 350px;
                 margin-left: 4rem;
+
+                    @include media('<=tablet') {
+                        width: 400px;
+                        height: 300px;
+                        margin-left: 0;
+                    }
+
             }
  
         // ---------- css for SUMMARY
@@ -126,6 +156,10 @@
             margin-top: 2rem;
             border-bottom: lightgrey solid 1px;
 
+                @include media('<=phone') {
+                    flex-direction: column;
+                }
+
             p:last-child{
                 font-style: italic;
                 padding-bottom: 1rem;
@@ -135,16 +169,30 @@
         .day-details{
             width: 60%;
             padding-left: 2rem;
+
+            @include media('<=phone') {
+                width: 100%;
+                padding-left: 0;
+            }
         }
 
         .day-photo{
             width: 35%;            
             text-align: right;
             align-self: flex-end;
-            padding-bottom: 2rem;            
+            padding-bottom: 2rem;
+            
+                @include media('<=phone') {
+                    width: 100%;
+                    text-align: center;
+                }
 
             img{
                 width: 75%;
+
+                    @include media('<=phone') {
+                        width: 60%;
+                    }
             }
         }
     }
@@ -156,14 +204,18 @@
         .price{
             margin-left: 2rem;
 
-            >p{
-                font-size: 1.1rem;
+            p:first-of-type{
+                font-size: 1.2rem;
             }
         }
 
         .price-included{
             display: flex;
             margin-top: 4rem;
+
+                @include media('<=phone') {
+                    flex-direction: column;
+                }
 
             .fas{
                 margin-right: 1rem;
@@ -178,11 +230,31 @@
             }
 
             div{
-                width: 50%;
-                border: lightgrey solid 1px;
+                width: 50%;                
                 padding: 2rem;
                 padding-right: 5rem;
+
+                    @include media('<=phone') {
+                        width: 100%;                
+                        padding: 2rem;
+                    }
             }
+
+                div:first-of-type{
+                    border-top: lightgrey solid 1px;
+                    border-left: lightgrey solid 1px;  
+                    border-right: lightgrey solid 1px;
+                    
+                        @include media('<=phone') {
+                            border-bottom: lightgrey solid 1px;
+                            border-left: lightgrey solid 1px;  
+                            border-right: lightgrey solid 1px;
+                        }
+                }
+
+                div:last-of-type{
+                    border: lightgrey solid 1px;                       
+                }
         }
     }
 
