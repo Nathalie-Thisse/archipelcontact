@@ -59,6 +59,7 @@
         .article-image{
             max-width: 300px;
         }      
+
     }
 
     .article h4{
@@ -77,7 +78,40 @@
         }
     }
 
-    article:nth-child(odd){
+    article:first-child{
+        flex-direction: row-reverse;
+        position: relative;
+
+        @include media('<=phone') {
+            flex-direction: column;
+        }
+        
+        &::before{
+            content: "";
+            display: block;
+            position: absolute; 
+            background-image: url('/assets/images/agency/batik1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80px;
+            height: 200px;
+            top: 0rem;
+            right: -2.5rem;
+            z-index: -1;
+            
+                @include media('<=tablet') {
+                    top: 5rem;
+                    right: -2rem;
+                }
+                
+                @include media('<=phone') {
+                    top: 5rem;
+                    right: 9rem;
+                }      
+        }
+    }
+
+    article:nth-child(odd):not(article:first-child){
         flex-direction: row-reverse;
         position: relative;
 
