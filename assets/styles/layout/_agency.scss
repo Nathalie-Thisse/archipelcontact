@@ -53,65 +53,8 @@
             }
     }
 
-    // css special for first article because of the photo size
-    .article-first{
-        
-        .article-image{
-            max-width: 300px;
-        }      
-
-    }
-
-    .article h4{
-        padding-bottom: 1rem;
-
-        @include media('<=phone') {
-            margin: 1rem 0 !important; 
-        }
-    }
-   
-    .article p, h4{
-        text-align: left !important;
-
-        @include media('<=phone') {
-            text-align: center !important;
-        }
-    }
-
-    article:first-child{
-        flex-direction: row-reverse;
-        position: relative;
-
-        @include media('<=phone') {
-            flex-direction: column;
-        }
-        
-        &::before{
-            content: "";
-            display: block;
-            position: absolute; 
-            background-image: url('/assets/images/agency/batik1.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 80px;
-            height: 200px;
-            top: 0rem;
-            right: -2.5rem;
-            z-index: -1;
-            
-                @include media('<=tablet') {
-                    top: 5rem;
-                    right: -2rem;
-                }
-                
-                @include media('<=phone') {
-                    top: 5rem;
-                    right: 9rem;
-                }      
-        }
-    }
-
-    article:nth-child(odd):not(article:first-child){
+    // batik decoration next to photos
+    article:nth-child(odd){
         flex-direction: row-reverse;
         position: relative;
 
@@ -142,8 +85,7 @@
         }
     }
 
-    article:nth-child(even){
-        
+    article:nth-child(even){        
         position: relative;
 
             @include media('<=phone') {
