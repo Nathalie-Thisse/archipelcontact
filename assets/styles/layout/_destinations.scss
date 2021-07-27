@@ -111,12 +111,14 @@
     }
 
     svg{
-        width: 80%;
+        height: 340px;
+        width: 850px;
     }
 
     @include media('<=big-laptop'){
         svg{
-            width: 60%;
+            width: 600px;
+            height: 240px;
         }
     }
 
@@ -124,7 +126,6 @@
 
 
 .map-overlay{
-	/* filter: brightness(150%); */
     cursor: pointer;
     fill: $dark-violet;
 }
