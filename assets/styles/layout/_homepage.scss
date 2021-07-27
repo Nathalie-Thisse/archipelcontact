@@ -18,8 +18,8 @@
 .home-presentation{ 
     .news-box {
         position: absolute;
-        width: 250px;
-        height: 250px;
+        width: 215px;
+        height: 215px;
         background: #EFEFEF;
         border-radius: 2px;
         padding: 1.5rem;
@@ -34,21 +34,25 @@
 
         }
 
+        @include media('=>big-laptop') {
+            top: 5;
+            right: -1;
+        }
+
         
             h4{
                 font-family: 'Aleo';
                 font-weight: bold;
-                margin-bottom: 1rem !important; 
+                font-size: 1.15rem;
+                line-height: 2rem !important;
+                margin-bottom: 0.7rem !important;
             }
         
             h5{
-                font-size: 1.1rem;
+                font-size: 1.1rem;                
+                margin-bottom: 1.5rem !important; 
             }
-        
-            h6{
-                margin: 1.5rem auto;
-            }
-            
+                    
             a{
                 color: black;        
             }
