@@ -4,32 +4,46 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     /* Function to animate the Indonesian map with the blocks */
-    function mapAnimation(className, blockName){
+    function mapAnimation(regionName, blockName){
 
         blockName = document.querySelector(blockName);
 
-        /* select all the svg parts that have the same class */
-        region = document.querySelectorAll(className).forEach(region => {
+        function eventListenerAddClass(element){
 
-            /* add a class when hovered */
-            region.addEventListener('mouseover', function(){
-                document.querySelectorAll(className).forEach(regionPiece => {
+            element.addEventListener('mouseover', function(){
+                document.querySelectorAll(regionName).forEach(regionPiece => {
                     regionPiece.classList.add('map-overlay');
                     blockName.classList.add('block-overlay');
                 });
-
             })
+        }
 
-            /* remove a class when hovered */
-            region.addEventListener('mouseleave', function(){
-                document.querySelectorAll(className).forEach(regionPiece => {
+        function eventListenerRemoveClass(element){
+
+            element.addEventListener('mouseleave', function(){
+                document.querySelectorAll(regionName).forEach(regionPiece => {
                     regionPiece.classList.remove('map-overlay');
                     blockName.classList.remove('block-overlay');
-                })
+                });
             })
+        }
+       
 
+        /* select all the svg parts that have the same class */
+        region = document.querySelectorAll(regionName).forEach(region => {
+
+            /* add a class when hovered */
+            eventListenerAddClass(region);
+            eventListenerAddClass(blockName);
+
+            /* remove a class when hovered */
+            eventListenerRemoveClass(region);
+            eventListenerRemoveClass(blockName);
+           
         })
     }
+
+    
 
     /* call the function on all the islands */
     mapAnimation('.map-sumatra', '.block-sumatra');
