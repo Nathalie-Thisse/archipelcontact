@@ -4,23 +4,25 @@
 
 {% block body %}
 
-    <div id="island" class="wrapper">
+    <div id="island">
     
-        {# section 1 - introduction #}
-        <section class="introduction">
-            <h2 id="sumba-title">Sumba</h2>
-            <h4>La mystérieuse</h4>
-            <div class="introduction-paragraph">
-                <div class=''>
-                    <p>Sumba est une île captivante autant au niveau de sa culture que de ses paysages magnifiques et à couper le souffle !</p>
-                    <p>Il faut savoir s’arrêter pour l’apprécier car le temps lui-même s’est arrêté à Sumba. C’est le calme qui domine, on est loin de notre vie moderne et de nos repères, et c’est ce qui fait du bien.</p>
-                    <p>Ici, c’est la nature, les chamans et les esprits qui décident, mais on se laissera facilement emporter par l’atmosphère mystique qui y règne et la beauté des paysages. Forêts, bambous, champs de maïs, rizières, acacias, et au bord : des plages somptueuses et sauvages !</p>
+        <div class="wrapper">
+            {# section 1 - introduction #}
+            <section class="introduction">
+                <h2 id="sumba-title">Sumba</h2>
+                <h4>La mystérieuse</h4>
+                <div class="introduction-paragraph">
+                    <div class=''>
+                        <p>Sumba est une île captivante autant au niveau de sa culture que de ses paysages magnifiques et à couper le souffle !</p>
+                        <p>Il faut savoir s’arrêter pour l’apprécier car le temps lui-même s’est arrêté à Sumba. C’est le calme qui domine, on est loin de notre vie moderne et de nos repères, et c’est ce qui fait du bien.</p>
+                        <p>Ici, c’est la nature, les chamans et les esprits qui décident, mais on se laissera facilement emporter par l’atmosphère mystique qui y règne et la beauté des paysages. Forêts, bambous, champs de maïs, rizières, acacias, et au bord : des plages somptueuses et sauvages !</p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('../assets/images/sumbapage/horse.png') }}" alt="Cheval">
+                    </div>
                 </div>
-                <div>
-                    <img src="{{ asset('../assets/images/sumbapage/horse.png') }}" alt="Cheval">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
 
         {# section 2 - photo carousel #}        
@@ -51,282 +53,283 @@
             </div>
         </section>
         
-        {# section 3 - top activites & map #}    
-        <section class="topandmap">
-            <div class="top-activities">
-                <h4>Top des activités à Sumba</h4>
+        <div class="wrapper">
+            {# section 3 - top activites & map #}    
+            <section class="topandmap">
+                <div class="top-activities">
+                    <h4>Top des activités à Sumba</h4>
 
-                <ol class="gradient-list">
-                    <li>Vie traditionnelle</li>
-                    <li>Découvertes des coutumes</li>
-                    <li>Paysages & nature sauvage</li>
-                </ol>
-            </div>            
+                    <ol class="gradient-list">
+                        <li>Vie traditionnelle</li>
+                        <li>Découvertes des coutumes</li>
+                        <li>Paysages & nature sauvage</li>
+                    </ol>
+                </div>            
 
-            <div>
-                <img src="{{ asset('../assets/images/sumbapage/indomap-sumba.png') }}" alt="Carte indonésie île de Sumba">
-            </div>
-        </section>
-  
-        {# section 4 - activities #}
-        <div class="activities-container">
-
-            <h3>Les activités à Sumba - Nos recommandations :</h3>
-            <p>Les principales activités à faire à Sumba en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
-
-            <div class="tab-wrap">
-
-                <!-- active tab on page load gets checked attribute -->
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">L'OUEST</label>
-
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">L'EST</label>
-
-                <div class="tab__content tab1">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">
-                                <h4>• La région Kodi</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Visite des VILLAGES authentiques et leurs maisons aux hauts toits : Tossi, Parona Baroro, Rentengaro, etc. ; rencontre avec les HABITANTS , découverte de leur MODE de VIE de vie et de leurs TRADITIONS Marapu ; baignade dans la LAGUNE d’eau salée de Waikuri ; visite de la VILLE de Waikabubak</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• La région d’Anakalang</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Baignade à la CASCADE Waikelo Sawah qui descend d’une grotte ; visite des VILLAGES TRADITIONNELS de Pasunga, Galu Gakul, Prai Ijin et leurs tombes sculptées ; découverte de la région aux terres sont très fertiles, CULTURES du riz, café, noix de cajou, … ; Farniente ou SURF sur les PLAGES de sable blanc de Lamboya</p>
-                            </div>
-                        </div>
-                        
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1FoSAG519IvueaWM08qXMUsd2xBjLaczi" width="480" height="350"></iframe>
-                        </div>                                            
-                    </div>
+                <div>
+                    <img src="{{ asset('../assets/images/sumbapage/indomap-sumba.png') }}" alt="Carte indonésie île de Sumba">
                 </div>
-
-                <div class="tab__content tab2">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">                   
-                                <h4> • La région de Waingapu</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Visite de la VILLE de WAINGAPU ; visite des ateliers de TISSAGE d’Ikat à Prailiu ; RANDONNÉE autour du village et visite d’une MAISON TRADITIONNELLE ; les tombes en PIERRE MÉGALITHIQUES aux villages de Pau Dan Rende et Melolo ; fabrication du SUCRE DE PALME au village de Mau Jawa ; séjour sur la PLAGE de Kalala ; visite des vestiges de la colonie hollandaise à Prai Padamu et à Mau Maru</p>
-                            </div>                                                     
-                        </div>
-
-                        <div class="map-responsive">                            
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1atbErrVoZuZjKa_LRuBIc0VfHyUZpsy4" width="480" height="350"></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab__content tab3">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                    
-                                <h4>• Jakarta</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Visite de Jakarta, la CAPTITALE JAVANAISE ; la VIELLE VILLE Kota Tua ; la place Fatahillah Square ; le MUSÉE NATIONAL de Jakarta, Gedung Gajah ; la plus grande mosquée d’Asie ISIQLAL ; le MONUMENT NATIONAL de la tour Monas de 132 m de haut</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Bandung</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Visite du JARDIN BOTANIQUE de Bogor ; les PLANTATIONS de Thé à Puncak Pass ; visite de Bandung, la CAPITALE de Java Ouest</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Ujung Kulon</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Le PARC NATIONAL d’Ujung Kulon, classé au patrimoine mondial de l’Humanité par l’UNESCO, il est l’habitat de nombreuses espèces protégées</p>
-                            </div>
-                        </div>
-
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1gyljFwiXXW5lwIVklC-6DYYLLILWJaDr" width="480" height="350"></iframe>
-                        </div>
-                    </div>   
-                </div>
-
-                <div class="tab__content tab4">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                    
-                            <h4>• Dieng</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Sur le PLATEAU DE DIENG à 2000 mètres d’altitude, visite du TEMPLE hindouiste le plus ancien d’Indonésie ; découverte du CRATÈRE du volcan, toujours actif et des LACS</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Semarang</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Visite de la VILLE de Semarang, son quartier chinois, le bâtiment historique hollandais Lawang Sewu, etc.</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                            <h4>• Karimunjawa</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Les ILES PARADISIAQUES de Karimunjawa, ses plages de sable blanc et ses spots de Snorkeling</p>
-                            </div>
-                        </div>
-
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1U8ZawHgi8pCLkgXW8q-bWPBYHMKjoGlR" width="480" height="350"></iframe>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </div>
-        
-
-        {# section 5 - presentation #}
-        <section class="presentation">
-
-            <h3>Découvrez l’île de Sumba</h3>
-
-            <div class="main-paragraph-wrapper">
-                <p>Sumba, c’est l’île du Santal (Cendana), ses habitants, les Sumbanais sont accueillants. Anciens guerriers, ils dégagent aussi une certaine rudesse et un orgueil particulier. Ce sont des cavaliers hors pair qui s’affrontent lors des joutes à cheval, « les Pasolas » : de grandes cérémonies organisées en février et mars. Il n’y a pas de calendrier ni de jour fixes car ce sont les chamans fixent les dates. Les voyageurs sont toujours les bienvenus.</p>
-                <p>La religion animiste : le Marapu, est beaucoup plus présente dans l’Ouest de l’île et fait toujours partie intégrante de la vie quotidienne, elle est aujourd’hui combinée à la religion chrétienne. Les représentants sont des chamans (rato) chargés de la bonne gestion du culte des Marapu.</p>
-                <p>Les Marapu: des dieux, ancêtres, esprits et autres forces surnaturelles, sont partout. Et pour mieux invoquer leur protection, il importe de les combler d'offrandes, souvent des animaux sacrifiés.</p>
-                <p>Les tombes mégalithiques témoignent de l'importance des cérémonies funéraires. Tout comme pour les mariages, elles sont très onéreuses pour les familles, de grandes cérémonies sont organisées à chaque événement important de la vie de la famille.</p>
-                <p>Dans la région KODI, on découvre de nombreux villages traditionnels : Tosi, Parona Baroro, Ratenggaro. La région est assez pauvre et les familles sont nombreuses avec 5 voir 10 enfants. Elles vivent toujours de manière traditionnelle, sans eau, ni électricité. Ils cultivent le maïs, le riz, etc. et élèvent chèvres, buffles, cochons, etc.</p>
-                <p>Le village de Ratengaro offre une très belle vue sur la mer et ses toits sont les plus hauts de tout Sumba ! Dans la croyance Marapu, plus les toits sont hauts, plus nous serons proches des dieux.</p>
-                <p>A Waikuri, on peut se baigner dans la très jolie lagune d’eau salée ; et à Pero beach, la plage est connue des surfeurs. La plupart des habitants sont des pêcheurs de Calamars.</p>
-                <p>La ville de Waikabubak, située au sud, est la 2ème plus importante après Waingapu la capitale. On peut y déjeuner dans les petites échoppes locales.</p>
-                <p>Dans la région d’ANAKALANG, on peut se baigner dans a la cascade de Wekelo Sawah qui descend d’une grotte, l’endroit est très joli, entouré de rizières.</p>
-                <p>On découvre également les villages traditionnels de Pasunga, Galu Gakul et Prai Ijin avec leurs tombes sculptées.  Cette région est habitée par des fermiers pour la plupart (riz, café, noix de cajou, etc,), les terres sont très fertiles.</p>
-                <p>A Lamboya, on profite des magnifiques plages de sable blanc, sauvage entourées de palmiers où il fait bon se reposer.</p>
-            </div>
-        
-        </section>
-
-        {# section 6 - tours #}
-
-        <section class="tours-section">
-            
-            <h3>Nos circuits</h3>
-
-            <div class="tours-cards">
-            {# To display several tours here:  #}
-                {# tour nº12 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 12 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/12.jpg') }}" alt="sumba and flores tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº3 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 3 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº6 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 6 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/6.jpg') }}" alt="sustainable tourism bali" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
-
-        <div class="button-contact">
-            <a href="{{ path('contact')}}#contact">
-                <button>Contactez-nous pour des circuits sur-mesure</button>
-            </a>
-        </div>
+            </section>
     
+            {# section 4 - activities #}
+            <div class="activities-container">
+
+                <h3>Les activités à Sumba - Nos recommandations :</h3>
+                <p>Les principales activités à faire à Sumba en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
+
+                <div class="tab-wrap">
+
+                    <!-- active tab on page load gets checked attribute -->
+                    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                    <label for="tab1">L'OUEST</label>
+
+                    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                    <label for="tab2">L'EST</label>
+
+                    <div class="tab__content tab1">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">
+                                    <h4>• La région Kodi</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Visite des VILLAGES authentiques et leurs maisons aux hauts toits : Tossi, Parona Baroro, Rentengaro, etc. ; rencontre avec les HABITANTS , découverte de leur MODE de VIE de vie et de leurs TRADITIONS Marapu ; baignade dans la LAGUNE d’eau salée de Waikuri ; visite de la VILLE de Waikabubak</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• La région d’Anakalang</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Baignade à la CASCADE Waikelo Sawah qui descend d’une grotte ; visite des VILLAGES TRADITIONNELS de Pasunga, Galu Gakul, Prai Ijin et leurs tombes sculptées ; découverte de la région aux terres sont très fertiles, CULTURES du riz, café, noix de cajou, … ; Farniente ou SURF sur les PLAGES de sable blanc de Lamboya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1FoSAG519IvueaWM08qXMUsd2xBjLaczi" width="480" height="350"></iframe>
+                            </div>                                            
+                        </div>
+                    </div>
+
+                    <div class="tab__content tab2">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">                   
+                                    <h4> • La région de Waingapu</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Visite de la VILLE de WAINGAPU ; visite des ateliers de TISSAGE d’Ikat à Prailiu ; RANDONNÉE autour du village et visite d’une MAISON TRADITIONNELLE ; les tombes en PIERRE MÉGALITHIQUES aux villages de Pau Dan Rende et Melolo ; fabrication du SUCRE DE PALME au village de Mau Jawa ; séjour sur la PLAGE de Kalala ; visite des vestiges de la colonie hollandaise à Prai Padamu et à Mau Maru</p>
+                                </div>                                                     
+                            </div>
+
+                            <div class="map-responsive">                            
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1atbErrVoZuZjKa_LRuBIc0VfHyUZpsy4" width="480" height="350"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab__content tab3">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+                                <div class="dropdown">                    
+                                    <h4>• Jakarta</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Visite de Jakarta, la CAPTITALE JAVANAISE ; la VIELLE VILLE Kota Tua ; la place Fatahillah Square ; le MUSÉE NATIONAL de Jakarta, Gedung Gajah ; la plus grande mosquée d’Asie ISIQLAL ; le MONUMENT NATIONAL de la tour Monas de 132 m de haut</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Bandung</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Visite du JARDIN BOTANIQUE de Bogor ; les PLANTATIONS de Thé à Puncak Pass ; visite de Bandung, la CAPITALE de Java Ouest</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Ujung Kulon</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Le PARC NATIONAL d’Ujung Kulon, classé au patrimoine mondial de l’Humanité par l’UNESCO, il est l’habitat de nombreuses espèces protégées</p>
+                                </div>
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1gyljFwiXXW5lwIVklC-6DYYLLILWJaDr" width="480" height="350"></iframe>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="tab__content tab4">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+                                <div class="dropdown">                    
+                                <h4>• Dieng</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Sur le PLATEAU DE DIENG à 2000 mètres d’altitude, visite du TEMPLE hindouiste le plus ancien d’Indonésie ; découverte du CRATÈRE du volcan, toujours actif et des LACS</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                <h4>• Semarang</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Visite de la VILLE de Semarang, son quartier chinois, le bâtiment historique hollandais Lawang Sewu, etc.</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                <h4>• Karimunjawa</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Les ILES PARADISIAQUES de Karimunjawa, ses plages de sable blanc et ses spots de Snorkeling</p>
+                                </div>
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1U8ZawHgi8pCLkgXW8q-bWPBYHMKjoGlR" width="480" height="350"></iframe>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            
+
+            {# section 5 - presentation #}
+            <section class="presentation">
+
+                <h3>Découvrez l’île de Sumba</h3>
+
+                <div class="main-paragraph-wrapper">
+                    <p>Sumba, c’est l’île du Santal (Cendana), ses habitants, les Sumbanais sont accueillants. Anciens guerriers, ils dégagent aussi une certaine rudesse et un orgueil particulier. Ce sont des cavaliers hors pair qui s’affrontent lors des joutes à cheval, « les Pasolas » : de grandes cérémonies organisées en février et mars. Il n’y a pas de calendrier ni de jour fixes car ce sont les chamans fixent les dates. Les voyageurs sont toujours les bienvenus.</p>
+                    <p>La religion animiste : le Marapu, est beaucoup plus présente dans l’Ouest de l’île et fait toujours partie intégrante de la vie quotidienne, elle est aujourd’hui combinée à la religion chrétienne. Les représentants sont des chamans (rato) chargés de la bonne gestion du culte des Marapu.</p>
+                    <p>Les Marapu: des dieux, ancêtres, esprits et autres forces surnaturelles, sont partout. Et pour mieux invoquer leur protection, il importe de les combler d'offrandes, souvent des animaux sacrifiés.</p>
+                    <p>Les tombes mégalithiques témoignent de l'importance des cérémonies funéraires. Tout comme pour les mariages, elles sont très onéreuses pour les familles, de grandes cérémonies sont organisées à chaque événement important de la vie de la famille.</p>
+                    <p>Dans la région KODI, on découvre de nombreux villages traditionnels : Tosi, Parona Baroro, Ratenggaro. La région est assez pauvre et les familles sont nombreuses avec 5 voir 10 enfants. Elles vivent toujours de manière traditionnelle, sans eau, ni électricité. Ils cultivent le maïs, le riz, etc. et élèvent chèvres, buffles, cochons, etc.</p>
+                    <p>Le village de Ratengaro offre une très belle vue sur la mer et ses toits sont les plus hauts de tout Sumba ! Dans la croyance Marapu, plus les toits sont hauts, plus nous serons proches des dieux.</p>
+                    <p>A Waikuri, on peut se baigner dans la très jolie lagune d’eau salée ; et à Pero beach, la plage est connue des surfeurs. La plupart des habitants sont des pêcheurs de Calamars.</p>
+                    <p>La ville de Waikabubak, située au sud, est la 2ème plus importante après Waingapu la capitale. On peut y déjeuner dans les petites échoppes locales.</p>
+                    <p>Dans la région d’ANAKALANG, on peut se baigner dans a la cascade de Wekelo Sawah qui descend d’une grotte, l’endroit est très joli, entouré de rizières.</p>
+                    <p>On découvre également les villages traditionnels de Pasunga, Galu Gakul et Prai Ijin avec leurs tombes sculptées.  Cette région est habitée par des fermiers pour la plupart (riz, café, noix de cajou, etc,), les terres sont très fertiles.</p>
+                    <p>A Lamboya, on profite des magnifiques plages de sable blanc, sauvage entourées de palmiers où il fait bon se reposer.</p>
+                </div>
+            
+            </section>
+
+            {# section 6 - tours #}
+
+            <section class="tours-section">
+                
+                <h3>Nos circuits</h3>
+
+                <div class="tours-cards">
+                {# To display several tours here:  #}
+                    {# tour nº12 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 12 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/12.jpg') }}" alt="sumba and flores tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº3 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 3 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº6 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 6 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/6.jpg') }}" alt="sustainable tourism bali" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            <div class="button-contact">
+                <a href="{{ path('contact')}}#contact">
+                    <button>Contactez-nous pour des circuits sur-mesure</button>
+                </a>
+            </div>
+        </div>
     </div>
 
 {% block javascripts %}

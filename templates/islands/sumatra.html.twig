@@ -4,23 +4,23 @@
 
 {% block body %}
 
-    <div id="island" class="wrapper">
-    
-        {# section 1 - introduction #}
-        <section class="introduction">
-            <h2 id="sumatra-title">Sumatra</h2>
-            <h4>Entre jungle et tribus</h4>
-            <div class="introduction-paragraph">
-                <div class=''>
-                    <p>Sumatra est une immense île, belle et sauvage.</p>
-                    <p>Très peu connue du tourisme, elle attire de plus en plus les curieux à la recherche de jungle et d’aventure.</p>
+    <div id="island">
+        <div class="wrapper">
+            {# section 1 - introduction #}
+            <section class="introduction">
+                <h2 id="sumatra-title">Sumatra</h2>
+                <h4>Entre jungle et tribus</h4>
+                <div class="introduction-paragraph">
+                    <div class=''>
+                        <p>Sumatra est une immense île, belle et sauvage.</p>
+                        <p>Très peu connue du tourisme, elle attire de plus en plus les curieux à la recherche de jungle et d’aventure.</p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('../assets/images/sumatrapage/icon-palmtrees.png') }}" alt="Elephant">
+                    </div>
                 </div>
-                <div>
-                    <img src="{{ asset('../assets/images/sumatrapage/icon-palmtrees.png') }}" alt="Elephant">
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         {# section 2 - photo carousel #}        
         <section id="photos-slider">
@@ -49,220 +49,221 @@
                 </div>
             </div>
         </section>
-        
-        {# section 3 - top activites & map #}    
-        <section class="topandmap">
-            <div class="top-activities">
-                <h4>Top des activités à Sumatra</h4>
 
-                <ol class="gradient-list">
-                    <li>Randonnée</li>
-                    <li>Faune</li>
-                    <li>Jungle</li>
-                </ol>
-            </div>            
+        <div class="wrapper"> 
+            {# section 3 - top activites & map #}    
+            <section class="topandmap">
+                <div class="top-activities">
+                    <h4>Top des activités à Sumatra</h4>
 
-            <div>
-                <img src="{{ asset('../assets/images/sumatrapage/indomap-sumatra.png') }}" alt="Carte indonésie île de Sumatra">
-            </div>
-        </section>
-  
-        {# section 4 - activities #}
-        <div class="activities-container">
+                    <ol class="gradient-list">
+                        <li>Randonnée</li>
+                        <li>Faune</li>
+                        <li>Jungle</li>
+                    </ol>
+                </div>            
 
-            <h3>Les activités à Sumatra - Nos recommandations :</h3>
-            <p>Les principales activités à faire à Sumatra en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
-
-            <div class="tab-wrap">
-
-                <!-- active tab on page load gets checked attribute -->
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">LE NORD</label>
-
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">LES ÎLES</label>
-
-                <div class="tab__content tab1">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">
-                                <h4>• Parc National de Leuser</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Randonnée dans la JUNGLE à Tangkahan ; observation du bain des ÉLÉPHANTS dans la rivière ; à Bukit Lawang, observation de la flore et la faune locale dont les ORANG-OUTANGS ; les Thomas Leafs, les macaques à longue queue, les gibbons noirs ; descente de la rivière en TUBBING ; BIVOUAC en bord de rivière, au cœur la forêt tropicale</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• Au sud de Medan</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Découverte de la RIVIÈRE Sembahe et des CASCADES de Sibolangit ; visite de BRASTAGI et son marché aux fruits ; panorama sur les fameux VOLCANS Sinabung et Sibayak ; ascension du VOLCAN Sibayak jusqu’au sommet ; rencontres au VILLAGE TRADITIONNEL BATAK de Dokan ; arrêt aux CHUTES D’EAU de Sipiso-piso ; visite d’une LONG HOUSE Rumah Bolon</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Lac Toba</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Séjour sur l’île de SAMOSIR sur le LAC TOBA, le plus grand lac volcanique du monde ; découverte de l’île et de la vie de ses habitants ; visite d’Ambarita où siégeait les rois Sialagan ; Simanindo, son MUSÉE et ses spectacles de DANSES traditionnelles ; Tomok, les SITES FUNÉRAIRES des rois Sidabutar; le village de Simarjarunpung et sa magnifique vue sur le lac</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• Medan</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="d textcontent">
-                                <p>Visite de la VILLE de Medan, le PALAIS du SULTAN, la grande MOSQUÉE, le TEMPLE chinois, etc.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1VQgV5nz3NeqiXef7iQ_cA5ePMk5gBXpM" width="480" height="350"></iframe>
-                        </div>                                            
-                    </div>
+                <div>
+                    <img src="{{ asset('../assets/images/sumatrapage/indomap-sumatra.png') }}" alt="Carte indonésie île de Sumatra">
                 </div>
-
-                <div class="tab__content tab2">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">                   
-                                <h4> • Cubadak</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Petit paradis pour les PLONGEURS et les amateurs de SNORKELING au bout du monde. L’île est parfaite pour la détente.</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Mentawai</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">                            
-                                <p>Découverte du peuple MENTAWAI qui vit dans un petit archipel de 4 îles, en harmonie avec la nature. Rencontre et découverte de leur mode de vie : chasse, cuisine, médecine traditionnelle. Nuit chez l’habitant dans un village traditionnel</p>
-                            </div>                                                 
-                        </div>
-
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1qtII7okpBkctbdCa6TbNQnGMRkxgLIxq" width="480" height="350"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-        {# section 5 - presentation #}
-        <section class="presentation">
-
-            <h3>Découvrez l’île de Sumatra</h3>
-
-            <div class="main-paragraph-wrapper">
-                <p>Dans la jungle de Sumatra, on peut s’enfoncer afin d’y observer la faune et la flore extrêmement diverses : des milliers d’oiseaux, des mammifères sauvages. On peut aussi vivre l’une des expériences les plus impressionnante : l’observation des orang-outang dans leur milieu naturel.</p>
-                <p>A la rencontre du peuple Batak et ses croyances ancestrales, ils vivent dans des maisons sur pilotis et sont de véritables artistes sculptant le bois et la pierre.</p>
-                <p>La région possède le plus grand lac volcanique du monde : le lac TOBA, avec l’île de Samosir où l’on peut voir des vestiges de la civilisation batak Karo. C’est aussi une grande région de plantations où les terres sont très fertiles.</p>
-                <p>La région possède le plus grand lac volcanique du monde : le lac TOBA, avec l’île de Samosir où l’on peut voir des vestiges de la civilisation batak Karo. C’est aussi une grande région de plantations où les terres sont très fertiles.</p>
-            </div>
-        
-        </section>
-
-        {# section 6 - tours #}
-
-        <section class="tours-section">
-            
-            <h3>Nos circuits</h3>
-
-            <div class="tours-cards">
-            {# To display several tours here:  #}
-                {# tour nº8 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 8 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/8.jpg') }}" alt="sumatra tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº3 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 3 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº4 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 4 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/4.jpg') }}" alt="sulawesi tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
-
-        <div class="button-contact">
-            <a href="{{ path('contact')}}#contact">
-                <button>Contactez-nous pour des circuits sur-mesure</button>
-            </a>
-        </div>        
+            </section>
     
+            {# section 4 - activities #}
+            <div class="activities-container">
+
+                <h3>Les activités à Sumatra - Nos recommandations :</h3>
+                <p>Les principales activités à faire à Sumatra en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
+
+                <div class="tab-wrap">
+
+                    <!-- active tab on page load gets checked attribute -->
+                    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                    <label for="tab1">LE NORD</label>
+
+                    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                    <label for="tab2">LES ÎLES</label>
+
+                    <div class="tab__content tab1">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">
+                                    <h4>• Parc National de Leuser</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Randonnée dans la JUNGLE à Tangkahan ; observation du bain des ÉLÉPHANTS dans la rivière ; à Bukit Lawang, observation de la flore et la faune locale dont les ORANG-OUTANGS ; les Thomas Leafs, les macaques à longue queue, les gibbons noirs ; descente de la rivière en TUBBING ; BIVOUAC en bord de rivière, au cœur la forêt tropicale</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Au sud de Medan</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Découverte de la RIVIÈRE Sembahe et des CASCADES de Sibolangit ; visite de BRASTAGI et son marché aux fruits ; panorama sur les fameux VOLCANS Sinabung et Sibayak ; ascension du VOLCAN Sibayak jusqu’au sommet ; rencontres au VILLAGE TRADITIONNEL BATAK de Dokan ; arrêt aux CHUTES D’EAU de Sipiso-piso ; visite d’une LONG HOUSE Rumah Bolon</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Lac Toba</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Séjour sur l’île de SAMOSIR sur le LAC TOBA, le plus grand lac volcanique du monde ; découverte de l’île et de la vie de ses habitants ; visite d’Ambarita où siégeait les rois Sialagan ; Simanindo, son MUSÉE et ses spectacles de DANSES traditionnelles ; Tomok, les SITES FUNÉRAIRES des rois Sidabutar; le village de Simarjarunpung et sa magnifique vue sur le lac</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Medan</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d textcontent">
+                                    <p>Visite de la VILLE de Medan, le PALAIS du SULTAN, la grande MOSQUÉE, le TEMPLE chinois, etc.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1VQgV5nz3NeqiXef7iQ_cA5ePMk5gBXpM" width="480" height="350"></iframe>
+                            </div>                                            
+                        </div>
+                    </div>
+
+                    <div class="tab__content tab2">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">                   
+                                    <h4> • Cubadak</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Petit paradis pour les PLONGEURS et les amateurs de SNORKELING au bout du monde. L’île est parfaite pour la détente.</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Mentawai</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">                            
+                                    <p>Découverte du peuple MENTAWAI qui vit dans un petit archipel de 4 îles, en harmonie avec la nature. Rencontre et découverte de leur mode de vie : chasse, cuisine, médecine traditionnelle. Nuit chez l’habitant dans un village traditionnel</p>
+                                </div>                                                 
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1qtII7okpBkctbdCa6TbNQnGMRkxgLIxq" width="480" height="350"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            {# section 5 - presentation #}
+            <section class="presentation">
+
+                <h3>Découvrez l’île de Sumatra</h3>
+
+                <div class="main-paragraph-wrapper">
+                    <p>Dans la jungle de Sumatra, on peut s’enfoncer afin d’y observer la faune et la flore extrêmement diverses : des milliers d’oiseaux, des mammifères sauvages. On peut aussi vivre l’une des expériences les plus impressionnante : l’observation des orang-outang dans leur milieu naturel.</p>
+                    <p>A la rencontre du peuple Batak et ses croyances ancestrales, ils vivent dans des maisons sur pilotis et sont de véritables artistes sculptant le bois et la pierre.</p>
+                    <p>La région possède le plus grand lac volcanique du monde : le lac TOBA, avec l’île de Samosir où l’on peut voir des vestiges de la civilisation batak Karo. C’est aussi une grande région de plantations où les terres sont très fertiles.</p>
+                    <p>La région possède le plus grand lac volcanique du monde : le lac TOBA, avec l’île de Samosir où l’on peut voir des vestiges de la civilisation batak Karo. C’est aussi une grande région de plantations où les terres sont très fertiles.</p>
+                </div>
+            
+            </section>
+
+            {# section 6 - tours #}
+
+            <section class="tours-section">
+                
+                <h3>Nos circuits</h3>
+
+                <div class="tours-cards">
+                {# To display several tours here:  #}
+                    {# tour nº8 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 8 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/8.jpg') }}" alt="sumatra tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº3 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 3 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº4 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 4 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/4.jpg') }}" alt="sulawesi tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            <div class="button-contact">
+                <a href="{{ path('contact')}}#contact">
+                    <button>Contactez-nous pour des circuits sur-mesure</button>
+                </a>
+            </div>        
+        </div>
     </div>
 
 {% block javascripts %}

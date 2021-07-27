@@ -4,24 +4,24 @@
 
 {% block body %}
 
-    <div id="island" class="wrapper">
-    
-        {# section 1 - introduction #}
-        <section class="introduction">
-            <h2 id="sulawesi-title">Sulawesi</h2>
-            <h4>L'île aux 1000 visages</h4>
-            <div class="introduction-paragraph">
-                <div class=''>
-                    <p>L’île en forme d’orchidée n’en finit pas d’étonner le visiteur. Encore peu visitée, elle a pourtant de nombreux trésors à nous faire partager.</p>
-                    <p>Au Sud de l’île, vous découvrirez le peuple bugis, constructeurs de bateaux, des plages sauvages et surtout le pays Toraja : rencontre avec ce peuple de montagnards aux traditions séculaires, un souvenir inoubliable.</p>
-                    <p>Au Nord, les amateurs de farniente et les plongeurs viendront quant à eux profiter des petits paradis comme la région de Manado, l’archipel Togian ou le parc national marin de Wakatobi. Des plages dignes des plus belles carte postales !</p>
+    <div id="island">
+        <div class="wrapper">
+            {# section 1 - introduction #}
+            <section class="introduction">
+                <h2 id="sulawesi-title">Sulawesi</h2>
+                <h4>L'île aux 1000 visages</h4>
+                <div class="introduction-paragraph">
+                    <div class=''>
+                        <p>L’île en forme d’orchidée n’en finit pas d’étonner le visiteur. Encore peu visitée, elle a pourtant de nombreux trésors à nous faire partager.</p>
+                        <p>Au Sud de l’île, vous découvrirez le peuple bugis, constructeurs de bateaux, des plages sauvages et surtout le pays Toraja : rencontre avec ce peuple de montagnards aux traditions séculaires, un souvenir inoubliable.</p>
+                        <p>Au Nord, les amateurs de farniente et les plongeurs viendront quant à eux profiter des petits paradis comme la région de Manado, l’archipel Togian ou le parc national marin de Wakatobi. Des plages dignes des plus belles carte postales !</p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('../assets/images/sulawesipage/fish.png') }}" alt="Poisson exotique">
+                    </div>
                 </div>
-                <div>
-                    <img src="{{ asset('../assets/images/sulawesipage/fish.png') }}" alt="Poisson exotique">
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         {# section 2 - photo carousel #}        
         <section id="photos-slider">
@@ -51,335 +51,336 @@
             </div>
         </section>
         
-        {# section 3 - top activites & map #}    
-        <section class="topandmap">
-            <div class="top-activities">
-                <h4>Top des activités à Sulawesi</h4>
+        <div class="wrapper">
+            {# section 3 - top activites & map #}    
+            <section class="topandmap">
+                <div class="top-activities">
+                    <h4>Top des activités à Sulawesi</h4>
 
-                <ol class="gradient-list">
-                    <li>Coutumes & vie traditionnelle</li>
-                    <li>Randonnée</li>
-                    <li>Plongée & snorkeling</li>
-                </ol>
-            </div>            
+                    <ol class="gradient-list">
+                        <li>Coutumes & vie traditionnelle</li>
+                        <li>Randonnée</li>
+                        <li>Plongée & snorkeling</li>
+                    </ol>
+                </div>            
 
-            <div>
-                <img src="{{ asset('../assets/images/sulawesipage/indomap-sulawesi.png') }}" alt="Carte indonésie île de Sulawesi">
-            </div>
-        </section>
-  
-        {# section 4 - activities #}
-        <div class="activities-container">
-
-            <h3>Les activités à Sulawesi - Nos recommandations :</h3>
-            <p>Les principales activités à faire à Sulawesi en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
-
-            <div class="tab-wrap">
-
-                <!-- active tab on page load gets checked attribute -->
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">LE PAYS TORAJA</label>
-
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">LE SUD</label>
-
-                <input type="radio" id="tab3" name="tabGroup1" class="tab">
-                <label for="tab3">MANADO</label>
-
-                <input type="radio" id="tab4" name="tabGroup1" class="tab">
-                <label for="tab4">LES ÎLES TOGIAN</label>
-
-                <div class="tab__content tab1">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">
-                                <h4>• Rentepao</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>L’agréable petite ville de RENTEPAO et son marché aux bestiaux, le plus grand de la région</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• Les villages</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Les villages traditionnels de KETE KESU, PALAWA, etc. et leurs MAISONS en forme de bateau ; dîner et nuit chez l’HABITANT, dans un village traditionnel accessible à pied</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Les cérémonies</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Les CÉRÉMONIES et les rites funéraires grandioses ; les falaises de LEMO ; les GROTTES funéraires de Londa ; les TOMBES ROYAES de Suaya</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• Batutumonga</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="d textcontent">
-                                <p>RANDONNÉE à travers une forêt de bambous et des rizières jusqu’au VILLAGE de MONTAGNE de Batutumonga ; nuit dans une MAISON TRADITIONNELLE ; visite des TOMBEAUX CREUSÉS dans la roche au village de Lo'ko Mata</p>
-                            </div>
-                        </div>
-                        
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=14VR-q3L9OFjS7fbxOYhdsQXEzdv6RqjZ" width="480" height="350"></iframe>
-                        </div>                                            
-                    </div>
+                <div>
+                    <img src="{{ asset('../assets/images/sulawesipage/indomap-sulawesi.png') }}" alt="Carte indonésie île de Sulawesi">
                 </div>
+            </section>
+    
+            {# section 4 - activities #}
+            <div class="activities-container">
 
-                <div class="tab__content tab2">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
+                <h3>Les activités à Sulawesi - Nos recommandations :</h3>
+                <p>Les principales activités à faire à Sulawesi en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
 
-                            <div class="dropdown">                   
-                                <h4> • Makassar</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Visite de la VILLE la plus importante de l’île, du fort de Rotterdam, la croisette pour boire un verre, la rue des bijoutiers, etc.</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Sengkang</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">                            
-                                <p>Le village de SENGKANG, au bord du LAC TEMPE ; promenade en BATEAU sur le lac ; visite des MAISONS FLOTANTES, découverte de la vie des habitants du lac ; observation des nombreux OISEAUX : aigrettes, hérons, grues…</p>
-                            </div>
+                <div class="tab-wrap">
 
-                            <div class="dropdown">
-                                <h4>• Tanaberu & Bissapu</h4>
-                                <div class="icon">
+                    <!-- active tab on page load gets checked attribute -->
+                    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                    <label for="tab1">LE PAYS TORAJA</label>
+
+                    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                    <label for="tab2">LE SUD</label>
+
+                    <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                    <label for="tab3">MANADO</label>
+
+                    <input type="radio" id="tab4" name="tabGroup1" class="tab">
+                    <label for="tab4">LES ÎLES TOGIAN</label>
+
+                    <div class="tab__content tab1">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">
+                                    <h4>• Rentepao</h4>
+                                    <div class="icon">
                                         <span class="btn">
                                             <i class="fas fa-plus"></i>
                                         </span>
                                     </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Visite des CHANTIERS NAVALS à Tenaberu, ils fournissent les meilleurs bateaux du pays et les techniques de construction sont ancestrales ; découverte des CHUTES d’eau de Bissapu, à 500 mètres de hauteur et entourées de forêt</p>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>L’agréable petite ville de RENTEPAO et son marché aux bestiaux, le plus grand de la région</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Les villages</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Les villages traditionnels de KETE KESU, PALAWA, etc. et leurs MAISONS en forme de bateau ; dîner et nuit chez l’HABITANT, dans un village traditionnel accessible à pied</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Les cérémonies</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Les CÉRÉMONIES et les rites funéraires grandioses ; les falaises de LEMO ; les GROTTES funéraires de Londa ; les TOMBES ROYAES de Suaya</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Batutumonga</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d textcontent">
+                                    <p>RANDONNÉE à travers une forêt de bambous et des rizières jusqu’au VILLAGE de MONTAGNE de Batutumonga ; nuit dans une MAISON TRADITIONNELLE ; visite des TOMBEAUX CREUSÉS dans la roche au village de Lo'ko Mata</p>
+                                </div>
                             </div>
                             
-                            <div class="dropdown">
-                                <h4> • Bira</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="d textcontent">
-                                <p>Séjour sur les belles PLAGES de sable blanc de Bira, encore sauvages ; SNORKELING sur l’île voisine de Liukang</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4> • Jeneponto</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>                            
-                            <div class="e textcontent">
-                                <p>KITE SURF sur les spots du sud de l’île</p>
-                            </div>                                                        
-                        </div>
-
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1bwnvHxiKxmS8VykSlnwIZaCMsTkjFtX7" width="480" height="350"></iframe>
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=14VR-q3L9OFjS7fbxOYhdsQXEzdv6RqjZ" width="480" height="350"></iframe>
+                            </div>                                            
                         </div>
                     </div>
-                </div>
 
-                <div class="tab__content tab3">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                    
-                                <h4>• Pays Minahasa</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
+                    <div class="tab__content tab2">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">                   
+                                    <h4> • Makassar</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Ascension du VOLCAN MAHAWU et son lac d’acide, panorama sur le VOLCAN LOKON ; visite d’un élevage de poissons « ikan mas » ; DÉJEUNER dans un restaurant traditionnel au bord du lac ; séjour à TOMOHON, petite ville de montagne ; visite des TOMBEAUX ANIMISTES de Warugas</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Tangkoko</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
+                                <div class="a textcontent">
+                                    <p>Visite de la VILLE la plus importante de l’île, du fort de Rotterdam, la croisette pour boire un verre, la rue des bijoutiers, etc.</p>
                                 </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Découverte du Parc National de TANGKOKO et ses espèces endémiques : le macaque noir, le couscous, espèce de marsupial et le fameux tarsier, singe le plus petit du monde ; randonnée dans la JUNGLE dense pour observer le calao, grand oiseau multicolore de la famille des toucans</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Bunaken</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
+                                
+                                <div class="dropdown">
+                                    <h4>• Sengkang</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
                                 </div>
+                                <div class="b textcontent">                            
+                                    <p>Le village de SENGKANG, au bord du LAC TEMPE ; promenade en BATEAU sur le lac ; visite des MAISONS FLOTANTES, découverte de la vie des habitants du lac ; observation des nombreux OISEAUX : aigrettes, hérons, grues…</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Tanaberu & Bissapu</h4>
+                                    <div class="icon">
+                                            <span class="btn">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Visite des CHANTIERS NAVALS à Tenaberu, ils fournissent les meilleurs bateaux du pays et les techniques de construction sont ancestrales ; découverte des CHUTES d’eau de Bissapu, à 500 mètres de hauteur et entourées de forêt</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4> • Bira</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d textcontent">
+                                    <p>Séjour sur les belles PLAGES de sable blanc de Bira, encore sauvages ; SNORKELING sur l’île voisine de Liukang</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4> • Jeneponto</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>                            
+                                <div class="e textcontent">
+                                    <p>KITE SURF sur les spots du sud de l’île</p>
+                                </div>                                                        
                             </div>
-                            <div class="c textcontent">
-                                <p>Séjour farniente sur les ILES PARADISIAQUES de Bunaken, idéales pour le snorkeling et la PLONGÉE et les amateurs de belles PLAGES</p>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1bwnvHxiKxmS8VykSlnwIZaCMsTkjFtX7" width="480" height="350"></iframe>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1VR5W7myghgWwpX6qIT-q8VEWgyxuslA8" width="480" height="350"></iframe>
-                        </div>
-                    </div>   
-                </div>
-
-                <div class="tab__content tab4">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                    
-                            <h4>• Îles Togian</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
+                    <div class="tab__content tab3">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+                                <div class="dropdown">                    
+                                    <h4>• Pays Minahasa</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Ascension du VOLCAN MAHAWU et son lac d’acide, panorama sur le VOLCAN LOKON ; visite d’un élevage de poissons « ikan mas » ; DÉJEUNER dans un restaurant traditionnel au bord du lac ; séjour à TOMOHON, petite ville de montagne ; visite des TOMBEAUX ANIMISTES de Warugas</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Tangkoko</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Découverte du Parc National de TANGKOKO et ses espèces endémiques : le macaque noir, le couscous, espèce de marsupial et le fameux tarsier, singe le plus petit du monde ; randonnée dans la JUNGLE dense pour observer le calao, grand oiseau multicolore de la famille des toucans</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Bunaken</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Séjour farniente sur les ILES PARADISIAQUES de Bunaken, idéales pour le snorkeling et la PLONGÉE et les amateurs de belles PLAGES</p>
                                 </div>
                             </div>
-                            <div class="a textcontent">
-                                <p>Paradis des PLONGEURS, les îles offrent quelques-uns de meilleurs spots de plongée du pays et des décors magnifiques</p>
-                            </div>
-                        </div>
 
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1ltwmeakKM9ztKP1bmGBX2l_N5WY7JN1A" width="480" height="350"></iframe>
-                        </div>
-                    </div>   
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1VR5W7myghgWwpX6qIT-q8VEWgyxuslA8" width="480" height="350"></iframe>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="tab__content tab4">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+                                <div class="dropdown">                    
+                                <h4>• Îles Togian</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Paradis des PLONGEURS, les îles offrent quelques-uns de meilleurs spots de plongée du pays et des décors magnifiques</p>
+                                </div>
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1ltwmeakKM9ztKP1bmGBX2l_N5WY7JN1A" width="480" height="350"></iframe>
+                            </div>
+                        </div>   
+                    </div>
                 </div>
             </div>
-        </div>
-        
-
-        {# section 5 - presentation #}
-        <section class="presentation">
-
-            <h3>Découvrez l’île de Sulawesi</h3>
-
-            <div class="main-paragraph-wrapper">
-                <p>En arrivant à Sulawesi, le dépaysement vous saisira : encore <strong>peu explorée</strong> à cause des difficiles moyens de communications, cette île se mérite ! Il vous faudra une journée entière pour atteindre le pays Toraja, par l’unique route qui traverse l’île de part en part.</p>
-                <p>Lente traversée de régions fertiles, villages de pêcheurs, plages sauvages… puis le pays Bugis fait place aux panoramas saisissants et à la majesté des montagnes abritant le <strong>peuple Toraja</strong>. Vous allez y vivre une véritable expérience ethnique !</p>
-                <p>Les Torajas sont un peuple de montagnards qui vivent dans des maisons en forme de bateaux et vouent un culte particulier au passage vers l’au-delà. Les <strong>cérémonies</strong> funéraires y sont <strong>grandioses</strong>, elles durent plusieurs jours, avec de nombreux invités et des rites animistes séculaires.</p>
-                <p>Si une fête funéraire a lieu pendant votre séjour – elles sont fréquentes - votre guide vous y conduira et le chef du village vous accueillera volontiers car votre présence parmi les convives honore le défunt.</p>
-                <p>Les <strong>rizières de montagnes</strong>, parsemées de pierres géantes, offrent un impressionnant décor à ces traditions ancestrales.</p>
-                <p>Au hasard de vos pas, vous découvrirez les villages juchés dans les bambous, véritables chefs d’œuvre d’architecture et d’harmonie colorée. Vous verrez les étonnantes tombes suspendues installées dans les falaises et gardées par les effigies sacrées des défunts… Sans oublier les <strong>buffles d’eau</strong>, animaux sacrés auxquels les toraja prêtent le pouvoir de transporter les âmes vers le paradis.</p>
-                <p>Et partout, vous serez accueillis avec sourire et enthousiasme !</p>
-                <p>Une <strong>nuit chez l’habitant</strong> au village de Batutumonga vous laissera un souvenir impérissable, et la vue est époustouflante sur toute la vallée et les rizières en terrasses.</p>
-                <p>Sur la route vers <strong>Makassar</strong>, la capitale de l’île, le village lacustre de Sengkang mérite lui aussi une visite : embarquez à bord de longues barques motorisées pour une promenade à la découverte des richesses du <strong>Lac Tempe</strong>, sa faune ailée... Des dizaines d’aigrettes s’envolent au fur et à mesure que votre embarcation se fraye un chemin dans un univers végétal étonnant qui se referme derrière vous... Vous verrez les habitants de la cité lacustre se livrer à toutes sortes d’activités sur les berges et découvrirez leurs <strong>maisons flottantes</strong>, vision incroyable à notre ère de modernisme et de confort. Pour finir en beauté : le retour au coucher du soleil est mémorable.</p>
-                <p>Sulaswesi, c’est aussi une île entourée de <strong>plages</strong> encore <strong>sauvages</strong>. Au Sud, la plage de sable blanc de Bira est seulement fréquentée par le tourisme local. Farniente et balade en bateau traditionnel vers l’île de Liukang, ses eaux cristallines et ses fonds sous-marins colorés.</p>
-                <p>Au Nord, avec ses fonds sous-marins et sa faune aquatique, la région est célèbre pour offrir les plus beaux <strong>spots de plongée</strong>. Les îles Bunaken au large de MANADO, l’archipel des TOGIAN et le parc nationai de WAKATABI attirent les plongeurs du monde entier.</p>
-                <p>Et depuis Manado : toujours plus d’évasion dans l’arrière-pays Minahasa qui offre des ressources insoupçonnées comme les 3 <strong>volcans</strong> en activité ; le parc national de Tangkoko ; les superbes plages de Pulisan…</p>
-        </section>
-
-        {# section 6 - tours #}
-
-        <section class="tours-section">
             
-            <h3>Nos circuits</h3>
 
-            <div class="tours-cards">
-            {# To display several tours here:  #}
-                {# tour nº4 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 4 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/4.jpg') }}" alt="sulawesi tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
+            {# section 5 - presentation #}
+            <section class="presentation">
 
-                {# tour nº3 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 3 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
+                <h3>Découvrez l’île de Sulawesi</h3>
 
-                {# tour nº5 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 5 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/5.jpg') }}" alt="komodo tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
+                <div class="main-paragraph-wrapper">
+                    <p>En arrivant à Sulawesi, le dépaysement vous saisira : encore <strong>peu explorée</strong> à cause des difficiles moyens de communications, cette île se mérite ! Il vous faudra une journée entière pour atteindre le pays Toraja, par l’unique route qui traverse l’île de part en part.</p>
+                    <p>Lente traversée de régions fertiles, villages de pêcheurs, plages sauvages… puis le pays Bugis fait place aux panoramas saisissants et à la majesté des montagnes abritant le <strong>peuple Toraja</strong>. Vous allez y vivre une véritable expérience ethnique !</p>
+                    <p>Les Torajas sont un peuple de montagnards qui vivent dans des maisons en forme de bateaux et vouent un culte particulier au passage vers l’au-delà. Les <strong>cérémonies</strong> funéraires y sont <strong>grandioses</strong>, elles durent plusieurs jours, avec de nombreux invités et des rites animistes séculaires.</p>
+                    <p>Si une fête funéraire a lieu pendant votre séjour – elles sont fréquentes - votre guide vous y conduira et le chef du village vous accueillera volontiers car votre présence parmi les convives honore le défunt.</p>
+                    <p>Les <strong>rizières de montagnes</strong>, parsemées de pierres géantes, offrent un impressionnant décor à ces traditions ancestrales.</p>
+                    <p>Au hasard de vos pas, vous découvrirez les villages juchés dans les bambous, véritables chefs d’œuvre d’architecture et d’harmonie colorée. Vous verrez les étonnantes tombes suspendues installées dans les falaises et gardées par les effigies sacrées des défunts… Sans oublier les <strong>buffles d’eau</strong>, animaux sacrés auxquels les toraja prêtent le pouvoir de transporter les âmes vers le paradis.</p>
+                    <p>Et partout, vous serez accueillis avec sourire et enthousiasme !</p>
+                    <p>Une <strong>nuit chez l’habitant</strong> au village de Batutumonga vous laissera un souvenir impérissable, et la vue est époustouflante sur toute la vallée et les rizières en terrasses.</p>
+                    <p>Sur la route vers <strong>Makassar</strong>, la capitale de l’île, le village lacustre de Sengkang mérite lui aussi une visite : embarquez à bord de longues barques motorisées pour une promenade à la découverte des richesses du <strong>Lac Tempe</strong>, sa faune ailée... Des dizaines d’aigrettes s’envolent au fur et à mesure que votre embarcation se fraye un chemin dans un univers végétal étonnant qui se referme derrière vous... Vous verrez les habitants de la cité lacustre se livrer à toutes sortes d’activités sur les berges et découvrirez leurs <strong>maisons flottantes</strong>, vision incroyable à notre ère de modernisme et de confort. Pour finir en beauté : le retour au coucher du soleil est mémorable.</p>
+                    <p>Sulaswesi, c’est aussi une île entourée de <strong>plages</strong> encore <strong>sauvages</strong>. Au Sud, la plage de sable blanc de Bira est seulement fréquentée par le tourisme local. Farniente et balade en bateau traditionnel vers l’île de Liukang, ses eaux cristallines et ses fonds sous-marins colorés.</p>
+                    <p>Au Nord, avec ses fonds sous-marins et sa faune aquatique, la région est célèbre pour offrir les plus beaux <strong>spots de plongée</strong>. Les îles Bunaken au large de MANADO, l’archipel des TOGIAN et le parc nationai de WAKATABI attirent les plongeurs du monde entier.</p>
+                    <p>Et depuis Manado : toujours plus d’évasion dans l’arrière-pays Minahasa qui offre des ressources insoupçonnées comme les 3 <strong>volcans</strong> en activité ; le parc national de Tangkoko ; les superbes plages de Pulisan…</p>
+            </section>
 
-        <div class="button-contact">
-            <a href="{{ path('contact')}}#contact">
-                <button>Contactez-nous pour des circuits sur-mesure</button>
-            </a>
-        </div>        
-    
+            {# section 6 - tours #}
+
+            <section class="tours-section">
+                
+                <h3>Nos circuits</h3>
+
+                <div class="tours-cards">
+                {# To display several tours here:  #}
+                    {# tour nº4 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 4 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/4.jpg') }}" alt="sulawesi tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº3 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 3 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº5 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 5 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/5.jpg') }}" alt="komodo tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            <div class="button-contact">
+                <a href="{{ path('contact')}}#contact">
+                    <button>Contactez-nous pour des circuits sur-mesure</button>
+                </a>
+            </div>        
+        </div>
     </div>
 
 {% block javascripts %}

@@ -4,24 +4,24 @@
 
 {% block body %}
 
-    <div id="island" class="wrapper">
-    
-        {# section 1 - introduction #}
-        <section class="introduction">
-            <h2 id="lombok-title">Lombok</h2>
-            <h4>Entre rizières et sables</h4>
-            <div class="introduction-paragraph">
-                <div class=''>
-                    <p>Lombok est une île préservée à l’Est de Bali, avec des cocoteraies et des plages de sable blanc, une atmosphère paisible, des hôtels où il fait bon vivre et des petites îles paradisiaques.</p>
-                    <p>Plongée, snorkeling et farniente sont au rendez-vous !</p>
-                    <p>Avis aux amateurs de randonnée, le Mont Rinjani, volcan haut de 3726 mètres, s’offre à vous ainsi que de nombreuses balades au travers des campagnes, jungles et cascades.</p>
+    <div id="island">
+        <div class="wrapper">
+            {# section 1 - introduction #}
+            <section class="introduction">
+                <h2 id="lombok-title">Lombok</h2>
+                <h4>Entre rizières et sables</h4>
+                <div class="introduction-paragraph">
+                    <div class=''>
+                        <p>Lombok est une île préservée à l’Est de Bali, avec des cocoteraies et des plages de sable blanc, une atmosphère paisible, des hôtels où il fait bon vivre et des petites îles paradisiaques.</p>
+                        <p>Plongée, snorkeling et farniente sont au rendez-vous !</p>
+                        <p>Avis aux amateurs de randonnée, le Mont Rinjani, volcan haut de 3726 mètres, s’offre à vous ainsi que de nombreuses balades au travers des campagnes, jungles et cascades.</p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('../assets/images/lombokpage/turtle.png') }}" alt="Tortue">
+                    </div>
                 </div>
-                <div>
-                    <img src="{{ asset('../assets/images/lombokpage/turtle.png') }}" alt="Tortue">
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         {# section 2 - photo carousel #}        
         <section id="photos-slider">
@@ -51,268 +51,269 @@
             </div>
         </section>
         
-        {# section 3 - top activites & map #}    
-        <section class="topandmap">
-            <div class="top-activities">
-                <h4>Top des activités à Lombok</h4>
+        <div class="wrapper">
+            {# section 3 - top activites & map #}    
+            <section class="topandmap">
+                <div class="top-activities">
+                    <h4>Top des activités à Lombok</h4>
 
-                <ol class="gradient-list">
-                    <li>Plages</li>
-                    <li>Plongée & snorkeling</li>
-                    <li>Randonnées</li>
-                </ol>
-            </div>            
+                    <ol class="gradient-list">
+                        <li>Plages</li>
+                        <li>Plongée & snorkeling</li>
+                        <li>Randonnées</li>
+                    </ol>
+                </div>            
 
-            <div>
-                <img src="{{ asset('../assets/images/lombokpage/indomap-lombok.png') }}" alt="Carte indonésie île de Lombok">
-            </div>
-        </section>
-  
-        {# section 4 - activities #}
-        <div class="activities-container">
-
-            <h3>Les activités à Lombok - Nos recommandations :</h3>
-            <p>Les principales activités à faire à Lombok en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
-
-            <div class="tab-wrap">
-
-                <!-- active tab on page load gets checked attribute -->
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">LE NORD</label>
-
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">L'EST & L'OUEST</label>
-
-                <input type="radio" id="tab3" name="tabGroup1" class="tab">
-                <label for="tab3">LE SUD</label>
-
-                <div class="tab__content tab1">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">
-                                <h4>• Les Gilis du Nord</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Séjour farniente sur les ÎLES PARADISAQUES de Gili Trawangan, Gili Air ou Gili Meno ; SNORKELING et PLONGÉE sur les spots des alentours pour observer les fonds marins, les coraux et les TORTUES</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• Senggigi</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Séjour BALNÉAIRE dans la station calme de Senggigi ; balade dans la forêt des SINGES de Pusuk ; Randonnée jusqu’aux TEMPLES de Batu Belaq et à travers les VILLAGES de Bentek et de Gangga ; baignade dans les CASCADES de Sendang Gile, Benang Kelambu, Benang Sekotel, etc. ; visite du MARCHÉ de Gunungsari</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Rinjani</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Ascension du MONT RINJANI et nuits en bivouac, depuis le village de SENARU ou de SEMBALUN LAWANG ; le LAC de Segara Anak ; les SOURCES CHAUDES de Gua Susu et la FONTAINE d’or de Pancoran Emas</p>
-                            </div>
-                        </div>
-                        
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1j4AeXlURgEGfdYVG6eKkfQM3WHbVQaJL" width="480" height="350"></iframe>
-                        </div>                                            
-                    </div>
+                <div>
+                    <img src="{{ asset('../assets/images/lombokpage/indomap-lombok.png') }}" alt="Carte indonésie île de Lombok">
                 </div>
+            </section>
+    
+            {# section 4 - activities #}
+            <div class="activities-container">
 
-                <div class="tab__content tab2">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
+                <h3>Les activités à Lombok - Nos recommandations :</h3>
+                <p>Les principales activités à faire à Lombok en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
 
-                            <div class="dropdown">                   
-                                <h4> • Mataram</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Visite de la CAPITALE de l’île, MATARAM, le jardin royal de NARMANDA, visite du temple hindouiste LINGSAR ; découverte des PÊCHEURS à PONDOK PRASI</p>
-                            </div>
-                            
-                            <div class="dropdown">
-                                <h4>• Les villages de l’Ouest</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">                            
-                                <p>Les villages de culture SASAK ; Banuymulek, réputé pour ses potiers ; Sukara pour ses ateliers de TISSAGE ; le village de Gunung Pengsong habité par les SINGES ; le village d’ARTISANAT Sayang-Sayang</p>
-                            </div>
+                <div class="tab-wrap">
 
-                            <div class="dropdown">
-                                <h4>• L’Est</h4>
-                                <div class="icon">
+                    <!-- active tab on page load gets checked attribute -->
+                    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                    <label for="tab1">LE NORD</label>
+
+                    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                    <label for="tab2">L'EST & L'OUEST</label>
+
+                    <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                    <label for="tab3">LE SUD</label>
+
+                    <div class="tab__content tab1">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">
+                                    <h4>• Les Gilis du Nord</h4>
+                                    <div class="icon">
                                         <span class="btn">
                                             <i class="fas fa-plus"></i>
                                         </span>
                                     </div>
-                            </div>
-                            <div class="c textcontent">
-                                <p>Le village de PÊCHEURS de Tanjung Luat et son marché aux REQUINS ; Pringgasela et les ateliers de TISSAGE d’Ikat ; TETEBATU et ses rizières en terrasses ; Loyok où les habitants travaillent le BAMBOU</p>
-                            </div>                                                  
-                        </div>
-
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1JzSJ-fztqefKyXFndzr67zysbm6K0Mwp" width="480" height="350"></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab__content tab3">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-                            <div class="dropdown">                    
-                                <h4>• Les Gilis du Sud</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
                                 </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Dans la péninsule de SEKOTONG, moins connue des touristes ; PLAGE, SNORKELING et PLONGÉE aux îles Gilis du Sud Nanggu, Sudak et Kedis</p>
+                                <div class="a textcontent">
+                                    <p>Séjour farniente sur les ÎLES PARADISAQUES de Gili Trawangan, Gili Air ou Gili Meno ; SNORKELING et PLONGÉE sur les spots des alentours pour observer les fonds marins, les coraux et les TORTUES</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Senggigi</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Séjour BALNÉAIRE dans la station calme de Senggigi ; balade dans la forêt des SINGES de Pusuk ; Randonnée jusqu’aux TEMPLES de Batu Belaq et à travers les VILLAGES de Bentek et de Gangga ; baignade dans les CASCADES de Sendang Gile, Benang Kelambu, Benang Sekotel, etc. ; visite du MARCHÉ de Gunungsari</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Rinjani</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Ascension du MONT RINJANI et nuits en bivouac, depuis le village de SENARU ou de SEMBALUN LAWANG ; le LAC de Segara Anak ; les SOURCES CHAUDES de Gua Susu et la FONTAINE d’or de Pancoran Emas</p>
+                                </div>
                             </div>
                             
-                            <div class="dropdown">
-                                <h4>• Kuta Lombok</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1j4AeXlURgEGfdYVG6eKkfQM3WHbVQaJL" width="480" height="350"></iframe>
+                            </div>                                            
+                        </div>
+                    </div>
+
+                    <div class="tab__content tab2">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">                   
+                                    <h4> • Mataram</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Séjour balnéaire sur les belles PLAGES de sable blanc de Kuta Lombok ; SURF sur les spots des alentours accessibles en bateau</p>
+                                <div class="a textcontent">
+                                    <p>Visite de la CAPITALE de l’île, MATARAM, le jardin royal de NARMANDA, visite du temple hindouiste LINGSAR ; découverte des PÊCHEURS à PONDOK PRASI</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Les villages de l’Ouest</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">                            
+                                    <p>Les villages de culture SASAK ; Banuymulek, réputé pour ses potiers ; Sukara pour ses ateliers de TISSAGE ; le village de Gunung Pengsong habité par les SINGES ; le village d’ARTISANAT Sayang-Sayang</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• L’Est</h4>
+                                    <div class="icon">
+                                            <span class="btn">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </div>
+                                </div>
+                                <div class="c textcontent">
+                                    <p>Le village de PÊCHEURS de Tanjung Luat et son marché aux REQUINS ; Pringgasela et les ateliers de TISSAGE d’Ikat ; TETEBATU et ses rizières en terrasses ; Loyok où les habitants travaillent le BAMBOU</p>
+                                </div>                                                  
                             </div>
 
-                            <div class="dropdown">
-                                <h4>• Sud Ouest/h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>Les belles plages sauvages de Tanjung Bloam, Pink Beach, Penyisok, etc.</p>
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1JzSJ-fztqefKyXFndzr67zysbm6K0Mwp" width="480" height="350"></iframe>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1HJCUmJ_HrK4cCcWrDeJQD0G1ltG63IJo" width="480" height="350"></iframe>
-                        </div>
-                    </div>   
-                </div>                
+                    <div class="tab__content tab3">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+                                <div class="dropdown">                    
+                                    <h4>• Les Gilis du Sud</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Dans la péninsule de SEKOTONG, moins connue des touristes ; PLAGE, SNORKELING et PLONGÉE aux îles Gilis du Sud Nanggu, Sudak et Kedis</p>
+                                </div>
+                                
+                                <div class="dropdown">
+                                    <h4>• Kuta Lombok</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Séjour balnéaire sur les belles PLAGES de sable blanc de Kuta Lombok ; SURF sur les spots des alentours accessibles en bateau</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Sud Ouest/h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>Les belles plages sauvages de Tanjung Bloam, Pink Beach, Penyisok, etc.</p>
+                                </div>
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1HJCUmJ_HrK4cCcWrDeJQD0G1ltG63IJo" width="480" height="350"></iframe>
+                            </div>
+                        </div>   
+                    </div>                
+                </div>
             </div>
-        </div>
-        
-
-        {# section 5 - presentation #}
-        <section class="presentation">
-
-            <h3>Découvrez l’île de Lombok</h3>
-
-            <div class="main-paragraph-wrapper">
-                <p>Tout proche de Bali, on peut se rendre à Lombok en bateau rapide ou en avion, au programme : balnéaire en bord de plage, plongée ou randonnée.</p>
-                <p>Les îles GILIS du Nord : Trawangan, Air et Meno. Situées au large de Lombok s’étendent de petits paradis aux plages de sable blanc et aux eaux cristallines, petits restaurants sur la plage, calèches pour se déplacer sur l’île, plongée et baignade à volonté…</p>
-                <p>Moins connues, les îles Gilis du Sud : Gili Nanggu, Sudak et Kedis, sont elles aussi un petit paradis sur terre.</p>
-                <p>Le Mont Rinjani culminant à 3700 mètres d’altitude, ce volcan est un lieu de pèlerinage pour les sasaks et certains balinais pratiquant une religion très ancienne. L’ascension est sportive et peut être organisée en 3 jours / 2 nuits pour atteindre le sommet. </p>
-            </div>
-        
-        </section>
-
-        {# section 6 - tours #}
-
-        <section class="tours-section">
             
-            <h3>Nos circuits</h3>
 
-            <div class="tours-cards">
-            {# To display several tours here:  #}
-                {# tour nº10 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 10 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/10.jpg') }}" alt="bali and lombok tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
+            {# section 5 - presentation #}
+            <section class="presentation">
 
-                {# tour nº3 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 3 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
+                <h3>Découvrez l’île de Lombok</h3>
 
-                {# tour nº7 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 7 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/7.jpg') }}" alt="bali family tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € pour la famille</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
+                <div class="main-paragraph-wrapper">
+                    <p>Tout proche de Bali, on peut se rendre à Lombok en bateau rapide ou en avion, au programme : balnéaire en bord de plage, plongée ou randonnée.</p>
+                    <p>Les îles GILIS du Nord : Trawangan, Air et Meno. Situées au large de Lombok s’étendent de petits paradis aux plages de sable blanc et aux eaux cristallines, petits restaurants sur la plage, calèches pour se déplacer sur l’île, plongée et baignade à volonté…</p>
+                    <p>Moins connues, les îles Gilis du Sud : Gili Nanggu, Sudak et Kedis, sont elles aussi un petit paradis sur terre.</p>
+                    <p>Le Mont Rinjani culminant à 3700 mètres d’altitude, ce volcan est un lieu de pèlerinage pour les sasaks et certains balinais pratiquant une religion très ancienne. L’ascension est sportive et peut être organisée en 3 jours / 2 nuits pour atteindre le sommet. </p>
+                </div>
+            
+            </section>
 
-        <div class="button-contact">
-            <a href="{{ path('contact')}}#contact">
-                <button>Contactez-nous pour des circuits sur-mesure</button>
-            </a>
-        </div>        
-    
+            {# section 6 - tours #}
+
+            <section class="tours-section">
+                
+                <h3>Nos circuits</h3>
+
+                <div class="tours-cards">
+                {# To display several tours here:  #}
+                    {# tour nº10 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 10 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/10.jpg') }}" alt="bali and lombok tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº3 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 3 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº7 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 7 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/7.jpg') }}" alt="bali family tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € pour la famille</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            <div class="button-contact">
+                <a href="{{ path('contact')}}#contact">
+                    <button>Contactez-nous pour des circuits sur-mesure</button>
+                </a>
+            </div>        
+        </div>
     </div>
 
 {% block javascripts %}

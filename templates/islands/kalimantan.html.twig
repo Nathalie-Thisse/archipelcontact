@@ -4,23 +4,23 @@
 
 {% block body %}
 
-    <div id="island" class="wrapper">
-    
-        {# section 1 - introduction #}
-        <section class="introduction">
-            <h2 id="kalimantan-title">Kalimantan</h2>
-            <h4>La sauvage</h4>
-            <div class="introduction-paragraph">
-                <div class=''>
-                    <p>Kalimatan, est la partie indonésienne de l’île de Bornéo. C’est une île à l’état sauvage où les routes se font encore rares.</p>
-                    <p>Cette île aux milles rivières est recouverte d’une épaisse forêt tropicale que les amateurs d’aventure se feront un plaisir de découvrir.</p>
+    <div id="island">
+        <div class="wrapper">
+            {# section 1 - introduction #}
+            <section class="introduction">
+                <h2 id="kalimantan-title">Kalimantan</h2>
+                <h4>La sauvage</h4>
+                <div class="introduction-paragraph">
+                    <div class=''>
+                        <p>Kalimatan, est la partie indonésienne de l’île de Bornéo. C’est une île à l’état sauvage où les routes se font encore rares.</p>
+                        <p>Cette île aux milles rivières est recouverte d’une épaisse forêt tropicale que les amateurs d’aventure se feront un plaisir de découvrir.</p>
+                    </div>
+                    <div class="kalimantan-svg">
+                        <img src="{{ asset('../assets/images/kalimantanpage/icon-leaf.svg') }}" alt="feuille">
+                    </div>
                 </div>
-                <div class="kalimantan-svg">
-                    <img src="{{ asset('../assets/images/kalimantanpage/icon-leaf.svg') }}" alt="feuille">
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         {# section 2 - photo carousel #}        
         <section id="photos-slider">
@@ -50,182 +50,183 @@
             </div>
         </section>
         
-        {# section 3 - top activites & map #}    
-        <section class="topandmap">
-            <div class="top-activities">
-                <h4>Top des activités à Kalimantan</h4>
+        <div class="wrapper">
+            {# section 3 - top activites & map #}    
+            <section class="topandmap">
+                <div class="top-activities">
+                    <h4>Top des activités à Kalimantan</h4>
 
-                <ol class="gradient-list">
-                    <li>Randonnée</li>
-                    <li>Faune</li>
-                    <li>Jungle & nature sauvage</li>
-                </ol>
-            </div>            
+                    <ol class="gradient-list">
+                        <li>Randonnée</li>
+                        <li>Faune</li>
+                        <li>Jungle & nature sauvage</li>
+                    </ol>
+                </div>            
 
-            <div>
-                <img src="{{ asset('../assets/images/kalimantanpage/indomap-kalimantan.png') }}" alt="Carte indonésie île de Kalimantan">
-            </div>
-        </section>
-  
-        {# section 4 - activities #}
-        <div class="activities-container">
-
-            <h3>Les activités à Kalimantan - Nos recommandations :</h3>
-            <p>Les principales activités à faire à Kalimantan en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
-
-            <div class="tab-wrap">
-
-                <!-- active tab on page load gets checked attribute -->
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">KALIMANTAN CENTRAL</label>
-
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">KALIMANTAN DU SUD</label>
-
-                <div class="tab__content tab1">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-                            <div class="dropdown">
-                                <h4>• Fleuve Sekonyer</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Découverte de cette région SAUVAGE de Kalimantan ; navigation sur le FLEUVE Sekonyer en bateau traditionnel ; DÉJEUNER à Tanjung Harapan ; Observations des OISEAUX bicornes très colorés, des marins pêcheurs ; des aigles, des MACAQUES, des nasiques, des ORANGOUTANGS</p>
-                            </div>
-
-                            <div class="dropdown">
-                                <h4>• Parc National Tanjung Putin</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b textcontent">
-                                <p>RANDONNÉE dans la jungle du Parc National de TANJUNG PUTIN ; observation des SINGES Proboscis à long nez, des gibbons, des reptiles, des oiseaux colorés ; découverte de la réserve des ORANG-OUTANGS à Pondok Tanggui ; exploration de la FORÊT PRIMAIRE au Camp Leaky ; rencontre avec les RANGERS qui réintroduisent les orang-outang dans leur habitat naturel, Visite du centre de PROTECTION de l’ENVIRONNEMENT au village de Pesalat</p>
-                            </div>
-                        </div>
-                        
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1GDxrRPO83nIJBbVh00FUIMCfPrQPPkUD" width="480" height="350"></iframe>
-                        </div>                                            
-                    </div>
+                <div>
+                    <img src="{{ asset('../assets/images/kalimantanpage/indomap-kalimantan.png') }}" alt="Carte indonésie île de Kalimantan">
                 </div>
-
-                <div class="tab__content tab2">
-                    <div class="text-map-flexbox">
-                        <div class="dropdown-list">
-
-                            <div class="dropdown">                   
-                                <h4> • Benjarmasin</h4>
-                                <div class="icon">
-                                    <span class="btn">
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="a textcontent">
-                                <p>Découverte en barque du MARCHÉ FLOTTANT, le seul d’Indonésie ; Visite d’un VIILLAGE traditionnel DAYAK et d’une MAISON LONGUE à Loksado ; randonnée dans la JUNGLE et rencontre avec les DAYAKS qui y récupèrent le caoutchouc des arbres ; promenade en BATEAU sur le fleuve NEGARA et ses CANAUX ; observation des BUFFLES NAGEURS ; descente de la RIVIÈRE Amandit en radeau de bambous</p>
-                            </div>                                                     
-                        </div>
-
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1w1pwmiVCZUOjqoq39nzlCYWX5PHhR_L3" width="480" height="350"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-        {# section 5 - presentation #}
-        <section class="presentation">
-
-            <h3>Découvrez l’île de Kalimantan</h3>
-
-            <div class="main-paragraph-wrapper">
-                <p>A Kalimantan, les plus aventuriers y rencontreront des milliers d’espèces animales et végétales, pour beaucoup endémiques et rares : orangs-outangs, nasiques et autres gibbons, des reptiles, des milliers d’oiseaux colorés, etc. Un vrai voyage au cœur de la jungle !</p>
-                <p>Balikpapan est le point de départ des croisières en ‘homeboat’ sur le fleuve Mahakam : vous partirez à la découverte des pays dayaks.</p>
-                <p>A Banjarmasin, on découvre le marché flottant, l’un des plus grands au monde.</p>
-                <p>Dans la jungle, on peut visiter les maisons longues où habitent plusieurs familles. On peut aussi descendre la rivière Mahakam en bateau.</p>
-            </div>
-        
-        </section>
-
-        {# section 6 - tours #}
-
-        <section class="tours-section">
-            
-            <h3>Nos circuits</h3>
-
-            <div class="tours-cards">
-            {# To display several tours here:  #}
-                {# tour nº13 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 13 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/13.jpg') }}" alt="kalimantan tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº5 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 5 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/5.jpg') }}" alt="komodo tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-
-                {# tour nº6 #}
-                {% for tour in tours %} 
-                    {% if tour.id == 6 %}
-                        <figure class="image-block">
-                            {# <h3>{{ tour.islands }}</h3> #}
-                            <img src="{{ asset('../assets/images/tours/6.jpg') }}" alt="sustainable tourisme bali tour" />
-                            <figcaption>
-                                <h4>{{ tour.title }}</h4>
-                                <p>{{ tour.description }}</p>
-                                <p>À partir de {{ tour.price }} € par personne</p>
-                                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
-									Découvrez
-								</button></a>
-                            </figcaption>
-                        </figure>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
-
-        <div class="button-contact">
-            <a href="{{ path('contact')}}#contact">
-                <button>Contactez-nous pour des circuits sur-mesure</button>
-            </a>
-        </div>        
+            </section>
     
+            {# section 4 - activities #}
+            <div class="activities-container">
+
+                <h3>Les activités à Kalimantan - Nos recommandations :</h3>
+                <p>Les principales activités à faire à Kalimantan en fonction de vos goûts et des différentes régions, ainsi que notre sélection des meilleures visites et expériences.</p>
+
+                <div class="tab-wrap">
+
+                    <!-- active tab on page load gets checked attribute -->
+                    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                    <label for="tab1">KALIMANTAN CENTRAL</label>
+
+                    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                    <label for="tab2">KALIMANTAN DU SUD</label>
+
+                    <div class="tab__content tab1">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+                                <div class="dropdown">
+                                    <h4>• Fleuve Sekonyer</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Découverte de cette région SAUVAGE de Kalimantan ; navigation sur le FLEUVE Sekonyer en bateau traditionnel ; DÉJEUNER à Tanjung Harapan ; Observations des OISEAUX bicornes très colorés, des marins pêcheurs ; des aigles, des MACAQUES, des nasiques, des ORANGOUTANGS</p>
+                                </div>
+
+                                <div class="dropdown">
+                                    <h4>• Parc National Tanjung Putin</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="b textcontent">
+                                    <p>RANDONNÉE dans la jungle du Parc National de TANJUNG PUTIN ; observation des SINGES Proboscis à long nez, des gibbons, des reptiles, des oiseaux colorés ; découverte de la réserve des ORANG-OUTANGS à Pondok Tanggui ; exploration de la FORÊT PRIMAIRE au Camp Leaky ; rencontre avec les RANGERS qui réintroduisent les orang-outang dans leur habitat naturel, Visite du centre de PROTECTION de l’ENVIRONNEMENT au village de Pesalat</p>
+                                </div>
+                            </div>
+                            
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1GDxrRPO83nIJBbVh00FUIMCfPrQPPkUD" width="480" height="350"></iframe>
+                            </div>                                            
+                        </div>
+                    </div>
+
+                    <div class="tab__content tab2">
+                        <div class="text-map-flexbox">
+                            <div class="dropdown-list">
+
+                                <div class="dropdown">                   
+                                    <h4> • Benjarmasin</h4>
+                                    <div class="icon">
+                                        <span class="btn">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="a textcontent">
+                                    <p>Découverte en barque du MARCHÉ FLOTTANT, le seul d’Indonésie ; Visite d’un VIILLAGE traditionnel DAYAK et d’une MAISON LONGUE à Loksado ; randonnée dans la JUNGLE et rencontre avec les DAYAKS qui y récupèrent le caoutchouc des arbres ; promenade en BATEAU sur le fleuve NEGARA et ses CANAUX ; observation des BUFFLES NAGEURS ; descente de la RIVIÈRE Amandit en radeau de bambous</p>
+                                </div>                                                     
+                            </div>
+
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1w1pwmiVCZUOjqoq39nzlCYWX5PHhR_L3" width="480" height="350"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            {# section 5 - presentation #}
+            <section class="presentation">
+
+                <h3>Découvrez l’île de Kalimantan</h3>
+
+                <div class="main-paragraph-wrapper">
+                    <p>A Kalimantan, les plus aventuriers y rencontreront des milliers d’espèces animales et végétales, pour beaucoup endémiques et rares : orangs-outangs, nasiques et autres gibbons, des reptiles, des milliers d’oiseaux colorés, etc. Un vrai voyage au cœur de la jungle !</p>
+                    <p>Balikpapan est le point de départ des croisières en ‘homeboat’ sur le fleuve Mahakam : vous partirez à la découverte des pays dayaks.</p>
+                    <p>A Banjarmasin, on découvre le marché flottant, l’un des plus grands au monde.</p>
+                    <p>Dans la jungle, on peut visiter les maisons longues où habitent plusieurs familles. On peut aussi descendre la rivière Mahakam en bateau.</p>
+                </div>
+            
+            </section>
+
+            {# section 6 - tours #}
+
+            <section class="tours-section">
+                
+                <h3>Nos circuits</h3>
+
+                <div class="tours-cards">
+                {# To display several tours here:  #}
+                    {# tour nº13 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 13 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/13.jpg') }}" alt="kalimantan tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº5 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 5 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/5.jpg') }}" alt="komodo tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+
+                    {# tour nº6 #}
+                    {% for tour in tours %} 
+                        {% if tour.id == 6 %}
+                            <figure class="image-block">
+                                {# <h3>{{ tour.islands }}</h3> #}
+                                <img src="{{ asset('../assets/images/tours/6.jpg') }}" alt="sustainable tourisme bali tour" />
+                                <figcaption>
+                                    <h4>{{ tour.title }}</h4>
+                                    <p>{{ tour.description }}</p>
+                                    <p>À partir de {{ tour.price }} € par personne</p>
+                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                        Découvrez
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            <div class="button-contact">
+                <a href="{{ path('contact')}}#contact">
+                    <button>Contactez-nous pour des circuits sur-mesure</button>
+                </a>
+            </div>        
+        </div>
     </div>
 
 {% block javascripts %}
