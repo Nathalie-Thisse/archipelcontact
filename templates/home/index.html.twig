@@ -1,298 +1,311 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Archipel Contact{% endblock %}
+{% block title %}Archipel Contact
+{% endblock %}
 
 {% block body %}
 
-<div id="home" class="wrapper">
-     
-    {# section 1 - presentation #}
-    <section class="home-presentation">
-    
-        <h2>Archipel Contact</h2>
-                           
-            <h4>Réceptif Indonésie depuis 1989</h4>            
-                
-            <div class='main-paragraph-wrapper'>
-                <p>Il y a des pays qui étonnent, qui questionnent, qui inspirent et qui séduisent. <strong>L’indonésie</strong> est l’un d’entre eux…</p>
-                <p><strong>Archipel Contact</strong> vous emmène en voyage, à la découverte de ses paysages infiniment variés, ses richesses culturelles et peuples aux traditions ancestrales.</p>
-                <p>Créé en 1989 par des amoureux de l’Indonésie, Archipel Contact est une <strong>Agence réceptive</strong> qui prône un <strong>tourisme éthique et responsable</strong>, en harmonie avec la nature, dans le respect des traditions locales et en privilégiant des étapes de charme et de caractère.</p>
-            </div>
+	<div id="home">
 
-            <div class="news-box">
-                <h4>NEWS</h4>
-                <h5>Les dernières actualités en Indonésie :</h5>
-                <h6><strong>Infos Covid</strong></h6>
-                <a href="{{ path('information') }}#information">Plus d'informations...</a>
-            </div>
-        </div>
-    </section>
+        <div class="wrapper">
 
-    {# section 2 - destinations #}
-    <section class='home-destinations'>
+            {# section 1 - presentation #}
+            <section class="home-presentation">
 
-        <h3>Nos destinations</h3>
+                <h2>Archipel Contact</h2>
 
-        <div class="home-destinations--blocks">
+                <h4>Réceptif Indonésie depuis 1989</h4>
 
-            <a href="{{ path('bali') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
-                    <div class="text">
-                    <h4>Bali</h4>
-                    <div class="divider"></div>
-                    <p>L'île des dieux</p>
+                <div class='main-paragraph-wrapper'>
+                    <p>Il y a des pays qui étonnent, qui questionnent, qui inspirent et qui séduisent.
+                        <strong>L’indonésie</strong>
+                        est l’un d’entre eux…</p>
+                    <p>
+                        <strong>Archipel Contact</strong>
+                        vous emmène en voyage, à la découverte de ses paysages infiniment variés, ses richesses culturelles et peuples aux traditions ancestrales.</p>
+                    <p>Créé en 1989 par des amoureux de l’Indonésie, Archipel Contact est une
+                        <strong>Agence réceptive</strong>
+                        qui prône un
+                        <strong>tourisme éthique et responsable</strong>, en harmonie avec la nature, dans le respect des traditions locales et en privilégiant des étapes de charme et de caractère.</p>
+                </div>
+
+                <div class="news-box">
+                    <h4>NEWS</h4>
+                    <h5>Les dernières actualités en Indonésie :</h5>
+                    <h6>
+                        <strong>Infos Covid</strong>
+                    </h6>
+                    <a href="{{ path('information') }}#information">Plus d'informations...</a>
+                </div>
+
+            </section>
+
+            {# section 2 - destinations #}
+            <section class='home-destinations'>
+
+                <h3>Nos destinations</h3>
+
+                <div class="home-destinations--blocks">
+
+                    <a href="{{ path('bali') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-bali.jpg') }}' alt="Bali"/>
+                            <div class="text">
+                                <h4>Bali</h4>
+                                <div class="divider"></div>
+                                <p>L'île des dieux</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('java') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
+                            <div class="text">
+                                <h4>Java</h4>
+                                <div class="divider"></div>
+                                <p>Terre des volcans</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('lombok') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
+                            <div class="text">
+                                <h4>Lombok</h4>
+                                <div class="divider"></div>
+                                <p>Entre rizières et sables</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('sulawesi') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
+                            <div class="text">
+                                <h4>Sulawesi</h4>
+                                <div class="divider"></div>
+                                <p>L'île aux 1000 visages</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('flores') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}' alt="Komodo et Flores"/>
+                            <div class="text">
+                                <h4>Komodo Flores</h4>
+                                <div class="divider"></div>
+                                <p>Paradis authentiques</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('sumba') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}' alt="Sumba"/>
+                            <div class="text">
+                                <h4>Sumba</h4>
+                                <div class="divider"></div>
+                                <p>La Mystérieuse</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('sumatra') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
+                            <div class="text">
+                                <h4>Sumatra</h4>
+                                <div class="divider"></div>
+                                <p>Entre jungle et tribus</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{{ path('kalimantan') }}">
+                        <div class="home-destinations--block">
+                            <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
+                            <div class="text">
+                                <h4>Kalimantan</h4>
+                                <div class="divider"></div>
+                                <p>La Sauvage</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </section>
+
+            {# section 3 - our mission #}
+            <section class='home-mission'>
+
+                <h3>Notre mission</h3>
+
+                <div class='home-mission--values'>
+                    <div class='value1'>
+                        <h4>Expérience</h4>
+                        <div>
+                            <span>1989</span>
+                        </div>
+                        <p>Spécialistes depuis plus de 30 ans, nous créons des voyages exclusivement en Indonésie</p>
                     </div>
-                </div>
-            </a>
 
-            <a href="{{ path('java') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
-                    <div class="text">
-                    <h4>Java</h4>
-                    <div class="divider"></div>
-                    <p>Terre des volcans</p>
+                    <div class='value2'>
+                        <h4>Sur-mesure</h4>
+                        <div>
+                            <img src="{{ asset('../assets/images/icons/icon-measure.png') }}" alt="icon mesure">
+                        </div>
+                        <p>Chaque voyage proposé est unique et entièrement personnalisé</p>
                     </div>
-                </div>
-            </a>
 
-            <a href="{{ path('lombok') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
-                    <div class="text">
-                    <h4>Lombok</h4>
-                    <div class="divider"></div>
-                    <p>Entre rizières et sables</p>
+                    <div class='value3'>
+                        <h4>Éthique</h4>
+                        <div>
+                            <img src="{{ asset('../assets/images/icons/icon-ethical.png') }}" alt="icon nature">
+                        </div>
+                        <p>Nous pratiquons un tourisme à visage humain qui associe les populations locales</p>
                     </div>
+
                 </div>
-            </a>
-
-            <a href="{{ path('sulawesi') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
-                    <div class="text">
-                    <h4>Sulawesi</h4>
-                    <div class="divider"></div>
-                    <p>L'île aux 1000 visages</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="{{ path('flores') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-komodo.jpg') }}' alt="Komodo et Flores"/>
-                    <div class="text">
-                    <h4>Komodo Flores</h4>
-                    <div class="divider"></div>
-                    <p>Paradis authentiques</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="{{ path('sumba') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-sumba.jpg') }}' alt="Sumba"/>
-                    <div class="text">
-                    <h4>Sumba</h4>
-                    <div class="divider"></div>
-                    <p>La Mystérieuse</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="{{ path('sumatra') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
-                    <div class="text">
-                    <h4>Sumatra</h4>
-                    <div class="divider"></div>
-                    <p>Entre jungle et tribus</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="{{ path('kalimantan') }}">
-                <div class="home-destinations--block"> 
-                    <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
-                    <div class="text">
-                    <h4>Kalimantan</h4>
-                    <div class="divider"></div>
-                    <p>La Sauvage</p>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-    </section>
-
-    {# section 3 - our mission #}
-    <section class='home-mission'>
-
-        <h3>Notre mission</h3>
-
-        <div class='home-mission--values'>
-            <div class='value1'>
-                <h4>Expérience</h4>
-                <div>
-                    <span>1989</span>
-                </div>
-                <p>Spécialistes depuis plus de 30 ans, nous créons des voyages exclusivement en Indonésie</p>
-            </div>
-
-            <div class='value2'>
-                <h4>Sur-mesure</h4>
-                <div>
-                    <img src="{{ asset('../assets/images/icons/icon-measure.png') }}" alt="icon mesure">
-                </div>
-                <p>Chaque voyage proposé est unique et entièrement personnalisé</p>
-            </div>
-
-            <div class='value3'>
-                <h4>Éthique</h4>
-                <div>
-                    <img src="{{ asset('../assets/images/icons/icon-ethical.png') }}" alt="icon nature">
-                </div>
-                <p>Nous pratiquons un tourisme à visage humain qui associe les populations locales</p>
-            </div>            
-            
-        </div>
-    </section>
-
-    {# section 4 - photos slider#}
-    <section id="photos-slider">
-
-        {# <h3>Galerie photos</h3> #}
-
-        <div id="image-slider" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/homepage/carousel-batur.jpg') }}"alt="batur">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/homepage/carousel-borobudur.jpg') }}"alt="borobudur">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/homepage/carousel-flores.jpg') }}"alt="flores island">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/homepage/carousel-sumatra.jpg') }}"alt="sumatra">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/homepage/carousel-sulawesi.jpg') }}"alt="sulawesi">
-                        </li>
-                </ul>
-            </div>
+            </section>
         </div>
 
-    </section>
+		{# section 4 - photos slider#}
+		<section id="photos-slider">
 
-    {# section 5 - reviews #}
-    <section id="reviews-carousel">
-        <h3>Ils nous ont fait confiance</h3>
+			{# <h3>Galerie photos</h3> #}
 
-        <div class="section-testimonials">
-            <div class="slider">
-                <div class="slider__slides">
+			<div id="image-slider" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/homepage/carousel-batur.jpg') }}" alt="batur">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/homepage/carousel-borobudur.jpg') }}" alt="borobudur">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/homepage/carousel-flores.jpg') }}" alt="flores island">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/homepage/carousel-sumatra.jpg') }}" alt="sumatra">
+						</li>
+						<li class="splide__slide">
+							<img src="{{ asset('../assets/images/homepage/carousel-sulawesi.jpg') }}" alt="sulawesi">
+						</li>
+					</ul>
+				</div>
+			</div>
 
-                    <div class="slider__slide slider__slide--1">
-                        <figure class="testimonial slider__slide-content">
-                            <blockquote class="testimonial__text">
-                                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-                                <p class="testimonial__quote">
-                                    “ La destination a été une belle surprise, chaque endroit révèle quelque chose de magique ! Les hôtels sont plus chouettes les uns que les autres et le dernier hôtel dans les arbres était vraiment sympa. Madame s'est baignée avec des raies Manta. La population est très souriante et accueillante avec tout le monde, même entre eux. Tout est vraiment magique et exceptionnel ! ”
-                                </p>
-                                <cite class="testimonial__cite">
-                                    <span class="testimonial__cite--name">Marielle et Thomas P.</span>
-                                    <span class="testimonial__cite--role">Septembre 2018</span>
-                                </cite>
-                            </blockquote>
-                        </figure>
+		</section>
+
+        <div class="wrapper">
+            {# section 5 - reviews #}
+            <section id="reviews-carousel">
+                <h3>Ils nous ont fait confiance</h3>
+
+                <div class="section-testimonials">
+                    <div class="slider">
+                        <div class="slider__slides">
+
+                            <div class="slider__slide slider__slide--1">
+                                <figure class="testimonial slider__slide-content">
+                                    <blockquote class="testimonial__text">
+                                        <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                                        <p class="testimonial__quote">
+                                            “ La destination a été une belle surprise, chaque endroit révèle quelque chose de magique ! Les hôtels sont plus chouettes les uns que les autres et le dernier hôtel dans les arbres était vraiment sympa. Madame s'est baignée avec des raies Manta. La population est très souriante et accueillante avec tout le monde, même entre eux. Tout est vraiment magique et exceptionnel ! ”
+                                        </p>
+                                        <cite class="testimonial__cite">
+                                            <span class="testimonial__cite--name">Marielle et Thomas P.</span>
+                                            <span class="testimonial__cite--role">Septembre 2018</span>
+                                        </cite>
+                                    </blockquote>
+                                </figure>
+                            </div>
+
+                            <div class="slider__slide slider__slide--2">
+                                <figure class="testimonial slider__slide-content">
+                                    <blockquote class="testimonial__text">
+                                        <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                                        <p class="testimonial__quote">
+                                            “ Le pays des TORAJA restera un grand souvenir. Nous avons eu la chance de pouvoir assister à une belle cérémonie, au marché aux buffles, de randonner dans des paysages superbes. Nous avons beaucoup échangé avec notre guide. Bali était différent, varié et bien agréable également. Les quelques jours à Sidemen ont été très sympas. ”
+                                        </p>
+                                        <cite class="testimonial__cite">
+                                            <span class="testimonial__cite--name">Joelle et Didier P.</span>
+                                            <span class="testimonial__cite--role">Août 2019</span>
+                                        </cite>
+                                    </blockquote>
+                                </figure>
+                            </div>
+
+                            <div class="slider__slide slider__slide--3">
+                                <figure class="testimonial slider__slide-content">
+                                    <blockquote class="testimonial__text">
+                                        <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                                        <p class="testimonial__quote">
+                                            “ C’était un voyage magnifique, avec une organisation au top. Le rythme du circuit ainsi que les visites proposées étaient parfaits. Les logements, très variés, étaient tous magiques (avec un coup de cœur pour l’hôtel à Ubud, avec vue sur la jungle !!!! Et la balade à vélo dans les rizières, génial !!!) Enfin, vraiment tout était super. C’est une réelle chance de pouvoir participer à de tels voyages. Merci. ”
+                                        </p>
+                                        <cite class="testimonial__cite">
+                                            <span class="testimonial__cite--name">Groupe Bali</span>
+                                            <span class="testimonial__cite--role">Septembre 2019</span>
+                                        </cite>
+                                    </blockquote>
+                                </figure>
+                            </div>
+
+                            <div class="slider__slide slider__slide--4">
+                                <figure class="testimonial slider__slide-content">
+                                    <blockquote class="testimonial__text">
+                                        <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                                        <p class="testimonial__quote">
+                                            “ Le programme de départ était alléchant... Le résultat sur place fut à la hauteur ... je dirais même au-delà de nos espérances. Chaque jour, une nouveauté.......Nos yeux curieux ont été comblés. Encore MERCI. ”
+                                        </p>
+                                        <cite class="testimonial__cite">
+                                            <span class="testimonial__cite--name">Famille B.</span>
+                                            <span class="testimonial__cite--role">Août 2018</span>
+                                        </cite>
+                                    </blockquote>
+                                </figure>
+                            </div>
+
+                            <div class="slider__slide slider__slide--5">
+                                <figure class="testimonial slider__slide-content">
+                                    <blockquote class="testimonial__text">
+                                        <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
+                                        <p class="testimonial__quote">
+                                            “ Un seul mot pour tout décrire : WAOUHHHHH… un voyage à la hauteur de nos attentes. Nous recommandons chaleureusement ce voyage qui était adapté à nos besoins et à nos envies. ”
+                                        </p>
+                                        <cite class="testimonial__cite">
+                                            <span class="testimonial__cite--name">Famille L.</span>
+                                            <span class="testimonial__cite--role">Août 2017</span>
+                                        </cite>
+                                    </blockquote>
+                                </figure>
+                            </div>
+
+                        </div>
+
+                        <div class="slider__buttons">
+                            <div class="slider__button slider__button--prev">
+                                <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                                    <path fill="none" stroke-width="3" d="M11 1L3 9l8 8"/></svg>
+                            </div>
+                            <div class="slider__button slider__button--next">
+                                <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                                    <path fill="none" stroke-width="3" d="M2 1l8 8-8 8"/></svg>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="slider__slide slider__slide--2">
-                        <figure class="testimonial slider__slide-content">
-                            <blockquote class="testimonial__text">
-                                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-                                <p class="testimonial__quote">
-                                    “ Le pays des TORAJA restera un grand souvenir. Nous avons eu la chance de pouvoir assister à une belle cérémonie, au marché aux buffles, de randonner dans des paysages superbes. Nous avons beaucoup échangé avec notre guide. Bali était différent, varié et bien agréable également. Les quelques jours à Sidemen ont été très sympas. ”
-                                </p>
-                                <cite class="testimonial__cite">
-                                    <span class="testimonial__cite--name">Joelle et Didier P.</span>
-                                    <span class="testimonial__cite--role">Août 2019</span>
-                                </cite>
-                            </blockquote>
-                        </figure>
-                    </div>
-
-                    <div class="slider__slide slider__slide--3">
-                        <figure class="testimonial slider__slide-content">
-                            <blockquote class="testimonial__text">
-                                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-                                <p class="testimonial__quote">
-                                    “ C’était un voyage magnifique, avec une organisation au top. Le rythme du circuit ainsi que les visites proposées étaient parfaits. Les logements, très variés, étaient tous magiques (avec un coup de cœur pour l’hôtel à Ubud, avec vue sur la jungle !!!! Et la balade à vélo dans les rizières, génial !!!) Enfin, vraiment tout était super. C’est une réelle chance de pouvoir participer à de tels voyages. Merci. ”
-                                </p>
-                                <cite class="testimonial__cite">
-                                    <span class="testimonial__cite--name">Groupe Bali</span>
-                                    <span class="testimonial__cite--role">Septembre 2019</span>
-                                </cite>
-                            </blockquote>
-                        </figure>
-                    </div>
-
-                    <div class="slider__slide slider__slide--4">
-                        <figure class="testimonial slider__slide-content">
-                            <blockquote class="testimonial__text">
-                                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-                                <p class="testimonial__quote">
-                                    “ Le programme de départ était alléchant... Le résultat sur place fut à la hauteur ... je dirais même au-delà de nos espérances. Chaque jour, une nouveauté.......Nos yeux curieux ont été comblés. Encore MERCI. ”
-                                </p>
-                                <cite class="testimonial__cite">
-                                    <span class="testimonial__cite--name">Famille B.</span>
-                                    <span class="testimonial__cite--role">Août 2018</span>
-                                </cite>
-                            </blockquote>
-                        </figure>
-                    </div>
-
-                    <div class="slider__slide slider__slide--5">
-                        <figure class="testimonial slider__slide-content">
-                            <blockquote class="testimonial__text">
-                                <img class="testimonial__quotation-marks" src="{{ asset('../assets/images/icons/reviews/pattern-quotes.svg') }}" alt="quotation marks">
-                                <p class="testimonial__quote">
-                                    “ Un seul mot pour tout décrire : WAOUHHHHH… un voyage à la hauteur de nos attentes. Nous recommandons chaleureusement ce voyage qui était adapté à nos besoins et à nos envies. ”
-                                </p>
-                                <cite class="testimonial__cite">
-                                    <span class="testimonial__cite--name">Famille L.</span>
-                                    <span class="testimonial__cite--role">Août 2017</span>
-                                </cite>
-                            </blockquote>
-                        </figure>
-                    </div>
-
                 </div>
-
-                <div class="slider__buttons">
-                    <div class="slider__button slider__button--prev">
-                    <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
-                        <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" /></svg>
-                    </div>
-                    <div class="slider__button slider__button--next">
-                    <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
-                        <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" /></svg>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-</div>
+	</div>
 
-{% block javascripts %}
-     {{ parent() }}
-     {{ encore_entry_script_tags('homepage') }}
-{% endblock %}
-
-
+	{% block javascripts %}
+		{{ parent() }}
+		{{ encore_entry_script_tags('homepage') }}
+	{% endblock %}
 {% endblock %}
