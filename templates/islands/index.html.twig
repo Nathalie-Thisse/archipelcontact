@@ -10,6 +10,44 @@
         
         <section class='destinations'> 
             
+            <div class="destinations--blocks">
+                <a href="{{ path('sumatra') }}">
+                    <div class="destinations--block block-sumatra"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
+                        <div class="text">
+                        <h4>Sumatra</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ path('java') }}">
+                    <div class="destinations--block block-java"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
+                        <div class="text">
+                        <h4>Java</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ path('kalimantan') }}">
+                    <div class="destinations--block block-kalimantan"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
+                        <div class="text">
+                        <h4>Kalimantan</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ path('sulawesi') }}">
+                    <div class="destinations--block block-sulawesi"> 
+                        <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
+                        <div class="text">
+                        <h4>Sulawesi</h4>
+                        </div>
+                    </div>
+                </a>
+            
+            </div>
             
             <div class='destinations-map'>
 
@@ -25,7 +63,7 @@
                         .st0{fill:none;}
                     </style>
                     <a href="{{ path('lombok') }}">
-                        <polygon class="map-lombok" fill="rgb(42, 16, 84)" points="372.2,271.3 372.2,271.7 372,272 372,272.7 371.4,273.3 371,275 369.4,277.3 369.2,277.9 368.4,278.9 368.3,279.5 
+                        <polygon class="map-lombok" fill="rgb(113, 43, 145)" points="372.2,271.3 372.2,271.7 372,272 372,272.7 371.4,273.3 371,275 369.4,277.3 369.2,277.9 368.4,278.9 368.3,279.5 
                         368.9,279.5 369.4,279.9 369.8,279.9 369.3,280.6 368.7,280.8 368.6,280.6 368.4,280.6 367.9,280.9 367.3,280.9 367.8,279.4 
                         366.9,279.6 366.5,280 366.6,280.5 366.5,281.5 366.1,281.5 366,281.2 364.8,280.8 364.4,280.9 363.3,280.7 363,280.9 362.6,280.8 
                         362.5,280.1 362.2,280 361.3,280.2 361.1,280.4 360.7,280.4 360.4,280.1 360.2,280.2 360.1,280.6 359.8,280.6 359.2,280.2 
@@ -844,29 +882,6 @@
                     <rect x="319" y="292" class="st0" width="99.7" height="48"/>
                 </svg>
 
-
-                {# <div class="destination-map--details">
-                    <div> 
-                        <h4>Survolez les différentes îles</h4>
-
-                        <ul>
-                            <a href="{{ path('sumatra') }}"><li class="map-sumatra">• Sumatra</li></a>
-                            <a href="{{ path('java') }}"><li class="map-java">• Java</li></a>
-                            <a href="{{ path('kalimantan') }}"><li class="map-kalimantan">• Kalimantan</li></a>
-                            <a href="{{ path('bali') }}"><li class="map-bali">• Bali</li></a>
-                            <a href="{{ path('lombok') }}"><li class="map-lombok">• Lombok</li></a>
-                            <a href="{{ path('sulawesi') }}"><li class="map-sulawesi">• Sulawesi</li></a>
-                            <a href="{{ path('flores') }}"><li class="map-floreskomodo">• Flores & Komodo</li></a>
-                            <a href="{{ path('sumba') }}"><li class="map-sumba">• Sumba</li></a>
-                        </ul>
-                        
-                    </div>
-                    <div>
-                        <p class="region-detail"></p>
-                        <a href=""></a>
-                    </div>
-                </div> #}
-
             </div>
 
 
@@ -882,15 +897,6 @@
                     </div>
                 </a>
 
-                <a href="{{ path('java') }}">
-                    <div class="destinations--block block-java"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-java.jpg') }}' alt="Java"/>
-                        <div class="text">
-                        <h4>Java</h4>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="{{ path('lombok') }}">
                     <div class="destinations--block block-lombok"> 
                         <img src='{{ asset('../assets/images/homepage/low-quality-lombok.jpg') }}' alt="Lombok"/>
@@ -899,18 +905,6 @@
                         </div>
                     </div>
                 </a>
-
-                <a href="{{ path('sulawesi') }}">
-                    <div class="destinations--block block-sulawesi"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-sulawesi.jpg') }}' alt="Sulawesi"/>
-                        <div class="text">
-                        <h4>Sulawesi</h4>
-                        </div>
-                    </div>
-                </a>
-
-                
-            
 
                 <a href="{{ path('flores') }}">
                     <div class="destinations--block block-floreskomodo"> 
@@ -930,24 +924,7 @@
                     </div>
                 </a>
 
-                <a href="{{ path('sumatra') }}">
-                    <div class="destinations--block block-sumatra"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-sumatra.jpg') }}' alt="Sumatra"/>
-                        <div class="text">
-                        <h4>Sumatra</h4>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="{{ path('kalimantan') }}">
-                    <div class="destinations--block block-kalimantan"> 
-                        <img src='{{ asset('../assets/images/homepage/low-quality-kalimantan.jpg') }}' alt="Kalimantan"/>
-                        <div class="text">
-                        <h4>Kalimantan</h4>
-                        </div>
-                    </div>
-                </a>
-
+                
             </div>
 
         </section>
