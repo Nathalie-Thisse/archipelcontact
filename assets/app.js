@@ -38,7 +38,7 @@ function closeMenu() {
 
 /* Transparent navbar when scrolling on tablet or phone */
 
-let mediaQueryList = window.matchMedia('(max-width: 990px)');
+let mediaQueryList = window.matchMedia('(max-width: 1112px)');
 const navbar = document.querySelector('.nav-bar');
 let topOfNav = navbar.offsetTop;
 
@@ -64,7 +64,7 @@ if (mediaQueryList.matches) {
 
 /// Cookies
 
-    /* common fuctions */
+    /* common functions */
     function el(selector) { return document.querySelector(selector) }
     function els(selector) { return document.querySelectorAll(selector) }
     function on(selector, event, action) { els(selector).forEach(e => e.addEventListener(event, action)) }
@@ -74,13 +74,13 @@ if (mediaQueryList.matches) {
     }
 
 
-    /* popup button hanler */
+    /* pop up button handler */
     on('.cookie-popup button', 'click', () => {
     el('.cookie-popup').classList.add('cookie-popup--accepted');
     document.cookie = `cookie-accepted=true`
     });
 
-    /* popup init hanler */
+    /* pop up init handler */
     if (cookie('cookie-accepted') !== "true") {
     el('.cookie-popup').classList.add('cookie-popup--not-accepted');
     }

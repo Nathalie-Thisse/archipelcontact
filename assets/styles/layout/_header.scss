@@ -175,7 +175,8 @@
 }
 
 /// Hamburger menu responsive 
-@include media('<=phone'){
+@include media('<=tablet'){
+
 
 	.nav-bar{
 		justify-content: space-between;
