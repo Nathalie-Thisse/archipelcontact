@@ -117,14 +117,46 @@
         img{
             width: 45%;
             margin-top: 2rem;
+            
+
+            
 
             @include media('<=tablet') {
                 width: 60%;
             }
 
             @include media('<=phone') {
-                width: 80%;
+                width: 100%;
             }
+
+        }
+
+        div{
+            position: relative;
+        }
+
+        h4::before{
+            content: '';
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 150px;
+            height: 150px;
+            background-image: url('../../images/icons/icon-flower.svg');
+            top: 9rem;
+            left: 16rem;
+            z-index: -1;
+
+            @include media('<=tablet') {
+                top: 9rem;
+                left: 8rem;
+            }
+
+            @include media('<=phone') {
+                display: none;
+            }
+
         }
 
 } 
