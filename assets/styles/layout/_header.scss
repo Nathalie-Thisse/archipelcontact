@@ -184,21 +184,20 @@
 
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 4rem;
+        right: -100%;
+        top: 3.9rem;
         flex-direction: column;
         background-color: $dark-violet;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.5s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
 		padding: 0 !important;
     }
 
     .nav-menu.active {
-        left: 0;
+        right: 0;
 	
     }
 
