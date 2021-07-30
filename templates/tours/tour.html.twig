@@ -21,7 +21,7 @@
                 <ul class="gradient-list">
                     <li>Durée : {{ tour.duration }} nuits</li>
                     <li>Iles visitées : {{ tour.islands }}</li>
-                    <li>Prix : à partir de {{ tour.price }} € par personne</li>
+                    <li>Prix : à partir de {{ tour.price }} € par personne *</li>
                 </ul>
             </div>
 
@@ -61,8 +61,8 @@
         <section class="conditions">
             <div class="price">
                 <h4>Nos conditions</h4>
-                <p>Prix : à partir de {{ tour.price }} €</p>
-                <p>Note : prix en basse saison, base 2 personnes, en hôtel de charme de type 3*</p>
+                <p>Prix : à partir de {{ tour.price }} € par personne *</p>
+                <p>* Note : en basse saison, base 2 personnes, en hôtel de charme de type 3 étoiles, le prix peut varier en fonction du taux de change</p>
             </div>
             
             <div class="price-included">
@@ -78,11 +78,24 @@
             </div>
         </section>
 
-        <div class="button-contact">
-            <a href="{{ path('contact')}}#contact">
-                <button>Contactez-nous pour plus d'informations</button>
-            </a>
-        </div>
+        {# section 5 - next/previous, buttons #}
+        <section>
+
+            {# TODO
+            <div class="button-next-previous">
+            
+                <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><i class="fas fa-long-arrow-alt-left"></i>{{ tour.title }}</a>
+
+                <a href="{{ path('show_tour', {'id': tour.id})}}#tour">{{ tour.title }}<i class="fas fa-long-arrow-alt-right"></i></a>            
+            </div> #}
+
+            <div class="button-contact">
+                <a href="{{ path('contact')}}#contact">
+                    <button>Contactez-nous pour plus d'informations</button>
+                </a>
+            </div>
+
+        </section>
     </div>
 
 {% endblock %}

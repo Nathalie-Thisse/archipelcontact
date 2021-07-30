@@ -243,10 +243,10 @@
                 div:first-of-type{
                     border-top: lightgrey solid 1px;
                     border-left: lightgrey solid 1px;  
-                    border-right: lightgrey solid 1px;
+                    border-bottom: lightgrey solid 1px;
                     
                         @include media('<=phone') {
-                            border-bottom: lightgrey solid 1px;
+                            border-top: lightgrey solid 1px;
                             border-left: lightgrey solid 1px;  
                             border-right: lightgrey solid 1px;
                         }
