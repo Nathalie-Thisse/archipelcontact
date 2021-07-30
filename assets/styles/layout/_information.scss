@@ -18,15 +18,15 @@
 }
 
 #information .news{
-
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
     margin: 0 15rem;
 
         @include media('<=phone') {
             margin: 0 2rem;
         }
     
-    h4{
-        border-top: solid black 1px;
+    h3{
         margin: 0;
         padding-top: 1rem;
     }
@@ -36,7 +36,7 @@
     }
 
     p:last-of-type{        
-        border-bottom: solid black 1px;
+        
         padding-bottom: 1rem;
     }
 }
@@ -157,7 +157,7 @@
         text-align: center;
         position: relative;
 
-    /* ::before titles */
+    /* images ::before titles */
         &::before{
             content: "";
             background-size: contain;
