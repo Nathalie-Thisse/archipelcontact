@@ -34,22 +34,22 @@
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">
-							<img src="{{ asset('../assets/images/balipage/agung-2.jpg') }}" alt="agung">
+							<img src="{{ asset('../assets/images/balipage/agung-2.jpg') }}" alt="Volcan Agung">
 						</li>
 						<li class="splide__slide">
-							<img src="{{ asset('../assets/images/balipage/procession-2.jpg') }}" alt="procession bali">
+							<img src="{{ asset('../assets/images/balipage/procession-2.jpg') }}" alt="Procession à Bali">
 						</li>
 						<li class="splide__slide">
-							<img src="{{ asset('../assets/images/balipage/ricefields.jpg') }}" alt="ricefields">
+							<img src="{{ asset('../assets/images/balipage/ricefields.jpg') }}" alt="Rizières">
 						</li>
 						<li class="splide__slide">
-							<img src="{{ asset('../assets/images/balipage/sebatu.jpg') }}" alt="sebatu">
+							<img src="{{ asset('../assets/images/balipage/sebatu.jpg') }}" alt="Source sacrée Sebatu">
 						</li>
 						<li class="splide__slide">
-							<img src="{{ asset('../assets/images/balipage/surf-3.jpg') }}" alt="surfing bali">
+							<img src="{{ asset('../assets/images/balipage/surf-3.jpg') }}" alt="Surf Bali">
 						</li>
 						<li class="splide__slide">
-							<img src="{{ asset('../assets/images/balipage/ulun-danu-2.jpg') }}" alt="ulun danu temple">
+							<img src="{{ asset('../assets/images/balipage/ulun-danu-2.jpg') }}" alt="Temple d'Ulun Danu">
 						</li>
 					</ul>
 				</div>
@@ -478,7 +478,7 @@
 							{% for tour in tours %}
 								{% if tour.id == 1 %}
 									<figure class="image-block">
-										<img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
+										<img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
 										<figcaption>
 											<h4>{{ tour.title }}</h4>
 											<p>{{ tour.description }}</p>
@@ -495,7 +495,7 @@
 						{% for tour in tours %}
 							{% if tour.id == 7 %}
 								<figure class="image-block">
-									<img src="{{ asset('../assets/images/tours/7.jpg') }}" alt=" bali family tour"/>
+									<img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
 									<figcaption>
 										<h4>{{ tour.title }}</h4>
 										<p>{{ tour.description }}</p>
@@ -513,7 +513,7 @@
 							{% if tour.id == 6 %}
 								<figure class="image-block">
 									<h3>{{ tour.islands }}</h3>
-									<img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
+									<img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
 									<figcaption>
 										<h4>{{ tour.title }}</h4>
 										<p>{{ tour.description }}</p>

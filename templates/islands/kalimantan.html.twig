@@ -28,22 +28,22 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan7.jpg') }}" alt="kalimantan sunset">
+                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan7.jpg') }}" alt="Couché du soleil à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan2.jpg') }}" alt="kalimantan river">
+                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan2.jpg') }}" alt="Rivière à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan3.jpg') }}" alt="kalimantan orang-outang">
+                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan3.jpg') }}" alt="Orang-outang à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan5.jpg') }}" alt="kalimantan boat">
+                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan5.jpg') }}" alt="Une barque à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan4.jpg') }}" alt="kalimantan jungle">
+                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan4.jpg') }}" alt="La jungle de Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan1.jpg') }}" alt="kalimantan dancing">
+                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan1.jpg') }}" alt="Danse traditionnelle à Kalimantan">
                         </li>
                     </ul>
                 </div>
@@ -168,9 +168,8 @@
                     {# tour nº13 #}
                     {% for tour in tours %} 
                         {% if tour.id == 13 %}
-                            <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/13.jpg') }}" alt="kalimantan tour" />
+                            <figure class="image-block"><
+                            img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -187,8 +186,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 5 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/5.jpg') }}" alt="komodo tour" />
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -205,7 +203,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 6 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
