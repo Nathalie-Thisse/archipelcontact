@@ -358,8 +358,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 3 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/3.jpg') }}" alt="java and bali tour"/>
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -394,8 +393,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 14 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/14.jpg') }}" alt="honeymoon in bali" />
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>

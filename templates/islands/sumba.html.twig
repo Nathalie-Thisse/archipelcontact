@@ -308,8 +308,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 6 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/6.jpg') }}" alt="sustainable tourism bali" />
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>

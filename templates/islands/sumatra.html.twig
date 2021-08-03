@@ -247,8 +247,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 4 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/4.jpg') }}" alt="sulawesi tour" />
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>

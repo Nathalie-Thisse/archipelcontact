@@ -49,8 +49,7 @@
                 </div>
 
                 <div class="day-photo">
-                    {# <img src="{{ day.photo }}" alt=""> #}
-                    <img src="{{ asset('../assets/images/tours/programme1/tanah-lot.jpg') }}" alt="">               
+                    <img src="{{ asset('../assets/images/tours/' ~ day.photo()) }}" alt="photo du circuit"/>               
                 </div>
             </div>
 

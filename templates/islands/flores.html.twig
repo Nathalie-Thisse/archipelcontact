@@ -264,7 +264,6 @@
                     {% for tour in tours %} 
                         {% if tour.id == 11 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
                                 <img src="{{ asset('../assets/images/tours/11.jpg') }}" alt="flores and komodo tour" />
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
@@ -300,8 +299,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 9 %}
                             <figure class="image-block">
-                                {# <h3>{{ tour.islands }}</h3> #}
-                                <img src="{{ asset('../assets/images/tours/9.jpg') }}" alt="bali zen tour" />
+                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo du circuit"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
