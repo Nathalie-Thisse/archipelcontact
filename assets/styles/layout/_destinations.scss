@@ -1,5 +1,8 @@
 
 #destinations{
+
+    position: relative;
+
     h4{
         text-align: center;
     }
@@ -16,6 +19,54 @@
         @include media('<=tablet') {
             display: none;
         }
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url('/assets/images/travelline.png');
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 62%;
+        background-size: contain;
+        z-index: -1;
+        right: 1072px;
+        top: 124px;
+
+        @include media('<=big-laptop'){
+            left: -19%;
+            top: 1%;
+        }
+
+        @include media('<=tablet'){
+            display: none;
+        }
+
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url('/assets/images/travelline2.png');
+        background-repeat: no-repeat;
+        width: 21%;
+        height: 62%;
+        background-size: contain;
+        z-index: -1;
+        left: 1056px;
+        top: 124px;
+
+        @include media('<=big-laptop'){
+            left: 77%;
+            top: 32%;
+        }
+
+        @include media('<=tablet'){
+            display: none; 
+        }
+
     }
 
 }
