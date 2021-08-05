@@ -189,6 +189,8 @@
 
             img{
                 width: 75%;
+                object-fit: cover;
+                height: 200px;
 
                     @include media('<=phone') {
                         width: 60%;
