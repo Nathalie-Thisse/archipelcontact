@@ -8,6 +8,8 @@
 // any CSS you import will output into a single css file (app.css in this case)
 /* import './styles/app.scss'; */
 require('./styles/app.scss');
+import '@splidejs/splide';
+import '../node_modules/@splidejs/splide/dist/css/splide.min.css';
 
 // start the Stimulus application
 import './bootstrap';

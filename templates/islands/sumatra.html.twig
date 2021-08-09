@@ -18,7 +18,7 @@
                         <p>Et à travers les villages, c’est le peuple Batak que l’on rencontre, ses maisons sur pilotis et ses croyances ancestrales que l’on découvre.</p>
                     </div>
                     <div>
-                        <img src="{{ asset('../assets/images/sumatrapage/icon-palmtrees.png') }}" alt="Dessin d'élephant">
+                        <img src="{{ asset('build/images/sumatrapage/icon-palmtrees.png') }}" alt="Dessin d'élephant">
                     </div>
                 </div>
             </section>
@@ -30,22 +30,22 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sumatrapage/sumatra1.jpg') }}" alt="Lac Toba">
+                            <img src="{{ asset('build/images/sumatrapage/sumatra1.jpg') }}" alt="Lac Toba">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sumatrapage/sumatra2.jpg') }}" alt="Plage à Sumatra">
+                            <img src="{{ asset('build/images/sumatrapage/sumatra2.jpg') }}" alt="Plage à Sumatra">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sumatrapage/sumatra3.jpg') }}" alt="Eléphant">
+                            <img src="{{ asset('build/images/sumatrapage/sumatra3.jpg') }}" alt="Eléphant">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sumatrapage/sumatra4.jpg') }}" alt="Enfant à Sumatra">
+                            <img src="{{ asset('build/images/sumatrapage/sumatra4.jpg') }}" alt="Enfant à Sumatra">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sumatrapage/sumatra5.jpg') }}" alt="Orang-outang à Sumatra">
+                            <img src="{{ asset('build/images/sumatrapage/sumatra5.jpg') }}" alt="Orang-outang à Sumatra">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sumatrapage/sumatra6.jpg') }}" alt="Un palace à Sumatra">
+                            <img src="{{ asset('build/images/sumatrapage/sumatra6.jpg') }}" alt="Un palace à Sumatra">
                         </li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@
                 </div>            
 
                 <div>
-                    <img src="{{ asset('../assets/images/sumatrapage/indomap-sumatra.png') }}" alt="Carte de l'Indonésie localisant l'île de Sumatra">
+                    <img src="{{ asset('build/images/sumatrapage/indomap-sumatra.png') }}" alt="Carte de l'Indonésie localisant l'île de Sumatra">
                 </div>
             </section>
     
@@ -211,7 +211,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 8 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -228,7 +228,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 3 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -245,7 +245,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 4 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>

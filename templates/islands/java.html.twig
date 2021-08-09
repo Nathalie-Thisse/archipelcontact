@@ -17,7 +17,7 @@
                         <p>Voyager à travers ses magnifiques paysages de plaines et de volcans, couverts de forêts tropicales et de plantations, enchantera les amoureux de la nature.</p>
                     </div>
                     <div>
-                        <img src="{{ asset('../assets/images/javapage/java-mountains.svg') }}" alt="Montagnes de Java">
+                        <img src="{{ asset('build/images/javapage/java-mountains.svg') }}" alt="Montagnes de Java">
                     </div>
                 </div>
             </section>
@@ -29,22 +29,22 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/javapage/borobudur.jpg') }}" alt="Temple de Borobudrur"> 
+                            <img src="{{ asset('build/images/javapage/borobudur.jpg') }}" alt="Temple de Borobudrur"> 
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/javapage/bromo3.jpg') }}" alt="Mont Bromo">
+                            <img src="{{ asset('build/images/javapage/bromo3.jpg') }}" alt="Mont Bromo">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/javapage/street-java.jpg') }}" alt="Une rue à Java">"
+                            <img src="{{ asset('build/images/javapage/street-java.jpg') }}" alt="Une rue à Java">"
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/javapage/prambanan2.jpg') }}" alt="Temple de Prambanan">
+                            <img src="{{ asset('build/images/javapage/prambanan2.jpg') }}" alt="Temple de Prambanan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/javapage/ijen.jpg') }}" alt="Mont Ijen">
+                            <img src="{{ asset('build/images/javapage/ijen.jpg') }}" alt="Mont Ijen">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/javapage/street-java8.jpg') }}" alt="Dans la rue à Java">
+                            <img src="{{ asset('build/images/javapage/street-java8.jpg') }}" alt="Dans la rue à Java">
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                 </div>            
 
                 <div>
-                    <img src="{{ asset('../assets/images/javapage/indomap-java.png') }}" alt="Carte de l'Indonésie localisant l'île de Java">
+                    <img src="{{ asset('build/images/javapage/indomap-java.png') }}" alt="Carte de l'Indonésie localisant l'île de Java">
                 </div>
             </section>
     
@@ -358,7 +358,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 3 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -375,7 +375,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 1 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -392,7 +392,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 14 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>

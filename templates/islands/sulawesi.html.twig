@@ -17,7 +17,7 @@
                         <p>Au Nord, les amateurs de farniente et les plongeurs viendront quant à eux profiter des petits paradis comme la région de Manado, l’archipel Togian ou le parc national marin de Wakatobi. Des plages dignes des plus belles carte postales !</p>
                     </div>
                     <div>
-                        <img src="{{ asset('../assets/images/sulawesipage/fish.png') }}" alt="Dessin d'un poisson exotique">
+                        <img src="{{ asset('build/images/sulawesipage/fish.png') }}" alt="Dessin d'un poisson exotique">
                     </div>
                 </div>
             </section>
@@ -29,22 +29,22 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sulawesipage/sulawesi6.jpg') }}" alt="Un village traditionnel à Sulawesi">
+                            <img src="{{ asset('build/images/sulawesipage/sulawesi6.jpg') }}" alt="Un village traditionnel à Sulawesi">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sulawesipage/sulawesi1.jpg') }}" alt="Atelier de tissage à Sulawesi">
+                            <img src="{{ asset('build/images/sulawesipage/sulawesi1.jpg') }}" alt="Atelier de tissage à Sulawesi">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sulawesipage/sea3.jpg') }}" alt="Poissons à Sulawesi">
+                            <img src="{{ asset('build/images/sulawesipage/sea3.jpg') }}" alt="Poissons à Sulawesi">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sulawesipage/ricefield.jpg') }}" alt="Rizières en terrasses à Sulawesi">
+                            <img src="{{ asset('build/images/sulawesipage/ricefield.jpg') }}" alt="Rizières en terrasses à Sulawesi">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sulawesipage/man.jpg') }}" alt="Habitant de Sulawesi">
+                            <img src="{{ asset('build/images/sulawesipage/man.jpg') }}" alt="Habitant de Sulawesi">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/sulawesipage/sulawesi3.jpg') }}" alt="Maison traditionnelle de Sulawesi">
+                            <img src="{{ asset('build/images/sulawesipage/sulawesi3.jpg') }}" alt="Maison traditionnelle de Sulawesi">
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                 </div>            
 
                 <div>
-                    <img src="{{ asset('../assets/images/sulawesipage/indomap-sulawesi.png') }}" alt="Carte de l'Indonésie localisant l'île de Sulawesi">
+                    <img src="{{ asset('build/images/sulawesipage/indomap-sulawesi.png') }}" alt="Carte de l'Indonésie localisant l'île de Sulawesi">
                 </div>
             </section>
     
@@ -323,7 +323,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 4 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -340,7 +340,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 3 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -357,7 +357,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 5 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>

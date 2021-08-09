@@ -16,7 +16,7 @@
                         <p>Cette île aux milles rivières est recouverte d’une épaisse forêt tropicale que les amateurs d’aventure se feront un plaisir de découvrir.</p>
                     </div>
                     <div class="kalimantan-svg">
-                        <img src="{{ asset('../assets/images/kalimantanpage/icon-leaf.svg') }}" alt="Dessin d'une feuille de plante exotique">
+                        <img src="{{ asset('build/images/kalimantanpage/icon-leaf.svg') }}" alt="Dessin d'une feuille de plante exotique">
                     </div>
                 </div>
             </section>
@@ -28,22 +28,22 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan7.jpg') }}" alt="Couché du soleil à Kalimantan">
+                            <img src="{{ asset('build/images/kalimantanpage/kalimantan7.jpg') }}" alt="Couché du soleil à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan2.jpg') }}" alt="Rivière à Kalimantan">
+                            <img src="{{ asset('build/images/kalimantanpage/kalimantan2.jpg') }}" alt="Rivière à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan3.jpg') }}" alt="Orang-outang à Kalimantan">
+                            <img src="{{ asset('build/images/kalimantanpage/kalimantan3.jpg') }}" alt="Orang-outang à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan5.jpg') }}" alt="Une barque à Kalimantan">
+                            <img src="{{ asset('build/images/kalimantanpage/kalimantan5.jpg') }}" alt="Une barque à Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan4.jpg') }}" alt="La jungle de Kalimantan">
+                            <img src="{{ asset('build/images/kalimantanpage/kalimantan4.jpg') }}" alt="La jungle de Kalimantan">
                         </li>
                         <li class="splide__slide">
-                            <img src="{{ asset('../assets/images/kalimantanpage/kalimantan1.jpg') }}" alt="Danse traditionnelle à Kalimantan">
+                            <img src="{{ asset('build/images/kalimantanpage/kalimantan1.jpg') }}" alt="Danse traditionnelle à Kalimantan">
                         </li>
                     </ul>
                 </div>
@@ -64,7 +64,7 @@
                 </div>            
 
                 <div>
-                    <img src="{{ asset('../assets/images/kalimantanpage/indomap-kalimantan.png') }}" alt="Carte de l'Indonésie localisant l'île de Kalimantan">
+                    <img src="{{ asset('build/images/kalimantanpage/indomap-kalimantan.png') }}" alt="Carte de l'Indonésie localisant l'île de Kalimantan">
                 </div>
             </section>
     
@@ -169,7 +169,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 13 %}
                             <figure class="image-block"><
-                            img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                            img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -186,7 +186,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 5 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
@@ -203,7 +203,7 @@
                     {% for tour in tours %} 
                         {% if tour.id == 6 %}
                             <figure class="image-block">
-                                <img src="{{ asset('../assets/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
+                                <img src="{{ asset('build/images/tours/' ~ tour.photo()) }}" alt="photo de voyage en Indonésie"/>
                                 <figcaption>
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
