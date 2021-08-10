@@ -26,6 +26,10 @@
         text-align: center;
         font-family: 'Beth Ellen', cursive;
         margin-bottom: 4rem; 
+
+            @include media('<=phone') {
+                margin-bottom: 1rem !important;
+            }
     }
 }
 

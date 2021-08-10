@@ -193,7 +193,8 @@
                 height: 200px;
 
                     @include media('<=phone') {
-                        width: 60%;
+                        width: 80%;
+                        height: 150px;
                     }
             }
         }

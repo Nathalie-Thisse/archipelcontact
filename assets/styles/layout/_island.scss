@@ -42,6 +42,10 @@
 
         div:last-child{
             width: 30%;
+
+                @include media('<=phone') {
+                   width: 70%;
+                }
         }
 
         //specifics for Kalimantan page
@@ -60,8 +64,9 @@
             @include media('<=tablet') {
                 margin: 4rem 0;
             }
-            @media only screen and (max-width: 767px) {
+            @include media('<=phone') {
                 flex-direction: column;
+                margin: 2rem 0;
             }
 
             .top-activities{
@@ -91,7 +96,7 @@
                         margin-left: 2rem;
                     }
                     @include media('<=phone') {
-                        max-width: 400px;
+                        max-width: 280px;
                         margin-left: 0rem;
                         margin-top: 3rem;
                     }
@@ -169,8 +174,8 @@
         font-size: 1.05rem;
         padding: 0 16rem;
 
-        @media only screen and (max-width: 767px) {
-            padding: 3rem;
+        @include media('<=phone') {
+            padding: 0 2rem;
             text-align: center;
         }
     }
@@ -180,5 +185,12 @@
     }
 
     /** ---> for activities tabs ---> see tab.scss **/
+
+
+    /** -------- section 5 : Presentation  --------- **/
+
+    .main-paragraph-wrapper{
+        padding: 0 0.5rem;
+    }
 }
 

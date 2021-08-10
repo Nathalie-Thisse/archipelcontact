@@ -56,7 +56,11 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;     
+        overflow: hidden;
+        
+          @include media('<=phone') {
+            padding: 0 2rem;
+        }
       }
 
 

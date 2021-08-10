@@ -34,6 +34,10 @@
 	img{
 		width: 90px;
 		margin-top: 15%;
+
+		@include media('<=phone') {
+            display: none;
+        }
 	}
 }
 

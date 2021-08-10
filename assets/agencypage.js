@@ -16,7 +16,7 @@ import Splide from '@splidejs/splide';
 			perPage: 4,
 				breakpoints: {
 					640: {
-						perPage: 2,
+						perPage: 1,
 					},
 				},
 			

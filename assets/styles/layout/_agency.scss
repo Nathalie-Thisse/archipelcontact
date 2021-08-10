@@ -29,7 +29,7 @@
         text-align: justify;
 
         @include media('<=phone') {
-            width: 80%;
+            width: 140%;
         }
     }
 
@@ -51,6 +51,13 @@
             @include media('<=phone') {
                 width: 100%;
             }
+    }
+
+    h4{
+        @include media('<=tablet') {
+            text-align: center; 
+            margin-top: 1rem;
+        }
     }
 
     // batik decoration next to photos
@@ -81,6 +88,8 @@
                 
                 @include media('<=phone') {
                     top: 5rem;
+                    left: 9rem;                    
+                    height: 135px;
                 }      
         }
     }
@@ -111,6 +120,8 @@
 
                 @include media('<=phone') {
                     top: 5rem;
+                    left: 9rem;                    
+                    height: 135px;
                 }      
         }
     }
