@@ -5,8 +5,11 @@
 
     max-width: 1200px; /* 2 */
 
-    padding-right: 10px; /* 3 */
-    padding-left:  10px; /* 3 */
+    padding: 0 10px; /* 3 */
+
+    @include media('<=phone') {
+        padding: 0 2rem;
+    }  
 }
 
 .main-paragraph-wrapper{
@@ -17,7 +20,7 @@
         padding: 0 10rem;
     } 
     @include media('<=phone') {
-        padding: 0 1rem;
+        padding: 0 0rem;
     }           
 }
 

@@ -16,6 +16,10 @@
 
     margin: 0 2rem;
     position: relative;
+
+    @include media('<=phone') {
+        margin: 0;
+    }
     
     .article{
         display:flex;
@@ -29,7 +33,7 @@
         text-align: justify;
 
         @include media('<=phone') {
-            width: 140%;
+            width: 100%;
         }
     }
 
@@ -88,9 +92,9 @@
                 }
                 
                 @include media('<=phone') {
+                    width: 105%;
+                    background-position-x: 100%;
                     top: 3rem;
-                    left: 12rem;
-                    height: 160px;
                 }      
         }
     }
@@ -121,9 +125,10 @@
                 }
 
                 @include media('<=phone') {
+                    
+                    width: 105%;
+                    background-position-x: 0%;
                     top: 3rem;
-                    left: -2rem;
-                    height: 160px;
                 }      
         }
     }
