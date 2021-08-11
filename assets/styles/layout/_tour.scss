@@ -60,6 +60,10 @@
                         height: 300px;
                         margin-top: 2rem;
                     }
+
+                    @include media('<=phone') {
+                        width: 300px;
+                    }
             }
 
             .map-responsive iframe{
@@ -71,6 +75,10 @@
                         width: 400px;
                         height: 300px;
                         margin-left: 0;
+                    }
+
+                    @include media('<=phone') {
+                        width: 300px;
                     }
 
             }
@@ -251,12 +259,13 @@
                         @include media('<=phone') {
                             border-top: lightgrey solid 1px;
                             border-left: lightgrey solid 1px;  
-                            border-right: lightgrey solid 1px;
+                            border-right: lightgrey solid 1px;                             
+                            border-bottom: none;
                         }
                 }
 
                 div:last-of-type{
-                    border: lightgrey solid 1px;                       
+                    border: lightgrey solid 1px;
                 }
         }
     }

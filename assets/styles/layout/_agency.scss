@@ -67,8 +67,9 @@
 
         @include media('<=phone') {
             flex-direction: column;
+            padding-top: 0;
         }
-        
+
         &::before{
             content: "";
             display: block;
@@ -87,9 +88,9 @@
                 }
                 
                 @include media('<=phone') {
-                    top: 5rem;
-                    left: 9rem;                    
-                    height: 135px;
+                    top: 3rem;
+                    left: 12rem;
+                    height: 160px;
                 }      
         }
     }
@@ -99,6 +100,7 @@
 
             @include media('<=phone') {
                 flex-direction: column;
+                padding-top: 0;
             }
         
         &::before{
@@ -119,9 +121,9 @@
                 }
 
                 @include media('<=phone') {
-                    top: 5rem;
-                    left: 9rem;                    
-                    height: 135px;
+                    top: 3rem;
+                    left: -2rem;
+                    height: 160px;
                 }      
         }
     }

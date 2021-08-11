@@ -122,7 +122,7 @@
         height: 280px;
       }
       @include media('<=phone') {
-        width: 220px;
+        width: 280px;
         height: 300px;
         margin-top: 2rem;
       }
@@ -137,7 +137,7 @@
         height: 280px;
       }
       @include media('<=phone') {
-        width: 220px;
+        width: 280px;
         height: 300px;
       }
 }
@@ -256,6 +256,10 @@
   // special CSS for "Coutumes" tab on Bali Page
   .coutumes p{
     padding-right: 20rem;
+
+      @include media('<=phone') {
+        padding-right: 0rem;
+      }
   }
 
   .coutumes-icon{    
@@ -264,6 +268,10 @@
 
       img{
         width: 100%;
+
+          @include media('<=phone') {
+            display: none;
+          }
       }
   }
 }

@@ -92,6 +92,10 @@
 
         h5 + div{
             padding-left: 30px;
+
+                @include media('<=phone') {
+                    padding: 2rem;
+                }
         }
 
         a{
