@@ -16,10 +16,19 @@
   line-height: 150%;
   transition: opacity .5s;
   opacity: 0;
+
+    @include media('<=tablet') {
+      left: 0;
+      right: 0; 
+    }
 }
 .cookie-popup--short {
   right: none;
   width: 21.875rem; 
+
+    @include media('<=tablet') {
+      width: auto !important;  
+    } 
 }
 .cookie-popup--dark {
   background: #000;
