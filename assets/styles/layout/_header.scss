@@ -15,7 +15,7 @@
     background-image:  linear-gradient(to right, rgba(35, 24, 52, 0.379), rgba(35, 24, 52, 0.379)), url('../../images/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center top;
 
     padding: 15% 0 8rem 0;
 
@@ -23,12 +23,18 @@
         font-size: 4rem; 
         padding-bottom: 3rem;
 		color: white; 
+		@include media('<=phone') {
+            font-size: 3.5rem;
+        }
     }
 
 	h2{
 		font-family: 'Quicksand', sans-serif;
-		font-size: 2rem !important;
+		font-size: 2rem;
 		padding: 0;
+		@include media('<=phone') {
+            font-size: 1.5rem !important;
+        }
 	}
 
 	img{

@@ -33,7 +33,6 @@
     }
 
     p:last-of-type{        
-        
         padding-bottom: 1rem;
     }
 }
@@ -129,13 +128,15 @@
     }
 
     /** margin/padding stuff**/
-    h3, h4{        
-        
+    h3, h4, h5{        
         font-family: 'Beth Ellen', cursive;
+    }
+
+    h4, h5{        
         padding-top: 5rem;
     }
 
-    h3{
+    h4{
         margin-top: 3rem;
         margin-bottom: 1rem;        
             
@@ -144,12 +145,11 @@
         }
     }
 
-    h3:first-child{
+    h4:first-child{
        padding-top: 1.5rem;
-       
    }
     
-    h4{
+    h5{
         margin: 2rem 0;
         text-align: center;
         position: relative;
@@ -170,60 +170,59 @@
     }
 
 
-    #when--climate h4::before{
+    #when--climate h5::before{
         background-image: url('../../images/informationpage/icon-sun.png');
     }
 
-    #when--temperatures h4::before{
+    #when--temperatures h5::before{
         background-image: url('../../images/informationpage/icon-thermometre.png');
     }
 
-    #formalities--passport h4::before{
+    #formalities--passport h5::before{
         background-image: url('../../images/informationpage/icon-passport.png');
     }
 
-    #formalities--passport h4::before{
+    #formalities--passport h5::before{
         background-image: url('../../images/informationpage/icon-passport.png');
     }
 
-    #danger--health h4::before{
+    #danger--health h5::before{
         background-image: url('../../images/informationpage/icon-health.png');
     }
 
-    #danger--water h4::before{
+    #danger--water h5::before{
         background-image: url('../../images/informationpage/icon-water.png');
     }
 
-    #formalities--vaccination h4::before{
+    #formalities--vaccination h5::before{
         background-image: url('../../images/informationpage/icon-vaccination.png');
     }
 
-    #money--bargaining h4::before{
+    #money--bargaining h5::before{
         background-image: url('../../images/informationpage/icon-money.png');
     }
 
-    #food--specialities h4::before{
+    #food--specialities h5::before{
         background-image: url('../../images/informationpage/icon-meal.png');
     }
 
-    #food--wheretoeat h4::before{
+    #food--wheretoeat h5::before{
         background-image: url('../../images/informationpage/icon-locationpin.png');
     }
 
-    #transport--driving h4::before{
+    #transport--driving h5::before{
         background-image: url('../../images/informationpage/icon-compass.png');
     }
 
-    #transport--taxis h4::before{
+    #transport--taxis h5::before{
         background-image: url('../../images/informationpage/icon-car.png');
     }
 
-    #transport--severalislands h4::before{
+    #transport--severalislands h5::before{
         background-image: url('../../images/informationpage/icon-map.png');
     }
 
     #time h3{
-
         position: relative;
 
         &::before{
@@ -238,11 +237,5 @@
         height: 80px;
         bottom: 87px;
         }
-
-       
-        
     }
-    
-
-
 }

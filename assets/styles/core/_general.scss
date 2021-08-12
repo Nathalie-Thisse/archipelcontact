@@ -29,10 +29,9 @@
 }
 
 h2{
-    font-size: 2.5rem !important;
 
     @include media('<=phone') {
-        line-height: 4.5rem !important;
+        line-height: 2.5rem !important;
         padding: 1rem 2rem !important;
     } 
 }
@@ -44,12 +43,15 @@ h1, h2{
 }
 
 h3{
+    font-size: 2.5rem !important;
     font-family: 'Beth Ellen', cursive;
-    font-size: 2rem;
+    padding: 5rem 0;
     text-align: center;
-    margin-top: 2rem !important; 
-    margin-bottom: 2.5rem !important;    
-    line-height: 3rem !important;
+
+    @include media('<=phone') {
+        font-size: 2rem !important;
+        padding: 3rem 0;
+    } 
 }
 
 h4{

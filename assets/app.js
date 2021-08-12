@@ -12,7 +12,7 @@ import '@splidejs/splide';
 import '../node_modules/@splidejs/splide/dist/css/splide.min.css';
 
 // start the Stimulus application
-import './bootstrap';
+/* import './bootstrap'; */
 
 
 /// ****** MAIN JS FILE : ******  
