@@ -136,6 +136,10 @@
           flex: 0 1 80%;
           z-index: 1;
           position: relative; 
+
+          @include media('<=phone') {    
+            flex: 0 1 100%;
+          }
         }        
       }
 
@@ -146,6 +150,11 @@
 
             @include media('<=tablet') {              
               top: -2.2rem;
+              left: -2.5rem;
+            }
+
+            @include media('<=phone') {              
+              top: -1.5rem;
               left: -2.5rem;
             }
         }
