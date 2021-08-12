@@ -8,6 +8,12 @@
         @include media('<=tablet') {
             padding: 2rem;
         } 
+    
+    .wrapper{
+        @include media('<=phone') {
+            padding: 0;
+        } 
+    }
 
     /** -------- section 1 Introduction & 5 Presentation  --------- **/
 
