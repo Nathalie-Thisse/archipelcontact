@@ -279,9 +279,9 @@
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
                                     <p>À partir de {{ tour.price }} € par personne</p>
-                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                    <form style="display: inline" action="{{ path('show_tour', {'id': tour.id})}}#tour" method="get"><button> 
                                         Découvrez
-                                    </button></a>
+                                    </button></form>
                                 </figcaption>
                             </figure>
                         {% endif %}
@@ -296,9 +296,9 @@
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
                                     <p>À partir de {{ tour.price }} € par personne</p>
-                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                    <form style="display: inline" action="{{ path('show_tour', {'id': tour.id})}}#tour" method="get"><button> 
                                         Découvrez
-                                    </button></a>
+                                    </button></form>
                                 </figcaption>
                             </figure>
                         {% endif %}
@@ -313,9 +313,9 @@
                                     <h4>{{ tour.title }}</h4>
                                     <p>{{ tour.description }}</p>
                                     <p>À partir de {{ tour.price }} € par personne</p>
-                                    <a href="{{ path('show_tour', {'id': tour.id})}}#tour"><button> 
+                                    <form style="display: inline" action="{{ path('show_tour', {'id': tour.id})}}#tour" method="get"><button> 
                                         Découvrez
-                                    </button></a>
+                                    </button></form>
                                 </figcaption>
                             </figure>
                         {% endif %}
@@ -324,9 +324,9 @@
             </section>
 
             <div class="button-contact">
-                <a href="{{ path('contact')}}#contact">
-                    <button>Contactez-nous pour des circuits sur-mesure</button>
-                </a>
+                <form style="display: inline" action="{{ path('contact')}}#contact" method="get">
+					<button>Contactez-nous pour des circuits sur-mesure</button>
+				</form>
             </div>
         </div>
     </div>

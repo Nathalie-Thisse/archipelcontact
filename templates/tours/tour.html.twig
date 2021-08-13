@@ -37,7 +37,7 @@
 
         <section class="programme-details">
 
-            <h3>Détails du circuit : </br>
+            <h3>Détails du circuit :<br />
                 {{ tour.title }}</h3>
 
             {% for day in tour.days %}
@@ -91,9 +91,9 @@
             </div> #}
 
             <div class="button-contact">
-                <a href="{{ path('contact')}}#contact">
-                    <button>Contactez-nous pour plus d'informations</button>
-                </a>
+                <form style="display: inline" action="{{ path('contact')}}#contact" method="get">
+					<button>Contactez-nous pour plus d'informations</button>
+				</form>
             </div>
 
         </section>
