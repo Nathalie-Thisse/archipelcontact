@@ -122,9 +122,6 @@
             width: 45%;
             margin-top: 2rem;
             
-
-            
-
             @include media('<=tablet') {
                 width: 60%;
             }
@@ -132,7 +129,6 @@
             @include media('<=phone') {
                 width: 100%;
             }
-
         }
 
         div{
@@ -148,15 +144,15 @@
             width: 150px;
             height: 150px;
             background-image: url('../../images/icons/icon-flower.svg');
-            top: 9rem;
-            left: 16rem;
+            top: 17rem;
+            left: 18rem;
             z-index: -1;
 
             @include media('<=tablet') {
-                top: 9rem;
-                left: 8rem;
+                top: 20rem;
+                left: 5rem;
             }
-
+            
             @include media('<=phone') {
                 display: none;
             }
