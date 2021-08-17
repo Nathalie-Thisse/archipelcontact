@@ -154,7 +154,7 @@
         text-align: center;
         position: relative;
 
-    /* images ::before titles */
+    /* Icons ::before titles */
         &::before{
             content: "";
             background-size: contain;
@@ -163,12 +163,10 @@
             display: block;
             position: absolute;
             width: 100%;
-            height: 80px;
-            bottom: 60px;
+            height: 60px;
+            bottom: 50px;
         }
-
     }
-
 
     #when--climate h5::before{
         background-image: url('../../images/informationpage/icon-sun.png');
@@ -178,12 +176,16 @@
         background-image: url('../../images/informationpage/icon-thermometre.png');
     }
 
-    #formalities--passport h5::before{
-        background-image: url('../../images/informationpage/icon-passport.png');
+    #formalities--visa h5::before{
+        background-image: url('../../images/informationpage/icon-visa.png');
     }
 
     #formalities--passport h5::before{
         background-image: url('../../images/informationpage/icon-passport.png');
+    }
+
+    #danger--advice h5::before{
+        background-image: url('../../images/informationpage/icon-lightbulb.png');
     }
 
     #danger--health h5::before{
@@ -198,8 +200,32 @@
         background-image: url('../../images/informationpage/icon-vaccination.png');
     }
 
-    #money--bargaining h5::before{
+    #money--currency h5::before{
         background-image: url('../../images/informationpage/icon-money.png');
+    }
+
+    #money--bargaining h5::before{
+        background-image: url('../../images/informationpage/icon-handshake.png');
+    }
+
+    #money--tips h5::before{
+        background-image: url('../../images/informationpage/icon-coins.png');
+    }
+
+    #money--prices h5::before{
+        background-image: url('../../images/informationpage/icon-rupiah.png');
+    }
+
+    #celebrations--nyepi h5::before{
+        background-image: url('../../images/informationpage/icon-plumeriaflower.svg');
+    }
+
+    #celebrations--idulfitri h5::before{
+        background-image: url('../../images/informationpage/icon-leaf_2.svg');
+    }
+
+    #celebrations--sulawesi h5::before{
+        background-image: url('../../images/informationpage/icon-birdofparadiseflower.svg');
     }
 
     #food--specialities h5::before{
@@ -218,24 +244,16 @@
         background-image: url('../../images/informationpage/icon-car.png');
     }
 
+    #transport--publictransport h5::before{
+        background-image: url('../../images/informationpage/icon-bus.png');
+    }
+
     #transport--severalislands h5::before{
+        background-image: url('../../images/informationpage/icon-plane.png');
+    }
+
+    #transport--oneisland h5::before{
         background-image: url('../../images/informationpage/icon-map.png');
     }
 
-    #time h3{
-        position: relative;
-
-        &::before{
-        content: "";
-        background-image: url('../../images/informationpage/icon-clock.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 80px;
-        bottom: 87px;
-        }
-    }
 }
