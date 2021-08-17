@@ -77,7 +77,7 @@
         position: relative;
         overflow: hidden;
 
-        @include media('<=big-phone') {
+        @include media('<=small-phone') {
           padding: 0 2rem;
           flex-wrap: nowrap;
         }
@@ -92,7 +92,7 @@
           padding: 0;
         }
 
-        @include media('<=big-phone') {
+        @include media('<=small-phone') {
           order: 2;
         }
       }
@@ -140,7 +140,7 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
 
-        @include media('<=big-phone') {
+        @include media('<=small-phone') {
           flex: 0 0 7%;
         }
       }
@@ -150,7 +150,7 @@
         border-bottom-left-radius: 10px;
         box-shadow: -0.6rem 0.40rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.9rem 1.125rem rgba(75, 0, 0, 0.05);
 
-        @include media('<=big-phone') {
+        @include media('<=small-phone') {
           order: 1;
           box-shadow: none;
         }
@@ -162,7 +162,7 @@
         border-bottom-right-radius: 10px;
         box-shadow: .6rem 0.40rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.9rem 1.125rem rgba(75, 0, 0, 0.05);
 
-        @include media('<=big-phone') {
+        @include media('<=small-phone') {
           order: 2;
           box-shadow: none;
         }
