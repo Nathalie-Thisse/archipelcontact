@@ -14,6 +14,8 @@ import Splide from '@splidejs/splide';
  			autoplay : 'true',
  			type  : 'fade',
  			rewind: true,
+			lazyLoad : 'true',
+			nearby : 1,
  		} ).mount();
 
 
