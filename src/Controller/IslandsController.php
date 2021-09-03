@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class IslandsController extends AbstractController
 {
   
-    #[Route('/islands', name: 'islands', methods: ['GET'])]
+    #[Route('/iles', name: 'islands', methods: ['GET'])]
     public function index(): Response
     {
         return $this->render('islands/index.html.twig', [

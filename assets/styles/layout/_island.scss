@@ -15,6 +15,7 @@
         } 
     }
 
+
     /** -------- section 1 Introduction & 5 Presentation  --------- **/
 
     .introduction-paragraph{
@@ -176,8 +177,8 @@
 
     /** -------- section 4 : Activities  --------- **/
 
-    .activities-container >p{
-        font-size: 1.05rem;
+    .activities-section p{
+        font-size: 1.2rem;
         padding: 0 16rem;
 
         @include media('<=phone') {

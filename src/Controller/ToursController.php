@@ -17,7 +17,7 @@ class ToursController extends AbstractController
 
     // Display all tours in Tours Page: 
 
-    #[Route('/tours', name: 'tours', methods: ['GET'])]
+    #[Route('/circuits', name: 'tours', methods: ['GET'])]
     public function index(ToursRepository $toursRepository): Response
     {
         return $this->render('tours/index.html.twig', [
@@ -41,7 +41,7 @@ class ToursController extends AbstractController
     
     // Display each tour information in Tour Page: 
         
-    #[Route('/tours/{id}', name: 'show_tour', methods: ['GET'])]
+    #[Route('/circuit/{id}', name: 'show_tour', methods: ['GET'])]
     public function showTour($id, EntityManagerInterface $entityManager, Request $request): Response
     {
         $tour = $entityManager->getRepository(Tours::class)->find($id);

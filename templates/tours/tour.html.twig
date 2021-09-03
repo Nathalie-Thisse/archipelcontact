@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Circuit en Indonésie{% endblock %}
+{% block title %}Circuit à Bali{% endblock %}
 
 {% block meta_description %}Voyage en Indonésie : des idées de circuits.{% endblock %}
 
@@ -10,7 +10,9 @@
 
         {# section 2 - introduction #}
         <section class="introduction">
-            <h3>{{ tour.title }}</h3>
+            <h3>Notre circuit :<br />
+                {{ tour.title }}</h3>
+
             <div>
                 <p>{{ tour.description }}</p>
             </div>

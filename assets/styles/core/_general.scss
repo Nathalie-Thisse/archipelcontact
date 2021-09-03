@@ -47,6 +47,7 @@ h3{
     font-family: 'Beth Ellen', cursive;
     padding: 5rem 0;
     text-align: center;
+    line-height: 5rem !important;
 
     @include media('<=phone') {
         font-size: 2rem !important;
