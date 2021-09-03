@@ -10,7 +10,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/admin/tours')]
+/* WORK IN PROGRESS ! */
+//V2 Back-office
+
+/* #[Route('/admin/tours')]
 class ToursEditController extends AbstractController
 {
     #[Route('/', name: 'tours_edit_index', methods: ['GET'])]
@@ -80,3 +83,4 @@ class ToursEditController extends AbstractController
         return $this->redirectToRoute('tours_edit_index');
     }
 }
+ */
