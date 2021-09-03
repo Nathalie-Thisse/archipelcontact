@@ -10,7 +10,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/admin/days')]
+/* WORK IN PROGRESS ! */
+//V2 Back-office
+
+/* #[Route('/admin/days')]
 class DaysEditController extends AbstractController
 {
     #[Route('/', name: 'days_edit_index', methods: ['GET'])]
@@ -80,3 +83,4 @@ class DaysEditController extends AbstractController
         return $this->redirectToRoute('days_edit_index');
     }
 }
+ */
