@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /* WORK IN PROGRESS ! */
 //V2 Back-office
 
-/* #[Route('/admin/days')]
+#[Route('/admin/days')]
 class DaysEditController extends AbstractController
 {
     #[Route('/', name: 'days_edit_index', methods: ['GET'])]
@@ -83,4 +83,3 @@ class DaysEditController extends AbstractController
         return $this->redirectToRoute('days_edit_index');
     }
 }
- */

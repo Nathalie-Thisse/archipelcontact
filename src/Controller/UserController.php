@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 //V2 Back-office
 
 
-/* #[Route('/admin/user')]
+#[Route('/admin/user')]
 class UserController extends AbstractController
 {
     #[Route('/', name: 'user_index', methods: ['GET'])]
@@ -83,4 +83,4 @@ class UserController extends AbstractController
 
         return $this->redirectToRoute('user_index');
     }
-} */
+}
