@@ -179,12 +179,15 @@
 
     .activities-section p{
         font-size: 1.2rem;
-        padding: 0 16rem;
-
+        
         @include media('<=phone') {
             padding: 0 2rem;
             text-align: center;
         }
+    }
+
+    .activities-section-p{
+        padding: 0 16rem;
     }
 
     .activities-container{

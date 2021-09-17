@@ -222,7 +222,7 @@
     text-align: left;
 
     p{
-      padding: 0 2rem;
+      padding: 0 6rem 0 1rem;
 
         @include media('<=phone') {          
           padding: 0 1rem;
