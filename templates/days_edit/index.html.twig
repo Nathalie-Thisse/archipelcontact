@@ -27,8 +27,8 @@
                     <td>{{ day.hotel }}</td>
                     <td>{{ day.photo }}</td>
                     <td>
-                        <a href="{{ path('days_edit_show', {'id': day.id}) }}">show</a>
-                        <a href="{{ path('days_edit_edit', {'id': day.id}) }}">edit</a>
+                        <a href="{{ path('days_edit_show', {'id': day.id}) }}#show-day">show</a>
+                        <a href="{{ path('days_edit_edit', {'id': day.id}) }}#edit-day">edit</a>
                     </td>
                 </tr>
             {% else %}
