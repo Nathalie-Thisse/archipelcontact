@@ -5,7 +5,9 @@
 {% block body %}
 
     <div class="container">
-        <h1>User index</h1>
+        <h1 id="index-users">User index</h1>
+
+        <a href="{{ path('dashboard') }}#dashboard" class="btn btn-warning mb-5" role="button"><i class="fas fa-arrow-alt-circle-left m-2"></i>back to dashboard</a>
 
         <table class="table">
             <thead>
