@@ -10,9 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/* WORK IN PROGRESS ! */
-//V2 Back-office
-
 #[Route('/admin/tours')]
 class ToursEditController extends AbstractController
 {

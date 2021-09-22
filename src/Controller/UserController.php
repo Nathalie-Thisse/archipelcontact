@@ -10,11 +10,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/* WORK IN PROGRESS ! */
-//V2 Back-office
 
-
-#[Route('/admin/user')]
+#[Route('/admin/users')]
 class UserController extends AbstractController
 {
     #[Route('/', name: 'user_index', methods: ['GET'])]

@@ -10,9 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/* WORK IN PROGRESS ! */
-//V2 Back-office
-
+// No need to use Days Index as we reach the page through Tours Index -> Edit Tour -> Edit Day
 #[Route('/admin/days')]
 class DaysEditController extends AbstractController
 {
@@ -62,11 +60,12 @@ class DaysEditController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
+            // We reach the Day Edit page through Tours Index -> Edit Tour -> Edit Day, so we need to go back to the Edit Tour page after Editing/deleting a Day:
             return $this->redirectToRoute('tours_edit_edit', [
                 'id' => $day->getTours()->getId()
             ]);
         }
-
+        
         return $this->render('days_edit/edit.html.twig', [
             'day' => $day,
             'form' => $form->createView(),
@@ -82,6 +81,9 @@ class DaysEditController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('days_edit_index');
+        // We reach the Day Edit page through Tours Index -> Edit Tour -> Edit Day, so we need to go back to the Edit Tour page after Editing/deleting a Day:
+        return $this->redirectToRoute('tours_edit_edit', [
+            'id' => $day->getTours()->getId()
+        ]);
     }
 }
