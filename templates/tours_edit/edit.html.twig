@@ -14,13 +14,13 @@
 
         {{ include('tours_edit/_delete_form.html.twig') }}
         </div>
-
+        
         {% for day in tour.days %}
             <li class="border-top mt-4 pt-3 fw-bold">{{ day.title }}</li>
             <li>{{ day.description }}</li>
             <li>{{ day.photo }}</li>
             <li>{{ day.hotel }}</li>
-            <a href="{{ path('days_edit_edit', {'id': day.id}) }}#edit-day" class="btn btn-primary m-1" role="button" target="_blank"><i class="fas fa-pencil-alt"></i></a>
+            <a href="{{ path('days_edit_edit', {'id': day.id}) }}#edit-day" class="btn btn-primary m-1" role="button"><i class="fas fa-pencil-alt"></i></a>
         {% endfor %} 
 
     </div>

@@ -62,7 +62,9 @@ class DaysEditController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('days_edit_index');
+            return $this->redirectToRoute('tours_edit_edit', [
+                'id' => $day->getTours()->getId()
+            ]);
         }
 
         return $this->render('days_edit/edit.html.twig', [
