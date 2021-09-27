@@ -9,11 +9,20 @@
         <h2 id="dashboard">Admin Dashboard</h2>
 
         <div class="d-flex justify-content-around">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">NEWS</h5>
+                    <p class="card-text">Create, delete and manage the news published on the Home & Informations pages.</p>
+                    <a href="{{ path('news_index') }}#news-index" class="card-link">Go to News' index</a>
+                </div>
+            </div>
+
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">TOURS</h5>
                     <p class="card-text">Create, delete and manage tours published on the website.</p>
-                    <a href="{{ path('tours_edit_index') }}#index-tours" class="card-link">Go to Tours' index</a>
+                    <a href="{{ path('tours_edit_index') }}#tours-index" class="card-link">Go to Tours' index</a>
                 </div>
             </div>
 

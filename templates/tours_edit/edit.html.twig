@@ -5,12 +5,12 @@
 {% block body %}
 
     <div class="container">
-        <h1 id="edit-tour">Edit Tours</h1>
+        <h1 id="tour-edit">Edit Tours</h1>
 
         {{ include('tours_edit/_form.html.twig', {'button_label': 'Update'}) }}
 
         <div class="d-flex">
-        <a href="{{ path('tours_edit_index') }}#index-tours" class="btn btn-warning m-1"><i class="fas fa-arrow-alt-circle-left m-2"></i>back to list</a>
+        <a href="{{ path('tours_edit_index') }}#tours-index" class="btn btn-warning m-1"><i class="fas fa-arrow-alt-circle-left m-2"></i>back to list</a>
 
         {{ include('tours_edit/_delete_form.html.twig') }}
         </div>
@@ -20,7 +20,7 @@
             <li>{{ day.description }}</li>
             <li>{{ day.photo }}</li>
             <li>{{ day.hotel }}</li>
-            <a href="{{ path('days_edit_edit', {'id': day.id}) }}#edit-day" class="btn btn-primary m-1" role="button"><i class="fas fa-pencil-alt"></i></a>
+            <a href="{{ path('days_edit_edit', {'id': day.id}) }}#day-edit" class="btn btn-primary m-1" role="button"><i class="fas fa-pencil-alt"></i></a>
         {% endfor %} 
 
     </div>
