@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit News{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 id="news-edit">Edit News</h1>
+
+        {{ include('news/_form.html.twig', {'button_label': 'Update'}) }}
+
+        <a href="{{ path('news_index') }}#news-index" class="btn btn-warning m-1"><i class="fas fa-arrow-alt-circle-left m-2"></i>back to list</a>
+
+        {{ include('news/_delete_form.html.twig') }}
+    </div>
+    {% endblock %}

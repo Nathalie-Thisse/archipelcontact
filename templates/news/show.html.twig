@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}News{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <h1 id="news-show">News</h1>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ news.id }}</td>
+                </tr>
+                <tr>
+                    <th>Title</th>
+                    <td>{{ news.title }}</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>{{ news.description }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="{{ path('news_index') }}#news-index" class="btn btn-warning m-1"><i class="fas fa-arrow-alt-circle-left m-2"></i>back to list</a>
+
+        <a href="{{ path('news_edit', {'id': news.id}) }}#news-edit" class="btn btn-primary m-2" role="button"><i class="fas fa-pencil-alt"></i>edit</a>
+
+        {{ include('news/_delete_form.html.twig') }}
+    </div>
+{% endblock %}

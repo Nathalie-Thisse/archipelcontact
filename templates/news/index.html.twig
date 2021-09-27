@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}News index{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <h1 id="news-index">News index</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for news in news %}
+                <tr>
+                    <td>{{ news.id }}</td>
+                    <td>{{ news.title }}</td>
+                    <td>{{ news.description }}</td>
+                    <td>
+                        <a href="{{ path('news_show', {'id': news.id}) }}#show-news" class="btn btn-primary m-1" role="button"><i class="far fa-eye"></i></a>
+                        <a href="{{ path('news_edit', {'id': news.id}) }}#edit-news" class="btn btn-primary m-1" role="button"><i class="fas fa-pencil-alt"></i></a>
+                        
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="4">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ path('news_new') }}#news-create" class="btn btn-success mb-5" role="button">Create new</a>
+
+        <a href="{{ path('dashboard') }}#dashboard" class="btn btn-warning mb-5" role="button"><i class="fas fa-arrow-alt-circle-left m-2"></i>back to dashboard</a>
+    </div>
+{% endblock %}

@@ -14,10 +14,10 @@
 
         <h4>Les dernières actualités en Indonésie</h4>
 
-        <h5><strong>Infos Covid-19</strong></h5>
-        <p>Les frontières indonésiennes sont toujours fermées aux touristes. Les visas business ne sont de nouveau plus acceptés depuis juillet 2021.</p>
-        <p>La date de réouverture des frontières n'a pas encore été confirmée par les autorités.</p>
-        <p>La vaccination en Indonésie a débuté en janvier 2021 et poursuit son cours. A Bali, une grande majorité de la population a déjà reçu une première dose et est, ce moment même, en train de recevoir la seconde dose.</p>
+        {% for news in news %}
+                <h5><strong>{{ news.title }}</strong></h5>
+                <p>{{ news.description }}</p>
+        {% endfor %}
     </section>
 
     <h3>Informations pratiques</h3>

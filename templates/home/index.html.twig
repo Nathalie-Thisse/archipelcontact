@@ -22,8 +22,13 @@
 
                 <div class="news-box">
                     <h4>ACTUALITÉS INDONÉSIE</h4>
-                    <h5>Les dernières informations Covid-19</h5>
-                    <a href="{{ path('information') }}#information">Cliquez ici</a>
+
+                    {% for news in news %}
+                        <h5><strong>{{ news.title }}</strong></h5>
+                    {% endfor %}
+                    
+                    <p>Pour plus d'informations<br />
+                    <a href="{{ path('information') }}#information">Cliquez ici</a></p>
                 </div>
 
             </section>
