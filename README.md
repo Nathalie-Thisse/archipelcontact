@@ -16,7 +16,7 @@ This website was made with:
 - Bootstraps for the back-office
 
 
-![Alt text](public/images/screenshotReadMe1.png?raw=true "Archipel Contact header")
+![Alt text](public/images/screenshotreadme1.png?raw=true "Archipel Contact header")
 
 
 ### Features
