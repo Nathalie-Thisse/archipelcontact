@@ -28,8 +28,8 @@ This website was made with:
 - Dynamic list of items. It displays all the useful informations you need before traveling 
 - A container with tabs for each islands displaying the best activities to do. 
 
-![Alt text](public/images/screenshotReadMe2.png?raw=true "Archipel Contact islands")
-![Alt text](public/images/screenshotReadMe3.png?raw=true "Archipel Contact svg map")
-![Alt text](public/images/screenshotReadMe4.png?raw=true "Archipel Contact list of items")
-![Alt text](public/images/screenshotReadMe5.png?raw=true "Archipel Contact tabs")
-![Alt text](public/images/screenshotReadMe6.png?raw=true "Archipel Contact travel examples")
+![Archipel Contact islands](public/images/screenshotreadme2.png?raw=true "Archipel Contact islands")
+![rchipel Contact svg map](public/images/screenshotreadme3.png?raw=true "Archipel Contact svg map")
+![Archipel Contact list of items](public/images/screenshotreadme4.png?raw=true "Archipel Contact list of items")
+![Archipel Contact tabs](public/images/screenshotreadme5.png?raw=true "Archipel Contact tabs")
+![Archipel Contact travel examples](public/images/screenshotreadme6.png?raw=true "Archipel Contact travel examples")
