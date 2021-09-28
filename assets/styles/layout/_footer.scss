@@ -1,4 +1,5 @@
-.footer{
+// SECTION MAIN FOOTER SECTION
+.footer section:first-of-type{
     background: url('/assets/images/icons/mandala-blanc.png'), $dark-violet;
     background-position: -100px -110px;
     background-repeat: no-repeat;
@@ -90,4 +91,49 @@
         }
     }
 
+}
+
+// SECTION COPYRIGHT 
+.footer section:last-of-type{    
+    background-color: $medium-violet;
+    color: white;
+    padding: 1rem;
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+
+        @include media('<=phone') {
+            div{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        p{
+            margin: 0rem;
+            font-size: 0.85rem;            
+            padding: 0 0.2rem;
+        }
+
+        @include media('<=phone') {
+            p{
+                font-size: 0.70rem;
+            }
+        }
+
+        @include media('<=phone') {
+            p:nth-child(2){
+                display: none;
+            }
+        }
+
+
+        a{
+            color: white;
+        }
+        a:hover{
+            color: $rose-violet;
+        }
 }

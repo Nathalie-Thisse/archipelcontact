@@ -105,39 +105,49 @@
 
         {# ------ FOOTER ------ #}
         <footer class='footer'>
-            
-            <h4>Archipel Contact</h4>            
+            {# SECTION 1 - Main footer section #}
+            <section>
+                <h4>Archipel Contact</h4>            
 
-            <div class="footer-content">
-                <ul class="footer-menu">
-                    <li><a href="{{ path('islands') }}#destinations">Destinations</a></li>
-                    <li><a href="{{ path('tours') }}#tours">Circuits</a></li>
-                    <li><a href="{{ path('information') }}#information">Informations Pratiques</a></li>
-                    <li><a href="{{ path('agency') }}#agency">L'Agence</a></li>
-                    <li><a href="{{ path('contact') }}#contact">Contact</a></li>
-                    <li><a href="{{ path('legal_notice') }}#legal-notice">Mentions légales</a></li>
-                </ul>
+                <div class="footer-content">
+                    <ul class="footer-menu">
+                        <li><a href="{{ path('islands') }}#destinations">Destinations</a></li>
+                        <li><a href="{{ path('tours') }}#tours">Circuits</a></li>
+                        <li><a href="{{ path('information') }}#information">Informations Pratiques</a></li>
+                        <li><a href="{{ path('agency') }}#agency">L'Agence</a></li>
+                        <li><a href="{{ path('contact') }}#contact">Contact</a></li>
+                        <li><a href="{{ path('legal_notice') }}#legal-notice">Mentions légales</a></li>
+                    </ul>
 
-                <div>                    
-                    <h5>Nos bureaux à Paris</h5>
-                    <a class="tel" href="tel:+33188610545"><p>Téléphone : +33 1 88 61 05 45</p></a>
+                    <div>                    
+                        <h5>Nos bureaux à Paris</h5>
+                        <a class="tel" href="tel:+33188610545"><p>Téléphone : +33 1 88 61 05 45</p></a>
 
-                    <h5>Nos bureaux à Denpasar</h5>
-                    <p>Jalan Ahmad Yani Utara</p>
-                    <p>Peguyangan, North Denpasar</p>
-                    <p>Bali 80115 - INDONÉSIE</p>
+                        <h5>Nos bureaux à Denpasar</h5>
+                        <p>Jalan Ahmad Yani Utara</p>
+                        <p>Peguyangan, North Denpasar</p>
+                        <p>Bali 80115 - INDONÉSIE</p>
 
+                    </div>
+
+                    <div class="footer-email">
+                        <a href="mailto:contact@archipel-contact.com">
+                            <p>Contactez-nous</p>
+                            <img src="{{ asset('build/images/icons/icon-whitepaperplane.webp') }}" alt="Icône Email">
+                        </a>
+                    </div>
+
+                </div>  
+            </section>
+
+            {# SECTION 2 - Copyright section #}
+            <section>
+                <div>
+                    <p>© Archipel Contact France</p>
+                    <p>-</p>
+                    <p>Made with 💚 by <a target="blank" href="https://leab.me">Léa</a> & <a target="blank" href="https://nathalie-dev.me">Nath</a></p>
                 </div>
-
-                <div class="footer-email">
-                    <a href="mailto:contact@archipel-contact.com">
-                        <p>Contactez-nous</p>
-                        <img src="{{ asset('build/images/icons/icon-whitepaperplane.webp') }}" alt="Icône Email">
-                    </a>
-                </div>
-
-            </div>  
-
+            </section>
         </footer>
 
     </body>
