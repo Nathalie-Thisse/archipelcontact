@@ -22,11 +22,11 @@ This website was made with:
 ### Features
 
 - Responsive pages and navigation menu
-- Back-office for admin users to change the content of each tours, each tours' days, and news about the country. 
+- Back-office for admin users to change the content of each tours, each tours' days, and news about the country 
 - Carousels of images made with [Splide](https://splidejs.com/)
 - Interactive SVG map of Indonesia made with JavaScript
 - Dynamic list of items. It displays all the useful informations you need before traveling 
-- A container with tabs for each islands displaying the best activities to do. 
+- A container with tabs for each islands displaying the best activities to do
 
 ![Archipel Contact islands](public/images/screenshotreadme2.png?raw=true "Archipel Contact islands")
 ![rchipel Contact svg map](public/images/screenshotreadme3.png?raw=true "Archipel Contact svg map")
